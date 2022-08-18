@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&family=Rubik+Dirt&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: fixed;
+    background: #B9B2DB;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+.left h3{
+    color: #EF8FAB;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.left span{
+    color: #A7D9E8;
+    text-align: center;
+}
+
+ .sair_btn{
+    padding: 5px;
+    background: crimson;
+    text-decoration: none;
+    float: right;
+    margin-top: -40px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    color: #A7D9E8;
+    transition: 0.5s;
+    transition-property: background;
+} 
+
+
+.carrinho{
+    font-size: 40px;
+    color: #fff;
+    float: right;
+    text-decoration: none;
+    margin-top: -52px;
+    margin-right: 40px;
+    transition: 0.5s;
+    transition-property: background;
+
+    /* padding-right: 1.5%;
+    display: flex;
+    justify-content: flex-end ; 
+    padding-bottom: 580px;
+    padding: 8px;
+    background: crimson;
+    float: right;
+    border-radius: 2px;
+    font-size: 15px;
+    color: darkorange; */
+
+}
+
+.conta{
+    font-size: 36px;
+    color: #fff;
+    float: right;
+    text-decoration: none;
+    margin-top: -49px;
+    margin-right: 10px;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+ 
+ .sair_btn:hover{
+    background:  #ff008c;
+} 
+    
+
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    margin-top: 70px;
+    padding-top: 30px;
+    left: 0;
+    background:  #B9B2DB; 
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.sidebar .img{
+    width: 150px;
+    height: 150px;
+    /* border-radius: 200px; */
+}
+
+.sidebar h2{
+    color: #FEE3B8;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar a:hover{
+    background: #FEE3B8;
+}
+
+.sidebar ion-icon{
+    padding-right: 10px;
+    color: #fff;
+}
+
+label #sidebar_btn{
+    z-index: 1;
+    position: fixed;
+    left: 10px;
+    color: #fff;
+    font-size: 25px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: color;
+    /* margin-left: ; */
+}
+
+label #sidebar_btn:hover{
+    color: crimson;
+}
+
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+.content{
+    background: url(../image/polvo.webp) no-repeat; /*ideia: colocar um iframe das páginas*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh;    
+    transition: 0.5s;
+}
+
+#check:checked ~ .content{
+    margin-left: 60px;
+}
+
+#check{
+    display: none;
+}
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+.table {
+    width:700px; 
+    display:grid;}
+
+.row { 
+    display:block;}
+
+.cell {
+    display:inline-block;
+    padding: 5px 5px;
+    margin-bottom: .5%;
+    background-color: rgb(248, 242, 234);
+    font-size: 10pt;
+}
+.cellHeader {
+    text-align: center !important;}
+
+
+.cellCodigo {width:100px; }
+
+.cellDescricao {width:300px;}
+
+.cellPrecoHeader {width:100px;}
+
+.cellPreco {width:60px; text-align:right;}
+
+.cellAcoes {width:100px;}
