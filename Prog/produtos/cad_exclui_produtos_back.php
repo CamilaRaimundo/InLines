@@ -1,6 +1,6 @@
 
 <?php
-    include "conexao.php"; 
+    include "../../utilis/conexao.php"; 
 
     //dados enviados do script exclui_prod_chamada_confirma_exclusao_logica.php
     $cod_produto = $_POST['id_produto'];

@@ -7,20 +7,20 @@
 }
 
 header{
-    position: fixed;
-    background: #B9B2DB;
-    padding: 20px;
-    width: 100%;
-    height: 30px;
+    position: fixed; /*posição fixa*/
+    background: #B9B2DB; /**/
+    padding: 20px; /*diastacia entre o elemento e sua borda é de 20 pixel*/
+    width: 100%; /*largura 100%*/
+    height: 30px;  /*altura 30 pixel*/
 }
 
 .left h3{
     color: #EF8FAB;
     margin: 0;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 800;
-    text-align: center;
+    text-transform: uppercase; /*transformação do texto para maiuscula*/
+    font-size: 30px; /*tamanho fonte 30 pixel*/
+    font-weight: 800; /*peso 800, negrito*/
+    text-align: center; /*alinhamento do texto centro*/
 }
 
 .left span{
@@ -29,29 +29,29 @@ header{
 }
 
  .sair_btn{
-    padding: 5px;
+    padding: 5px; /*preenchimento do texto 5pixel*/
     background: crimson;
-    text-decoration: none;
-    float: right;
-    margin-top: -40px;
-    margin-right: 40px;
-    border-radius: 2px;
-    font-size: 15px;
+    text-decoration: none; /*decoração do texto nenhuma*/
+    float: right; /*uma palavra-chave que indica que o elemento deve flutuar à direita do bloco*/
+    margin-top: -40px; /*margem do topo -40pixel*/
+    margin-right: 40px;/*margem direita 40 pixel*/
+    border-radius: 2px; /*borda redonda 2pixel*/
+    font-size: 15px;/*font 15pixel*/
     color: #A7D9E8;
-    transition: 0.5s;
-    transition-property: background;
+    transition: 0.5s; /*transição 0,5segundo*/
+    transition-property: background;/*propriedade da transição do fundo */
 } 
 
 
 .carrinho{
     font-size: 40px;
     color: #fff;
-    float: right;
-    text-decoration: none;
-    margin-top: -52px;
-    margin-right: 40px;
-    transition: 0.5s;
-    transition-property: background;
+    float: right;  /*uma palavra-chave que indica que o elemento deve flutuar à direita do bloco*/
+    text-decoration: none;/*decoração do texto nenhum*/
+    margin-top: -52px; /*margem do topo -52pixel*/
+    margin-right: 40px; /*margem da direita 40pixel*/
+    transition: 0.5s; /*transição 0,5segundos*/
+    transition-property: background;/*propriedade de transição do fundo */
 
     /* padding-right: 1.5%;
     display: flex;
@@ -67,14 +67,14 @@ header{
 }
 
 .conta{
-    font-size: 36px;
+    font-size: 36px; /*tamano fonte 36 pixel*/
     color: #fff;
-    float: right;
-    text-decoration: none;
-    margin-top: -49px;
-    margin-right: 10px;
-    transition: 0.5s;
-    transition-property: background;
+    float: right;/*uma palavra chave que indica que o elemento deve flutuar à direita do bloco*/
+    text-decoration: none; /*decoração do texto nenhum*/
+    margin-top: -49px;/*margem do topo -49pixel*/
+    margin-right: 10px;/*margem da direita 10 pixel*/
+    transition: 0.5s;/*transição 0,5segundos*/
+    transition-property: background;/*propriedade da transição do fundo*/
 }
 
  
@@ -84,38 +84,38 @@ header{
     
 
 .sidebar{
-    position: fixed;
-    width: 250px;
-    height: 100%;
-    margin-top: 70px;
-    padding-top: 30px;
-    left: 0;
+    position: fixed; /*posição fixa*/
+    width: 250px;/*largura 250pixel*/
+    height: 100%;/*altura 100%*/
+    margin-top: 70px;/*margem do topo 70pixel*/
+    padding-top: 30px;/*preenchimento do topo 30 pixel*/
+    left: 0; /*esquerda 0*/
     background:  #B9B2DB; 
-    transition: 0.5s;
-    transition-property: left;
+    transition: 0.5s; /*transição 0,5segundos*/
+    transition-property: left;/*propriedade da transição do fundo*/
 }
 
 .sidebar .img{
-    width: 150px;
-    height: 150px;
+    width: 150px; /*largura 150pixel*/
+    height: 150px;/*altura 150pixel*/
     /* border-radius: 200px; */
 }
 
 .sidebar h2{
     color: #FEE3B8;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-top: 0;/*margem do topo 0*/
+    margin-bottom: 20px; /*margem do botão 20 pixel*/
 }
 
 .sidebar a{
     color: #fff;
-    display: block;
-    width: 100%;
-    line-height: 60px;
-    text-decoration: none;
-    padding-left: 40px;
-    box-sizing: border-box;
-    transition: 0.5s;
+    display: block; /*gerando uma ou mais caixa de elementos inline*/    
+    width: 100%;/*largura 100%*/
+    line-height: 60px;/*espaçamento entre as linhas 60 pixel*/
+    text-decoration: none; /*decoração do texto nenhuma*/
+    padding-left: 40px; /*preenchimento da esquerda 40 pixel*/
+    box-sizing: border-box; /*o navegador não calcula a dimensão de um elemento somando bordas e margens com altura e largura*/
+    transition: 0.5s;/**/
     transition-property: background;
 }
 

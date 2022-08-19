@@ -12,9 +12,9 @@
         echo '<script language="javascript">';
         echo "alert('Não foi possível estabelecer conexão com o banco de dados!')";
         echo '</script>';	
-        
         exit;
     }
+    
     else
     {
         echo '<script language="javascript">';

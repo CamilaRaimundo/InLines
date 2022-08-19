@@ -1,5 +1,5 @@
 <?php
-    include "conexao.php"; 
+    include "../../utilis/conexao.php"; 
     
     // Recuperação de dados
     $nome=$_POST['nome'];
@@ -7,19 +7,16 @@
     $qtde=$_POST['qtde'];
     $preco=$_POST['preco'];
     $cod_visual=$_POST['cod_visual'];
-    $ativo='s';
+    $ativo='s'; /*ERRO*/ 
     $custo=$_POST['custo'];
     $margem_lucro=$_POST['margem_lucro'];
     $icms=$_POST['icms'];
-
-    $
 
 
     // Inserção
     $sql="INSERT INTO produto
           (id_produto, nome, descricao, qtde, preco, cod_visual, custo, margem_lucro, icms, ativo)
-          VALUES (
-            DEFAULT,
+          VALUES (DEFAULT,
             '$nome', 
             '$descricao', 
             $qtde, 
@@ -31,7 +28,7 @@
             '$ativo');";
     
     // Execução
-    $resultado=pg_query($conecta,$sql);
+    $resultado=pg_query($conecta,$sql); /*ERRO*/
     $linhas=pg_affected_rows($resultado);
 
     if ($linhas > 0)

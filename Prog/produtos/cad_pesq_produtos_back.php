@@ -1,5 +1,5 @@
 <?php
-    include "conexao.php"; 
+    include "../../utilis/conexao.php"; 
 
     $sql="SELECT * FROM produto WHERE ativo='s' ORDER BY id_produto;";
     

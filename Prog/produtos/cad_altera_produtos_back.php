@@ -1,5 +1,5 @@
 <?php
-    include "conexao.php"; 
+    include "../../utilis/conexao.php"; 
 
     //dados enviados do script altera_prod_lista.php
     $cod_produto=$_POST["id_produto"];
