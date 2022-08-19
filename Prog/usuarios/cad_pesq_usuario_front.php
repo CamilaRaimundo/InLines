@@ -33,7 +33,7 @@
 <a href='cad_novo_usuario_front.php'>+ Novo Usuário</a><br><br>
 
 <?php
-    include "cad_pesq_usuarios_back.php";
+    include "cad_pesq_usuario_back.php";
 
     if ($qtde == 0) {
         echo "Não foi encontrado nenhum usuário!!!<br><br>";
@@ -58,13 +58,13 @@
             </div>
         </div>";
 
-        // Criar linhas com os dados dos produtos
+        // Criar linhas com os dados dos usuários
         foreach ($resultado_lista as $linha)
         {
             echo "
             <div class='row'>
                 <div class='cell cellCodigo'>
-                    ".$linha['cod_usuario']."
+                    ".$linha['id_usuario']."
                 </div>
                 <div class='cell cellNome'>
                     ".$linha['nome']."
@@ -73,8 +73,8 @@
                     ".$linha['cpf']."
                 </div>
                 <div class='cell cellAcoes'>
-                    <a href='cad_altera_usuario_front.php?cod_usuario=".$linha['id_usuario']."'> Alterar</a>&nbsp;
-                    <a href='cad_exclui_usuario_front.php?cod_usuario=".$linha['id_usuario']."'> Excluir</a>&nbsp;
+                    <a href='cad_altera_usuario_front.php?id_usuario=".$linha['id_usuario']."'> Alterar</a>&nbsp;
+                    <a href='cad_exclui_usuario_front.php?id_usuario=".$linha['id_usuario']."'> Excluir</a>&nbsp;
                 </div>
             </div> "; 
         } 

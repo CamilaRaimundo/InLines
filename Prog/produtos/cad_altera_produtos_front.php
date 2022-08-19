@@ -26,8 +26,8 @@
               value="<?php echo $linha['descricao']; ?>" >
 
     <br><br>Quantidade
-       <input type="text" name="qtde_" 
-              value="<?php echo $linha['qtde']; ?>" >
+       <input type="text" name="quantidade" 
+              value="<?php echo $linha['quantidade']; ?>" >
 
     <br><br>Preço
        <input type="text" name="preco" 

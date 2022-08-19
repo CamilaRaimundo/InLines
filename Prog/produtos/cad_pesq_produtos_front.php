@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
 <body>
-<!-- 
+
 <style>
     .table {width:700px; display:grid;}
     .row { display:block;}
@@ -23,7 +23,7 @@
     .cellPrecoHeader {width:100px;}
     .cellPreco {width:60px; text-align:right;}
     .cellAcoes {width:100px;}
-</style>  -->
+</style> 
 
 <div class="cad_p">
 <a href='cad_novo_produtos_front.php'>+ Novo Produto</a><br><br>
@@ -32,7 +32,7 @@
     include "cad_pesq_produtos_back.php";
 
     if ($qtde == 0) {
-        echo "Não foi encontrado nenhum produto !!!<br><br>";
+        echo "Não foi encontrado nenhum produto!!!<br><br>";
         return;
     }
 
@@ -60,7 +60,7 @@
             echo "
             <div class='row'>
                 <div class='cell cellCodigo'>
-                    ".$linha['cod_produto']."
+                    ".$linha['id_produto']."
                 </div>
                 <div class='cell cellDescricao'>
                     ".$linha['descricao']."
@@ -69,8 +69,8 @@
                     ".$linha['preco']."
                 </div>
                 <div class='cell cellAcoes'>
-                    <a href='cad_altera_produtos_front.php?cod_produto=".$linha['cod_produto']."'> Alterar</a>&nbsp;
-                    <a href='cad_exclui_produtos_front.php?cod_produto=".$linha['cod_produto']."'> Excluir</a>&nbsp;
+                    <a href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;
+                    <a href='cad_exclui_produtos_front.php?id_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
                 </div>
             </div> "; 
         } 

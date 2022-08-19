@@ -1,7 +1,7 @@
 <?php
     include "../../utilis/conexao.php"; 
 
-    $sql="SELECT * FROM produto WHERE ativo='s' ORDER BY id_produto;";
+    $sql="SELECT * FROM produto WHERE ativo = 'true' ORDER BY id_produto;";
     
     // Executa o script bonitão no banco bonitão
     $resultado= pg_query($conecta, $sql);

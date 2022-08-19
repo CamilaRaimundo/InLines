@@ -6,9 +6,6 @@
 </head>
 <body>
     <link rel="stylesheet" href="style.css">
-    <!-- <iframe src="../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
-            width="100%" scrolling="no" allowfullscreen>
-    </iframe> -->
 
     <h1>Cadastro de Produtos</h1>
 
@@ -27,7 +24,7 @@
 
         <label>
             <strong>Quantidade:</strong><br/>
-            <input type="text" name="qtde"/><br/>
+            <input type="text" name="quantidade"/><br/>
             <br/>
         </label>
 

@@ -1,5 +1,5 @@
 <?php
-    include "conexao.php"; 
+    include "../../utilis/conexao.php"; 
 
     
     $id_usuario=$_POST["id_usuario"];
@@ -22,7 +22,7 @@
                  telefone = '$telefone',
                  cpf = '$cpf',
                  genero = '$genero',
-                 datanasc = $datanasc
+                 datanasc = '$datanasc'
 
 
            WHERE id_usuario = $id_usuario;";
@@ -35,7 +35,7 @@
     else	
         echo "<script type='text/javascript'>alert('Erro na Gravação !!!')</script>";
 
-    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=cad_pesq_produtos_front.php'>";
+    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=cad_pesq_usuario_front.php'>";
 
     // Fechando conexão com o Banco de Dados
     pg_close($conecta);

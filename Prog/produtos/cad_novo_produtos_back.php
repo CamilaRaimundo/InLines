@@ -4,10 +4,10 @@
     // Recuperação de dados
     $nome=$_POST['nome'];
     $descricao=$_POST['descricao'];
-    $qtde=$_POST['qtde'];
+    $quantidade=$_POST['quantidade'];
     $preco=$_POST['preco'];
     $cod_visual=$_POST['cod_visual'];
-    $ativo='s'; /*ERRO*/ 
+    $ativo='true'; 
     $custo=$_POST['custo'];
     $margem_lucro=$_POST['margem_lucro'];
     $icms=$_POST['icms'];
@@ -15,20 +15,22 @@
 
     // Inserção
     $sql="INSERT INTO produto
-          (id_produto, nome, descricao, qtde, preco, cod_visual, custo, margem_lucro, icms, ativo)
+          (id_produto, nome, descricao, quantidade, preco, cod_visual, custo, margem_lucro, icms, ativo)
           VALUES (DEFAULT,
             '$nome', 
             '$descricao', 
-            $qtde, 
+            $quantidade, 
             $preco,
             $cod_visual,
             $custo,
-            $margem_lucro,
+            '$margem_lucro',
             $icms,
             '$ativo');";
     
+    echo $sql;
+
     // Execução
-    $resultado=pg_query($conecta,$sql); /*ERRO*/
+    $resultado=pg_query($conecta,$sql); 
     $linhas=pg_affected_rows($resultado);
 
     if ($linhas > 0)

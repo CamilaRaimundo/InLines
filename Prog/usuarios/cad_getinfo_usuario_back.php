@@ -1,8 +1,6 @@
 <?php
-    include "conexao.php"; 
+    include "../../utilis/conexao.php"; 
 
-    /* a variável $cod_produto deve já ter sido atribuída na página pai, antes do include
-       para esse arquivo */
     $sql="SELECT * FROM usuario WHERE id_usuario = $id_usuario;";
 
     $resultado=pg_query($conecta,$sql);

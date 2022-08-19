@@ -1,7 +1,7 @@
 Novo usuario back:
 
 <?php
-    include "conexao.php"; 
+    include "../../utilis/conexao.php"; 
     
     // Recuperação de dados
     $nome=$_POST['nome'];
@@ -11,11 +11,11 @@ Novo usuario back:
     $cpf=$_POST['cpf'];
     $genero=$_POST['genero'];
     $datanasc=$_POST['datanasc'];
-    $ativo='s';
+    $ativo='true';
 
 
     // Inserção
-    $sql="INSERT INTO usuarios
+    $sql="INSERT INTO usuario
           (id_usuario, nome, email, senha, telefone, cpf, genero, datanasc,ativo)
           VALUES (
             DEFAULT,
@@ -25,9 +25,10 @@ Novo usuario back:
             '$telefone',
             '$cpf',
             '$genero',
-            $datanasc,
+            '$datanasc',
             '$ativo');";
     
+    echo $sql;
     // Execução
     $resultado=pg_query($conecta,$sql);
     $linhas=pg_affected_rows($resultado);
@@ -35,7 +36,7 @@ Novo usuario back:
     if ($linhas > 0)
     {
         echo '<script language="javascript">';
-        echo "alert('Produto salvo com sucesso!')";
+        echo "alert('Usuário salvo com sucesso!')";
         echo '</script>';	
 
         header("Location: cad_novo_usuario_front.php");

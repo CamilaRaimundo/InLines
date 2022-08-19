@@ -1,7 +1,7 @@
 <?php
-    include "conexao.php"; 
+    include "../../utilis/conexao.php"; 
 
-    $sql="SELECT * FROM usuario WHERE ativo='s' ORDER BY id_usuario;";
+    $sql="SELECT * FROM usuario WHERE ativo='true' ORDER BY id_usuario;";
     
     $resultado= pg_query($conecta, $sql);
 

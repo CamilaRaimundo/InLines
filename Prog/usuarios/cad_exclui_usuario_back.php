@@ -1,18 +1,18 @@
 
 <?php
-    include "conexao.php"; 
+    include "../../utilis/conexao.php"; 
 
     //dados enviados do script exclui_prod_chamada_confirma_exclusao_logica.php
-    $cod_produto = $_POST['cod_produto'];
+    $id_usuario = $_POST['id_usuario'];
     
     // Padrão para data no servidor do kinghost está americano (se atentar!!)
     $data=date('m/d/Y'); //'Y' (maiúsculo) para ano com 4 dígitos
     //$data=date('d/m/Y');
 
-    //inserida a data de exclusao do produto para histórico
+    //inserida a data de exclusao do usuario para histórico
     $sql="update usuario
-            set ativo = 'n', data_exclusao = '$data' 
-        WHERE id_usuario = $cod_usuario";
+            set ativo = 'false', data_exclusao = '$data' 
+        WHERE id_usuario = $id_usuario";
 
     //echo $sql;
 

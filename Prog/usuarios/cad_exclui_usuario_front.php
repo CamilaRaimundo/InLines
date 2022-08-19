@@ -1,10 +1,7 @@
 <link rel="stylesheet" href="style.css">
-<!-- <iframe src="../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
-        width="100%" scrolling="no" allowfullscreen>
-</iframe> -->
 
 <?php
-       $cod_produto = $_GET["cod_usuario"];
+       $id_usuario = $_GET["id_usuario"];
        include "cad_getinfo_usuario_back.php"; 
 ?>
 
@@ -46,6 +43,6 @@ Código do usuário
               
     <br><br>
     <input type="submit" value="Confirma exclusão">
-    <input type="button" value="Editar" onclick="location.href='cad_altera_usuario_front.php?cod_produto=<?php echo $cod_produto ?>';">
+    <input type="button" value="Editar" onclick="location.href='cad_altera_usuario_front.php?id_usuario=<?php echo $id_usuario?>';">
     <input type="button" value="Voltar" onclick="location.href='cad_pesq_usuario_front.php';">
 </form>

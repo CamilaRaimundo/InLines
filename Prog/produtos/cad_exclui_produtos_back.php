@@ -3,7 +3,7 @@
     include "../../utilis/conexao.php"; 
 
     //dados enviados do script exclui_prod_chamada_confirma_exclusao_logica.php
-    $cod_produto = $_POST['id_produto'];
+    $id_produto = $_POST['id_produto'];
     
     // Padrão para data no servidor do kinghost está americano (se atentar!!)
     $data=date('m/d/Y'); //'Y' (maiúsculo) para ano com 4 dígitos
@@ -11,8 +11,8 @@
 
     //inserida a data de exclusao do produto para histórico
     $sql="update produtos
-            set ativo = 'n', data_exclusao = '$data' 
-        WHERE id_produto = $cod_produto";
+            set ativo = 'false', data_exclusao = '$data' 
+        WHERE id_produto = $id_produto";
 
     //echo $sql;
 
@@ -20,7 +20,7 @@
     $qtde=pg_affected_rows($resultado);
 
     if ($qtde > 0 )
-        echo "<script type='text/javascript'>alert('Exclusão OK !!!')</script>";
+        echo "<script type='text/javascript'>alert('Exclusão OK!!!')</script>";
     else
         echo "<script type='text/javascript'>alert('Erro na exclusão !!!')</script>";
 

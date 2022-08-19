@@ -2,9 +2,9 @@
     include "../../utilis/conexao.php"; 
 
     //dados enviados do script altera_prod_lista.php
-    $cod_produto=$_POST["id_produto"];
+    $id_produto=$_POST["id_produto"];
     $descricao=$_POST["descricao"];
-    $qtde_=$_POST["qtde_"];
+    $quantidade=$_POST["quantidade"];
     $preco=$_POST["preco"];
     $nome=$_POST["nome"];
     $cod_visual=$_POST["cod_visual"];
@@ -15,7 +15,7 @@
 
     $sql="UPDATE produto
              SET descricao = '$descricao',
-                 qtde = $qtde_,
+                 quantidade = $quantidade,
                  preco = $preco, 
                  nome = '$nome',
                  cod_visual = '$cod_visual',
