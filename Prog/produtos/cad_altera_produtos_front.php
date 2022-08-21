@@ -1,7 +1,4 @@
 <link rel="stylesheet" href="style.css">
-<!-- <iframe src="../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
-        width="100%" scrolling="no" allowfullscreen>
-</iframe> -->
 
 <!-- Recuperando as informações do produto -->
 <?php
@@ -49,10 +46,6 @@
        <input type="text" name="icms" 
               value="<?php echo $linha['icms']; ?>" >
            
-
-
-
-
      <br><br>
     <input type="submit" value="Gravar">
     <input type="reset" value="Voltar" onclick="history.back()">

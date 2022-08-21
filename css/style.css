@@ -159,13 +159,12 @@ label #sidebar_btn:hover{
     width: 80px;
 }
 
-.content{
-    background: url(../image/polvo.webp) no-repeat; /*ideia: colocar um iframe das páginas*/
-    background-size: cover;
+/* .content{
+    background: url(../image/polvo.webp) no-repeat; 
     background-position: center;
     height: 100vh;    
     transition: 0.5s;
-}
+} */
 
 #check:checked ~ .content{
     margin-left: 60px;
@@ -173,6 +172,19 @@ label #sidebar_btn:hover{
 
 #check{
     display: none;
+}
+
+.mae{
+    margin: 0 auto;
+    
+}
+
+.container
+{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 20%; /* 0 encima e embaixo, automatico na esquerda e direita*/
+    padding: 10% 20px;
 }
 
 

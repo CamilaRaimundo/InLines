@@ -21,7 +21,7 @@
             '$descricao', 
             $quantidade, 
             $preco,
-            $cod_visual,
+            '$cod_visual',
             $custo,
             '$margem_lucro',
             $icms,

@@ -3,17 +3,61 @@
     <head>
         <meta charset="utf-8" />
         <title>Pesquisa de Produtos</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../../css/style.css">
     </head>
+
 <body>
+
+<div class="menu">
+<input type="checkbox" id="check">
+
+<header>
+    <!-- <a name="ancora"></a> -->
+    <label for="check">
+        <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
+        <!-- <i class="fa-brands fa-octopus-deploy" id="sidebar_btn"></i> -->
+    </label>
+
+
+    <div class="left">
+        <h3>In <span>Line</span></h3> 
+    </div>
+
+    <div class="right">
+        <a href="#" class="carrinho"><ion-icon name="cart"></ion-icon></a>
+        <a href="Prog/usuarios/cad_pesq_usuario_front.php" class="conta"><ion-icon name="person-outline"></ion-icon></a>
+    </div> 
+
+</header>
+<div class="sidebar">
+    <center>
+        <img src="./image/inlines.png" class="img" alt="In Lines">
+        <h2>Menu</h2>
+    </center>
+
+    <a href="index.html"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
+    <a href="Prog/produtos/cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Produtos</span></a>
+    <a href="Prog/usuarios/cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a>
+    <a href="#"><ion-icon name="code"></ion-icon><span>Devs</span></a>
+
+</div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<div class="mae">
+    <div class="container">
+        <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> -->
 
 <style>
     .table {width:700px; display:grid;}
     .row { display:block;}
     .cell {
-        display:inline-block;
+        display: inline-block;
         padding: 5px 5px;
-        margin-bottom: .5%;
+        margin: .5%;
         background-color: rgb(248, 242, 234);
         font-size: 10pt;
     }
@@ -23,6 +67,7 @@
     .cellPrecoHeader {width:100px;}
     .cellPreco {width:60px; text-align:right;}
     .cellAcoes {width:100px;}
+    .tabelona {margin:20%}
 </style> 
 
 <div class="cad_p">
@@ -73,11 +118,15 @@
                     <a href='cad_exclui_produtos_front.php?id_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
                 </div>
             </div> "; 
-        } 
+        }
     // Fechando a tag da tabela
     echo "</div>";
-    
-?>  
+
+?>
+</div>
+ 
+</div> 
+
 </div>  
 </body>
 </html>

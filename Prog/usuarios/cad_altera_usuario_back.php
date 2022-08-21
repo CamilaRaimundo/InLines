@@ -31,9 +31,9 @@
     $qtde=pg_affected_rows($resultado);
 
     if ($qtde > 0)
-        echo "<script type='text/javascript'>alert('Gravação OK !!!')</script>";
+        echo "<script type='text/javascript'>alert('Gravação OK!!!')</script>";
     else	
-        echo "<script type='text/javascript'>alert('Erro na Gravação !!!')</script>";
+        echo "<script type='text/javascript'>alert('Erro na Gravação!!!')</script>";
 
     echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=cad_pesq_usuario_front.php'>";
 

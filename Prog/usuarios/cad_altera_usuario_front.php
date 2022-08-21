@@ -12,23 +12,23 @@
     
     Id Usuario
     <input type="text" name="id_usuario" 
-           value="<?php echo $linha['id_usuario']; ?>" 
+           value="<?php echo $linha['id_usuario'];?>" 
            readonly>
     <br><br>Nome
     <input type="text" name="nome" 
-           value="<?php echo $linha['nome']; ?>" >
+           value="<?php echo $linha['nome'];?>" >
 
     <br><br>Email
     <input type="email" name="email" 
-           value="<?php echo $linha['email']; ?>" >
+           value="<?php echo $linha['email'];?>" >
 
     <br><br>Senha
     <input type="password" name="senha" 
-           value="<?php echo $linha['senha']; ?>" >
+           value="<?php echo $linha['senha'];?>" >
 
     <br><br>Telefone
     <input type="text" name="telefone" 
-           value="<?php echo $linha['telefone']; ?>" >
+           value="<?php echo $linha['telefone'];?>" >
 
     <br><br>CPF
     <input type="text" name="cpf" 
@@ -41,12 +41,13 @@
    <option label="Feminino" value="fem"></option>
    <option label="Não Binário" value="nbin"></option>
    <option label="Outros" value="outros"></option>
-   </select>
-           value="<?php echo $linha['genero']; ?>" >
+</select>
+           value="<?php echo $linha['genero'];?>" >
+           <!-- ARRUMAR O VISUAL DISSO -->
 
     <br><br>Data de Nascimento
     <input type="date" name="datanasc" 
-           value="<?php echo $linha['datanasc']; ?>" >
+           value="<?php echo $linha['datanasc'];?>" >
 
      <br><br>
     <input type="submit" value="Gravar">
