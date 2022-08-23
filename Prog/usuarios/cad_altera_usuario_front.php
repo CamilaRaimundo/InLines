@@ -34,16 +34,21 @@
     <input type="text" name="cpf" 
            value="<?php echo $linha['cpf']; ?>" >
 
-    
+   
     <br><br> Gênero:<br>
-   <select name="genero">
-   <option label="Masculino" value="masc"></option>
-   <option label="Feminino" value="fem"></option>
-   <option label="Não Binário" value="nbin"></option>
-   <option label="Outros" value="outros"></option>
-</select>
-           value="<?php echo $linha['genero'];?>" >
-           <!-- ARRUMAR O VISUAL DISSO -->
+    <input type="text" name="genero" 
+           value="<?php echo $linha['genero']; ?>" >
+           <select name= "genero">
+           <!--select name="genero"> 
+   <option label="Masculino" value="masc">Masculino</option!-->
+   <!-- <option label="Masculino" value="masc">Masculino</option> -->
+   <!-- <option label="Feminino" value="fem">Feminino</option> -->
+   <!-- <option label="Não Binário" value="nbin">Não Binário</option> -->
+   <!-- <option label="Outros" value="outros">Outros</option> -->
+<!-- </select> -->
+   
+           
+        
 
     <br><br>Data de Nascimento
     <input type="date" name="datanasc" 

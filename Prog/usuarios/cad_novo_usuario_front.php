@@ -36,12 +36,18 @@
         </label>
         <label>
             <strong>Gênero:</strong><br />
+            <input type="text" name="genero" /><br />
+            <br/>
+        </label>
+
+        <!-- <label>
+            <strong>Gênero:</strong><br />
              <select name="genero">
              <option label="Masculino" value="masc"></option>
              <option label="Feminino" value="fem"></option>
              <option label="Não Binário" value="nbin"></option>
              <option label="Outros" value="outros"></option>
-   </select>
+   </select> -->
             <br/><br>
         </label>
         <label>

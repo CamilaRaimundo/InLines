@@ -25,19 +25,19 @@
 
     <div class="right">
         <a href="#" class="carrinho"><ion-icon name="cart"></ion-icon></a>
-        <a href="Prog/usuarios/cad_pesq_usuario_front.php" class="conta"><ion-icon name="person-outline"></ion-icon></a>
+        <a href="../../Prog/usuarios/cad_pesq_usuario_front.php" class="conta"><ion-icon name="person-outline"></ion-icon></a>
     </div> 
 
 </header>
 <div class="sidebar">
     <center>
-        <img src="./image/inlines.png" class="img" alt="In Lines">
+        <img src="../../image/inlines.png" class="img" alt="In Lines">
         <h2>Menu</h2>
     </center>
 
-    <a href="index.html"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
-    <a href="Prog/produtos/cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Produtos</span></a>
-    <a href="Prog/usuarios/cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a>
+    <a href="../../index.html"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
+    <a href="cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Produtos</span></a>
+    <a href="../usuarios/cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a>
     <a href="#"><ion-icon name="code"></ion-icon><span>Devs</span></a>
 
 </div>
@@ -49,7 +49,6 @@
 
 <div class="mae">
     <div class="container">
-        <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> -->
 
 <style>
     .table {width:700px; display:grid;}
