@@ -22,7 +22,7 @@
     <br><br>
     Preço: R$ <?php echo number_format($linha['preco'], 2, ',', '.'); ?>
     <br><br>
-    <!-- Código do fornecedor: <?php echo $linha['id_fornecedor'];?>
+    <!-- Código do fornecedor: ?php echo $linha['id_fornecedor'];?>
     <br><br> -->
     <a href='carrinho_front.php?acao=add&idproduto=<?php echo $id_produto; ?>'>Comprar</a>
     &nbsp;<a href="selecao_produtos_front.php">Voltar</a>

@@ -25,7 +25,7 @@
 
     <div class="right">
         <a href="#" class="carrinho"><ion-icon name="cart"></ion-icon></a>
-        <a href="../../Prog/usuarios/cad_pesq_usuario_front.php" class="conta"><ion-icon name="person-outline"></ion-icon></a>
+        <a href="../../Prog/venda/carrinho_front.php" class="conta"><ion-icon name="person-outline"></ion-icon></a>
     </div> 
 
 </header>
@@ -52,8 +52,8 @@
     <div class="container">
 
     <!-- CHEN NESSAS PARTES, FIM -->
-<style>
-    .table {width:700px; display:grid;}
+<!-- <style>
+   .table {width:700px; display:grid;}
     .row { display:block;}
     .cell {
         display: inline-block;
@@ -69,7 +69,7 @@
     .cellPreco {width:60px; text-align:right;}
     .cellAcoes {width:100px;}
     .tabelona {margin:20%}
-</style> 
+</style>  -->
 
 <div class="cad_p">
 <a href='cad_novo_produtos_front.php'>+ Novo Produto</a><br><br>
@@ -83,8 +83,8 @@
     }
 
     // Começar tabela e criar o cabeçalho
-    echo "
-    <div class='table'>
+    echo"
+    <div class='table'> 
         <div class='row'>
             <div class='cell cellCodigo cellHeader'>
                 Cód. Produto
@@ -118,7 +118,7 @@
                     <a href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;
                     <a href='cad_exclui_produtos_front.php?id_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
                 </div>
-            </div> "; 
+            </div>";
         }
     // Fechando a tag da tabela
     echo "</div>";

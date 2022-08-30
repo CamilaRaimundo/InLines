@@ -23,7 +23,7 @@
     </div>
 
     <div class="right">
-        <a href="#" class="carrinho"><ion-icon name="cart"></ion-icon></a>
+        <a href="Prog/venda/carrinho_front.php" class="carrinho"><ion-icon name="cart"></ion-icon></a>
         <a href="Prog/usuarios/cad_pesq_usuario_front.php" class="conta"><ion-icon name="person-outline"></ion-icon></a>
     </div> 
 
@@ -50,7 +50,7 @@
 <div class="mae">
     <div class="container">
 
-<style>
+<!-- <style>
     .table {width:700px; display:grid;}
     .row { display:block;}
     .cell {
@@ -66,7 +66,7 @@
     .cellPrecoHeader {width:100px;}
     .cellCPF {width:60px; text-align:right;}
     .cellAcoes {width:100px;}
-</style>
+</style> -->
 
 <!-- <iframe src="../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
     width="100%" scrolling="no" allowfullscreen>

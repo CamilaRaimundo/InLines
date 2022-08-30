@@ -66,18 +66,21 @@
 						  grid-row-gap: 10px;
                           width=1250px">';
 
-        // Criar linhas com os dados dos produtos
+        // Criar linhas com os dados dos produtos (Ana e Chen editar)
         foreach ($resultado_lista as $linha)
         {
             $preco= number_format($linha['preco'], 2, ',', '.');
 
             echo "
-            <div style='border: 1px solid black;text-align:center'>
+            <div <style>
+                    border: 1px solid black;text-align:center
+
+                </style>
                 <div>
                     <br>
                     <a href='selecao_detalhes_front.php?id=".$linha['id_produto']."'> 
-                    // ANA E CHEN
-                       <img src='../../image/img.jpg' style='width:150px; height:100px' />
+                       <img src='img.jpg' style='width:150px; height:100px' />
+                       <img src='img2.jpg' style='width:150px; height:100px' />
                     </a>
                 </div>
 
