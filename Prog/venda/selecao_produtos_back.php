@@ -1,14 +1,14 @@
 <?php
-    include "../utils/conexao.php"; 
+    include "../../utilis/conexao.php";
 
-    $sql="SELECT * FROM produtoscrud WHERE excluido='n' ORDER BY descricao;";
+    $sql="SELECT * FROM produto WHERE ativo='true' ORDER BY nome;";
     
     $resultado= pg_query($conecta, $sql);
-    $qtde=pg_num_rows($resultado);
+    $quantidade=pg_num_rows($resultado);
 
     $resultado_lista = null;
 
-    if ($qtde > 0)
+    if ($quantidade > 0)
     {
         $resultado_lista=pg_fetch_all($resultado);
     }

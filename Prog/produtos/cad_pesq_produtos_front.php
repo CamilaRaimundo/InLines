@@ -38,6 +38,7 @@
     <a href="../../index.html"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
     <a href="cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Produtos</span></a>
     <a href="../usuarios/cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a>
+    <a href="../venda/selecao_produtos_front.php"><ion-icon name="bag-check-outline"></ion-icon><span>Vendas</span></a>
     <a href="#"><ion-icon name="code"></ion-icon><span>Devs</span></a>
 
 </div>
@@ -50,6 +51,7 @@
 <div class="mae">
     <div class="container">
 
+    <!-- CHEN NESSAS PARTES, FIM -->
 <style>
     .table {width:700px; display:grid;}
     .row { display:block;}
