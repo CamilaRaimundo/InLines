@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <title>Cadastro de Usuários</title>
+  </head>
+  <body>
+    
+        <!-- Code block starts -->
+        <dh-component>
+            <form id="login">
+                <div class="bg-white dark:bg-gray-800">
+                    <div class="container mx-auto bg-white dark:bg-gray-800 rounded">
+                        <div class="xl:w-full border-b border-gray-300 dark:border-gray-700 py-5 bg-white dark:bg-gray-800">
+                            <div class="flex w-11/12 mx-auto xl:w-full xl:mx-0 items-center">
+                                <p class="text-lg text-gray-800 dark:text-gray-100 font-bold">Cadastro de Usuários</p>
+                                <div class="ml-2 cursor-pointer text-gray-600 dark:text-gray-400">
+                                    <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4.svg" alt="info">
+                                    <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4dark.svg" alt="info">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mx-auto">
+                            <div class="xl:w-9/12 w-11/12 mx-auto xl:mx-0">
+                                <div class="rounded relative mt-8 h-48">
+                                    <div class="w-20 h-20 rounded-full bg-cover bg-center bg-no-repeat absolute bottom-0 -mb-10 ml-12 shadow flex items-center justify-center">
+                                        <img src="https://cdn.tuk.dev/assets/webapp/forms/form_layouts/form2.jpg" alt="" class="absolute z-0 h-full w-full object-cover rounded-full shadow top-0 left-0 bottom-0 right-0" />
+                                        <div class="absolute bg-black opacity-50 top-0 right-0 bottom-0 left-0 rounded-full z-0"></div>
+                                        <div class="cursor-pointer flex flex-col justify-center items-center z-10 text-gray-100">
+                                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg1.svg" alt="Edit">
+                                            <p class="text-xs text-gray-100">Editar foto</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mx-auto bg-white dark:bg-gray-800 mt-10 rounded px-4">
+                        <div class="mx-auto pt-4">
+                            <div class="container mx-auto">
+                                <form class="my-6 w-11/12 mx-auto xl:w-full xl:mx-0">
+                                    <div class="mt-16 flex flex-col xl:w-2/6 lg:w-1/2 md:w-1/2 w-full">
+                                        <label for="username" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">Nome:</label>
+                                        <input tabindex="0" type="text" id="username" name="username" required class="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none focus:border-indigo-700 bg-transparent placeholder-gray-500 text-gray-600 dark:text-gray-400" />
+                                    </div>
+                                    <div class="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
+                                        <label for="Quantidade" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">E-mail:</label>
+                                        <input tabindex="0" type='email' id="email" name="email" required class="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-600 dark:text-gray-400" placeholder="" />
+                                    </div>
+                                    <div class="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
+                                        <label for="preco" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">Senha:</label>
+                                        <input tabindex="0" type="password" id="preco" name="preco" required class="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-600 dark:text-gray-400" placeholder="" />
+                                    </div>
+                                    <div class="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
+                                        <label for="codigo" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100"> Telefone:</label>
+                                        <input tabindex="0" type="text" id="codigo" name="codigo" required class="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded bg-transparent text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-600 dark:text-gray-400" placeholder="" />
+                                    </div>
+                                    <div class="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
+                                        <label for="custo" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">CPF:</label>
+                                        <input tabindex="0" type="text" id="custo" name="custo" required class="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-600 dark:text-gray-400" />
+                                    </div>
+                                    <div class="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
+                                        <label for="lucro" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">Gênero:</label>
+                                        <input tabindex="0" type="text" id="lucro" name="lucro" required class="border bg-transparent border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-600 dark:text-gray-400"  />
+                                    </div>
+                                    <div class="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
+                                        <label for="lucro" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">Data de nascimento:</label>
+                                        <input tabindex="0" type="text" id="lucro" name="lucro" required class="border bg-transparent border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-600 dark:text-gray-400" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mx-auto w-11/12 xl:w-full">
+                        <div class="w-full py-4 sm:px-0 bg-white dark:bg-gray-800 flex justify-end">
+                            <button role="button" aria-label="cancel form" class="bg-gray-200 focus:outline-none transition duration-150 ease-in-out hover:bg-gray-300 dark:bg-gray-700 rounded text-indigo-600 dark:text-indigo-600 px-6 py-2 text-xs mr-4 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700">Cancel</button>
+                            <button role="button" ar09ia-label="Save form" class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-indigo-700 focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-8 py-2 text-sm" type="submit">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <style>
+                .checkbox:checked { 
+                    /* Apply class right-0*/
+                    right: 0;
+                }
+                .checkbox:checked + .toggle-label {
+                    /* Apply class bg-indigo-700 */
+                    background-color: #4c51bf;
+                }
+            </style>
+            <script>
+                let form = document.getElementById("login");
+                form.addEventListener(
+                    "submit",
+                    function (event) {
+                        event.preventDefault();
+                        let elements = form.elements;
+                        let payload = {};
+                        for (let i = 0; i < elements.length; i++) {
+                            let item = elements.item(i);
+                            switch (item.type) {
+                                case "checkbox":
+                                    payload[item.name] = item.checked;
+                                    break;
+                                case "submit":
+                                    break;
+                                default:
+                                    payload[item.name] = item.value;
+                                    break;
+                            }
+                        }
+                        // Place your API call here to submit your payload.
+                        console.log("payload", payload);
+                    },
+                    true
+                );
+            </script>
+            
+        </dh-component>
+        <!-- Code block ends -->
+    
+  </body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Formulário de Cadastro de Usuarios - Tabela Usuarios CRUD</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <h1>Cadastro de Usuarios</h1>
+
+    <form action="cad_novo_usuario_back.php" method="post">
+        <label>
+            <strong>Nome:</strong><br />    
+            <input type="text" name="nome" /><br />
+            <br />
+        </label>
+        <label>
+            <strong>Email:</strong><br />    
+            <input type="email" name="email" /><br />
+            <br />
+        </label>
+        <label>
+            <strong>Senha:</strong><br />
+            <input type="password" name="senha" /><br />
+            <br />
+        </label>
+        <label>
+            <strong>Telefone:</strong><br />
+            <input type="text" name="telefone"  /><br />
+            <br />
+        </label>
+        <label>
+            <strong>CPF:</strong><br />
+            <input type="text" name="cpf" /><br />
+            <br />
+        </label>
+        <label>
+            <strong>Gênero:</strong><br />
+            <input type="text" name="genero" /><br />
+            <br/>
+        </label>
+
+         <label>
+            <strong>Gênero:</strong><br />
+             <select name="genero">
+             <option label="Masculino" value="masc"></option>
+             <option label="Feminino" value="fem"></option>
+             <option label="Não Binário" value="nbin"></option>
+             <option label="Outros" value="outros"></option>
+        </select> 
+            <br/><br>
+        </label>
+        <label>
+            <strong>Data de nascimento:</strong><br />
+            <input type="date" name="datanasc" /><br />
+            <br />
+        </label>
+
+        <input type="submit" name="button" id="button" value="Enviar" />
+        <a href='cad_pesq_usuario_front.php'>Voltar</a><br><br>
+    </form> 
+</body>
+</html> -->

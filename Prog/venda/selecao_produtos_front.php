@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
@@ -11,7 +11,7 @@
 <input type="checkbox" id="check">
 
 <header>
-    <!-- <a name="ancora"></a> -->
+    <!-- <a name="ancora"></a> 
     <label for="check">
         <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
         <!-- <i class="fa-brands fa-octopus-deploy" id="sidebar_btn"></i> -->
@@ -23,7 +23,7 @@
     </div>
 
     <div class="right">
-        <a href="#" class="carrinho"><ion-icon name="cart"></ion-icon></a>
+        <a href="carrinho_front" class="carrinho"><ion-icon name="cart"></ion-icon></a>
         <a href="Prog/usuarios/cad_pesq_usuario_front.php" class="conta"><ion-icon name="person-outline"></ion-icon></a>
     </div> 
 
@@ -66,21 +66,16 @@
 						  grid-row-gap: 10px;
                           width=1250px">';
 
-        // Criar linhas com os dados dos produtos (Ana e Chen editar)
         foreach ($resultado_lista as $linha)
         {
             $preco= number_format($linha['preco'], 2, ',', '.');
-
+            // var_dump($resultado_lista); 
             echo "
-            <div <style>
-                    border: 1px solid black;text-align:center
-
-                </style>
+            <div style = 'border: 1px solid black;text-align:center'>
                 <div>
                     <br>
                     <a href='selecao_detalhes_front.php?id=".$linha['id_produto']."'> 
-                       <img src='img.jpg' style='width:150px; height:100px' />
-                       <img src='img2.jpg' style='width:150px; height:100px' />
+                       <img src='../../image/".$linha['imagem'].".jpg' style='width:150px; height:100px' />
                     </a>
                 </div>
 
@@ -99,11 +94,12 @@
                         <div>".$linha['quantidade']." em estoque</div>";
                     }
 					
-					echo "<a href='carrinho_front.php?acao=add&idproduto=".$linha['id_produto']."'>Comprar</a>";
+					echo "<a href='carrinho_front.php?acao=add&id_produto=".$linha['id_produto']."'>Comprar</a>";
 
                 echo "</div><br>";
             echo "</div>";
         }
+        
 
         echo "</div>";
 

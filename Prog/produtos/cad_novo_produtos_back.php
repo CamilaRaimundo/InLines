@@ -11,11 +11,12 @@
     $custo=$_POST['custo'];
     $margem_lucro=$_POST['margem_lucro'];
     $icms=$_POST['icms'];
+    $imagem=$_POST['imagem'];
 
 
     // Inserção
     $sql="INSERT INTO produto
-          (id_produto, nome, descricao, quantidade, preco, cod_visual, custo, margem_lucro, icms, ativo)
+          (id_produto, nome, descricao, quantidade, preco, cod_visual, custo, margem_lucro, icms, imagem, ativo)
           VALUES (DEFAULT,
             '$nome', 
             '$descricao', 
@@ -25,6 +26,7 @@
             $custo,
             '$margem_lucro',
             $icms,
+            '$imagem',
             '$ativo');";
     
     echo $sql;

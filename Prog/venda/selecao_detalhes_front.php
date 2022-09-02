@@ -1,8 +1,8 @@
-<link rel="stylesheet" href="../css/cabecalho.css">
+<link rel="stylesheet" href="../../css/style.css">
 
 <!-- Recuperando as informações do produto -->
 <?php
-       $id_produto = $_GET["id_produto"];
+       $id_produto = $_GET["id"];
        include "../produtos/cad_getinfo_produto_back.php"; 
 ?>
 
@@ -10,8 +10,9 @@
 
     <h1><?php echo $linha['descricao']; ?></h1>
 
-    <!-- CHEN E ANA -->
-    <img src='../../image/img.jpg' style='width:300px; height:250px'/>
+    <!-- ARRUMAR IMAGEM -->
+    <!-- <img src="../../image/' -->
+    <!-- <    ?    php $   linha['imagem]; ?>'.jpg "/> -->
     <!-- <img src='../../image/$linha['cod_visual']' style='width:300px; height:250px'/> -->
     <br><br>
     Código do produto:<?php echo $linha['id_produto'];?>
@@ -24,7 +25,7 @@
     <br><br>
     <!-- Código do fornecedor: ?php echo $linha['id_fornecedor'];?>
     <br><br> -->
-    <a href='carrinho_front.php?acao=add&idproduto=<?php echo $id_produto; ?>'>Comprar</a>
+    <a href='carrinho_front.php?acao=add&id_produto=<?php echo $id_produto; ?>'>Comprar</a>
     &nbsp;<a href="selecao_produtos_front.php">Voltar</a>
 </div>
 

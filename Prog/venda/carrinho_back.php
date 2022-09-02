@@ -1,38 +1,38 @@
 <?php
-    include "../utils/conexao.php"; 
+    include "../../utilis/conexao.php"; 
 
     function getQtdeProdutoCarrinho($conecta, $id_usuario, $id_produto) 
     {
-        $sql="SELECT qtde
+        $sql="SELECT quantidade
                 FROM carrinho
-                WHERE id_usuario = $idusuario
-                AND id_produto = $idproduto";
+                WHERE id_usuario = $id_usuario
+                AND id_produto = $id_produto";
 
         $resultado=pg_query($conecta,$sql);
-        $qtde=pg_num_rows($resultado);
+        $quantidade=pg_num_rows($resultado);
 
-        if ( $qtde == 0 )
+        if ( $quantidade == 0 )
             return 0;
         
         $produto_carrinho = pg_fetch_array($resultado);
-        return intval($produto_carrinho['qtde']);
+        return intval($produto_carrinho['quantidade']);
     }
 
     function addCarrinho($conecta, $id_usuario, $id_produto) 
     {
-        $qtdeProduto = getQtdeProdutoCarrinho($conecta, $id_usuario, $id_produto);
+        $quantidadeProduto = getQtdeProdutoCarrinho($conecta, $id_usuario, $id_produto);
 
-        if ($qtdeProduto == 0) 
+        if ($quantidadeProduto == 0) 
         {
             // Insere o produto
             $sql="INSERT INTO carrinho 
-                    (id_produto, id_usuario, qtde)   VALUES 
+                    (id_produto, id_usuario, quantidade)   VALUES 
                     ($id_produto, $id_usuario, 1);";
         }
         else 
         {
             $sql="UPDATE carrinho
-                    set qtde = ".($qtdeProduto + 1).
+                    set quantidade = ".($quantidadeProduto + 1).
                     "where id_produto = $id_produto
                     and id_usuario = $id_usuario";
         }
@@ -53,10 +53,10 @@
     {
         //var_dump($prods);
 
-        foreach($prods as $id_produto => $qtd)
+        foreach($produto as $id_produto => $quantidade)
         {
             $sql="UPDATE carrinho
-                    set qtde = $qtd
+                    set quantidade = $quantidade
                     where id_produto = $id_produto
                     and id_usuario = $id_usuario";
             
@@ -78,7 +78,7 @@
         }
         else if($acao == 'up')
         {
-            updateCarrinho($conecta, $id_usuario, $produto);
+            updateCarrinho($conecta, $id_usuario, $id_produto);
         }
 
         header("location:carrinho_front.php");
@@ -87,21 +87,32 @@
 
     $sql="SELECT c.*,
                 p.preco,
-                c.qtde * p.preco as subtotal,
+                c.quantidade * p.preco as subtotal,
                 p.descricao,
-                p.qtde as estoque
+                p.quantidade as estoque
             FROM carrinho c
-            inner join produtoscrud p
+            inner join produto p
             on c.id_produto = p.id_produto
             WHERE c.id_usuario = $id_usuario
             ORDER BY p.descricao;";
 
+    // $sql="SELECT carrinho.*,
+    // produto.preco,
+    // carrinho.quantidade * produto.preco as subtotal,
+    // produto.descricao,
+    // produto.quantidade as estoque
+    // FROM carrinho c
+    // inner join produto p
+    // on carrinho.id_produto = produto.id_produto
+    // WHERE carrinho.id_usuario = $id_usuario
+    // ORDER BY produto.descricao;";
+
     $resultado= pg_query($conecta, $sql);
-    $qtde=pg_num_rows($resultado);
+    $quantidade=pg_num_rows($resultado);
 
     $resultado_lista = null;
 
-    if ($qtde > 0)
+    if ($quantidade > 0)
     {
         $resultado_lista=pg_fetch_all($resultado);
     }

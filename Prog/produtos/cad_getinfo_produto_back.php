@@ -4,9 +4,9 @@
     $sql="SELECT * FROM produto WHERE id_produto = $id_produto;";
 
     $resultado=pg_query($conecta,$sql);
-    $qtde=pg_num_rows($resultado);
+    $quantidade=pg_num_rows($resultado);
 
-    if ( $qtde == 0 )
+    if ( $quantidade == 0 )
     {
         echo '<script language="javascript">';
         echo "alert('Produto não encontrado!')";

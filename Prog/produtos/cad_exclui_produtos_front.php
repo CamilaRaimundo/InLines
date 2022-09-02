@@ -45,6 +45,10 @@ Código do produto
        <input type="text" name="icms" 
               value="<?php echo $linha['icms'];?>" readonly>
 
+<br><br>Imagem
+       <input type="text" name="imagem" 
+              value="<?php echo $linha['imagem'];?>" readonly>
+
     <br><br>
     <input type="submit" value="Confirma exclusão">
     <input type="button" value="Editar" onclick="location.href='cad_altera_produtos_front.php?id_produto=<?php echo $id_produto?>';">

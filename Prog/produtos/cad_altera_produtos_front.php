@@ -45,6 +45,10 @@
     <br><br>ICMS
        <input type="text" name="icms" 
               value="<?php echo $linha['icms']; ?>" >
+
+       <br><br>Imagem
+       <input type="text" name="imagem" 
+              value="<?php echo $linha['imagem']; ?>" >
            
      <br><br>
     <input type="submit" value="Gravar">

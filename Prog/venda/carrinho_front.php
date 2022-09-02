@@ -27,7 +27,7 @@
 			Preço
 		</div>
 		<div class='cell cellPreco cellHeader'>
-			Qtde.
+			Quantidade
 		</div>
 		<div class='cell cellPreco cellHeader'>
 			Subtotal
@@ -42,11 +42,13 @@
 	<?php
 		$total = 0.0;
 
-		// Criar linhas com os dados dos produtos
+		if(!empty($resultado_lista))
+		{
         foreach ($resultado_lista as $linha)
-        { 
-			$id_produto = $linha['id_produto'];
-			$total += floatval($linha['subtotal']);
+			{ 
+				$id_produto = $linha['id_produto'];
+				$total += floatval($linha['subtotal']);
+			
 	?>
             <div class='row'>
 				<div class='cell cellDescricao'>
@@ -57,7 +59,7 @@
 				</div>
 				<div class='cell cellPreco'>
 					<input type="text" size="3" name="produto[<?php echo $id_produto; ?>]"
-						value="<?php echo $linha['qtde']; ?>" />
+						value="<?php echo $linha['quantidade']; ?>" />
 				</div>
 				<div class='cell cellPreco'>
 					<?php echo $linha['subtotal']; ?>
@@ -67,7 +69,10 @@
 				</div>
             </div>
 	<?php 
-		}  
+		}
+	}
+	else
+		echo "<p>Não há produtos no carrinho</p>";
 		echo "<h3>Total da compra: R$ ".number_format($total, 2, ',', '.');".</h3>";
 	?>
 

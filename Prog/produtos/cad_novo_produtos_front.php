@@ -29,7 +29,7 @@
         </label>
 
         <label>
-            <strong>Preço:</strong><br />
+            <strong>Preço:</strong><br/>
             <input type="text" name="preco"/><br/>
             <br/>
         </label>
@@ -37,22 +37,27 @@
         <label>
             <strong>Código Visual:</strong><br/>
             <input type="text" name="cod_visual" /><br />
-            <br />
+            <br/>
         </label>
         <label>
             <strong>Custo:</strong><br/>
             <input type="text" name="custo"/><br/>
-            <br />
+            <br/>
         </label>
         <label>
             <strong>Margem de lucro:</strong><br/>
             <input type="text" name="margem_lucro"/><br/>
-            <br />
+            <br/>
         </label>
         <label>
             <strong>ICMS:</strong><br/>
             <input type="text" name="icms"/><br/>
-            <br />
+            <br/>
+        </label>
+        <label>
+            <strong>Imagem:</strong><br/>
+            <input type="text" name="imagem"/><br/>
+            <br/>
         </label>
 
 

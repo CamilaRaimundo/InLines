@@ -11,6 +11,7 @@
     $custo=$_POST["custo"];
     $margem_lucro=$_POST["margem_lucro"];
     $icms=$_POST["icms"];
+    $imagem=$_POST["imagem"];
 
 
     $sql="UPDATE produto
@@ -21,7 +22,8 @@
                  cod_visual = '$cod_visual',
                  custo = $custo,
                  margem_lucro = $margem_lucro,
-                 icms = $icms
+                 icms = $icms,
+                 imagem = '$imagem'
 
 
            WHERE id_produto = $id_produto;";

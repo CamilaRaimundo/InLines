@@ -24,7 +24,7 @@
     </div>
 
     <div class="right">
-        <a href="#" class="carrinho"><ion-icon name="cart"></ion-icon></a>
+        <a href="Prog/venda/carrinho_front.php" class="carrinho"><ion-icon name="cart"></ion-icon></a>
         <a href="../../Prog/venda/carrinho_front.php" class="conta"><ion-icon name="person-outline"></ion-icon></a>
     </div> 
 
@@ -51,7 +51,6 @@
 <div class="mae">
     <div class="container">
 
-    <!-- CHEN NESSAS PARTES, FIM -->
 <!-- <style>
    .table {width:700px; display:grid;}
     .row { display:block;}

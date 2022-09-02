@@ -12,10 +12,3 @@ projetoscti16
 senha: @@InLines
 projetoscti.com.br/projetoscti16/site/
 
-22/08/2022
-• Div de conteúdo - alinhar página de produtos
-• Apresentação do gênero na página de alteração do usuário
-• Link da logo no menu
-• Links do menu lateral - pg produtos
-• Menu e alinhamento da página do usuário
-• Alinhamento dos componentes do menu
