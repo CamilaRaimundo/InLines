@@ -78,7 +78,7 @@
         }
         else if($acao == 'up')
         {
-            updateCarrinho($conecta, $id_usuario, $id_produto);
+            updateCarrinho($conecta, $id_usuario, $produto);
         }
 
         header("location:carrinho_front.php");

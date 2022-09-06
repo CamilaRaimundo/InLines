@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="shortcut icon" href="../../image/inlines2.png">
 
 <?php
        $id_produto = $_GET["id_produto"];

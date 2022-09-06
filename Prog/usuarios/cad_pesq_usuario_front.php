@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>Pesquisa de Usuários</title>
         <link rel="stylesheet" href="../../css/style.css">
+        <link rel="shortcut icon" href="../../image/inlines2.png">
     </head>
 <body>
 
@@ -49,28 +50,6 @@
 
 <div class="mae">
     <div class="container">
-
-<!-- <style>
-    .table {width:700px; display:grid;}
-    .row { display:block;}
-    .cell {
-        display:inline-block;
-        padding: 5px 5px;
-        margin-bottom: .5%;
-        background-color: rgb(248, 242, 234);
-        font-size: 10pt;
-    }
-    .cellHeader {text-align: center !important;}
-    .cellCodigo {width:100px; }
-    .cellNome {width:300px;}
-    .cellPrecoHeader {width:100px;}
-    .cellCPF {width:60px; text-align:right;}
-    .cellAcoes {width:100px;}
-</style> -->
-
-<!-- <iframe src="../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
-    width="100%" scrolling="no" allowfullscreen>
-</iframe> -->
 
 <a href='cad_novo_usuario_front.php'>+ Novo Usuário</a><br><br>
 

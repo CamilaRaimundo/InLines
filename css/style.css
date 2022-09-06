@@ -243,3 +243,7 @@ label #sidebar_btn:hover{
     .cellPreco {width:60px; text-align:right;}
     .cellAcoes {width:100px;}
 
+.img{
+    width:30%; 
+    height:35%
+}

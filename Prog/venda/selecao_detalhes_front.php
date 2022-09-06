@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../../css/style.css">
+<link rel="shortcut icon" href="../../image/inlines2.png">
 
 <!-- Recuperando as informações do produto -->
 <?php
@@ -11,15 +12,14 @@
     <h1><?php echo $linha['descricao']; ?></h1>
 
     <!-- ARRUMAR IMAGEM -->
-    <!-- <img src="../../image/' -->
-    <!-- <    ?    php $   linha['imagem]; ?>'.jpg "/> -->
-    <!-- <img src='../../image/$linha['cod_visual']' style='width:300px; height:250px'/> -->
+    <img src="../../image/<?php  echo $linha['imagem']; ?>.jpg"  style='width:50%; height:50%' >
+    
     <br><br>
     Código do produto:<?php echo $linha['id_produto'];?>
     <br><br>
     Descrição: <?php echo $linha['descricao']; ?>
     <br><br>
-    Quantidade : <?php echo $linha['quantidade']; ?>
+    Quantidade: <?php echo $linha['quantidade']; ?>
     <br><br>
     Preço: R$ <?php echo number_format($linha['preco'], 2, ',', '.'); ?>
     <br><br>

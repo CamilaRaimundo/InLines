@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../css/style.css">
-<!-- <link rel="stylesheet" href="../css/carrinho.css"> -->
+<link rel="shortcut icon" href="../../image/inlines2.png">
 <?php
 
     //session_start();

@@ -5,7 +5,8 @@
     <title>Formulário de Cadastro de Produtos - Tabela Produtos CRUD</title>
 </head>
 <body>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="shortcut icon" href="../../image/inlines2.png">
 
     <h1>Cadastro de Produtos</h1>
 
