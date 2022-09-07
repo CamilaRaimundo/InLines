@@ -23,8 +23,8 @@
     </div>
 
     <div class="right">
-        <a href="Prog/venda/carrinho_front.php" class="carrinho"><ion-icon name="cart"></ion-icon></a>
-        <a href="Prog/usuarios/cad_pesq_usuario_front.php" class="conta"><ion-icon name="person-outline"></ion-icon></a>
+        <a href="carrinho_front.php" class="carrinho"><ion-icon name="cart"></ion-icon></a>
+        <a href="../usuarios/cad_pesq_usuario_front.php" class="conta"><ion-icon name="person-outline"></ion-icon></a>
     </div> 
 
 </header>
@@ -36,7 +36,7 @@
 
     <a href="../../index.html"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
     <a href="../produtos/cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Produtos</span></a>
-    <a href="cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a>
+    <a href="../usuarios/cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a>
     <a href="../venda/selecao_produtos_front.php"><ion-icon name="bag-check-outline"></ion-icon><span>Vendas</span></a>
     <a href="#"><ion-icon name="code"></ion-icon><span>Devs</span></a>
 
@@ -61,7 +61,7 @@
             }
 
             echo '<div style="display:grid; 
-                            grid-template-columns: repeat(3,300px); 
+                            grid-template-columns: repeat(4,250px); 
                             grid-column-gap: 10px;
                             grid-row-gap: 10px;
                             width=1250px">';
@@ -75,7 +75,7 @@
                     <div>
                         <br>
                         <a href='selecao_detalhes_front.php?id=".$linha['id_produto']."'> 
-                        <img src='../../image/".$linha['imagem'].".jpg' style='width:50%; height:35%'/>
+                        <img src='../../image/".$linha['imagem'].".jpeg' style='width:50%; height:35%'/>
                         </a>
                     </div>
 
