@@ -4,66 +4,53 @@
     <meta charset="utf-8" />
     <title>Formulário de Cadastro de Produtos - Tabela Produtos CRUD</title>
 </head>
-<body>
+<body class=produtos_front>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="shortcut icon" href="../../image/inlines2.png">
-
-    <h1>Cadastro de Produtos</h1>
-
     <form action="cad_novo_produtos_back.php" method="post">
-        <label>
-            <strong>Nome:</strong><br/>    
-            <input type="text" name="nome"/><br/>
-            <br/>
-        </label>
 
-        <label>
-            <strong>Descrição:</strong><br/>    
-            <input type="text" name="descricao"/><br/>
-            <br/>
-        </label>
-
-        <label>
-            <strong>Quantidade:</strong><br/>
-            <input type="text" name="quantidade"/><br/>
-            <br/>
-        </label>
-
-        <label>
-            <strong>Preço:</strong><br/>
-            <input type="text" name="preco"/><br/>
-            <br/>
-        </label>
-
-        <label>
-            <strong>Código Visual:</strong><br/>
-            <input type="text" name="cod_visual" /><br />
-            <br/>
-        </label>
-        <label>
-            <strong>Custo:</strong><br/>
-            <input type="text" name="custo"/><br/>
-            <br/>
-        </label>
-        <label>
-            <strong>Margem de lucro:</strong><br/>
-            <input type="text" name="margem_lucro"/><br/>
-            <br/>
-        </label>
-        <label>
-            <strong>ICMS:</strong><br/>
-            <input type="text" name="icms"/><br/>
-            <br/>
-        </label>
-        <label>
-            <strong>Imagem:</strong><br/>
-            <input type="text" name="imagem"/><br/>
-            <br/>
-        </label>
-
-
-        <input type="submit" name="button" id="button" value="Enviar" />
-        <a href='cad_pesq_produtos_front.php'>Voltar</a><br><br>
+    <div class="wrapper">
+        <div class="title">
+            Cadastro de Produtos
+        </div>
+        <div class="form_items">
+            <div class="input_field">
+                <label>Nome</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label>Descrição</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label>Quantidade</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label>Código Visual</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label>Custo</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label>Margem de Lucro</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label>ICMS</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label>Imagem</label>
+                <input type="text" class="input">
+            </div>
+            <div>
+                <input type="submit" name="button" id="button" value="Enviar" />
+                <a href='cad_pesq_produtos_front.php'>Voltar</a><br><br>
+            </div>
+    </div>
     </form> 
 </body>
 </html>

@@ -119,4 +119,5 @@
 
     // Fecha a conexão com o PostgreSQL
     pg_close($conecta);
+
 ?>
