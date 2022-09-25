@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>Pesquisa de Produtos</title>
         <link rel="stylesheet" href="../../css/style.css">
-        <link rel="shortcut icon" href="../../image/inlines2.png">
+        <link rel="shortcut icon" href="../../image/logo.png">
 
     </head>
 

@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../css/style.css">
-<link rel="shortcut icon" href="../../image/inlines2.png">
+<link rel="shortcut icon" href="../../image/logo.png">
 <!-- Recuperando as informações do usuario -->
 <?php
        $id_usuario = $_GET["id_usuario"];

@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../css/style.css">
-<link rel="shortcut icon" href="../../image/inlines2.png">
+<link rel="shortcut icon" href="../../image/logo.png">
 
 <div class="menu">
 <input type="checkbox" id="check">
@@ -75,9 +75,9 @@
 				<div class='cell cellPreco cellHeader'>
 					Subtotal
 				</div>
-				<!-- <div class='cell cellAcoes'>
+				<div class='cell cellAcoes'>
 					&nbsp;
-				</div> -->
+				</div>
 			</div>
 
 			<form action="?acao=up" method="post">
@@ -94,29 +94,22 @@
 					
 			?>
 					<div class='row'>
-					<!-- tirar -->
-						
-					<div class='cell cellDescricao'>
-					<a href='?acao=del&id_produto=<?php echo $id_produto; ?>'><ion-icon name="close"></ion-icon></a>
+						<div class='cell cellDescricao'>
 							<?php echo $linha['descricao']; ?>
 						</div>
 						<div class='cell cellPreco'>
 							<?php echo $linha['preco']; ?>
 						</div>
-						
 						<div class='cell cellPreco'>
-						<ion-icon name="remove"></ion-icon>
-							<input type="text" size="1" name="produto[<?php echo $id_produto; ?>]"
+							<input type="text" size="3" name="produto[<?php echo $id_produto; ?>]"
 								value="<?php echo $linha['quantidade']; ?>" />
-						<ion-icon name="add"></ion-icon>
 						</div>
-					
 						<div class='cell cellPreco'>
 							<?php echo $linha['subtotal']; ?>
 						</div>
-						<!-- <div class='cell cellAcoes'>
-							<a href='?acao=del&id_produto=< ?php echo $id_produto; ?>'>Excluir</a> original
-						</div> -->
+						<div class='cell cellAcoes'>
+							<a href='?acao=del&id_produto=<?php echo $id_produto; ?>'>Excluir</a>
+						</div>
 					</div>
 			<?php 
 				}
@@ -129,7 +122,7 @@
 			<br><br>
 			<input type="submit" value="Atualizar Carrinho" />&nbsp;&nbsp;
 			<a href="selecao_produtos_front.php">Continue Comprando</a>&nbsp;&nbsp;
-			<a href="confirmacao_compra_front.php">Finalize sua Compra</a>
+			<a href="finalizacompra.php">Finalize sua Compra</a>
 			
 			</form>
 

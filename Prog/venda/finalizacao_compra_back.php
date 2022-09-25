@@ -19,7 +19,7 @@
         return true;
     }
 
-    function atualizarEstoque($codproduto, $qtdeVendida)
+    function atualizarEstoque($id_produto, $qtdeVendida)
     {
         // ESSE CODIGO ESTÁ INCOMPLETO!!!
 
@@ -33,7 +33,8 @@
     // (ainda precisa programar)
     validarProdutos($resultado_lista);
 
-    $sql = "INSERT INTO venda (cod_venda, cod_usuario, datavenda, excluido) VALUES (DEFAULT, $codusuario, NOW(),'f');";
+    $sql = "INSERT INTO venda (id_venda, id_usuario, datavenda, ativo) 
+                VALUES (DEFAULT, $id_usuario, NOW(),'true');";
     $res = pg_query($conecta, $sql);
     $qtdLinhas = pg_affected_rows($res);
 
@@ -43,20 +44,21 @@
     foreach($resultado_lista as $linha)
     { 
         $preco = $linha['preco'];
-        $qtde = $linha['qtde'];
-        $codproduto = $linha['cod_produto'];
+        $qtde = $linha['quantidade'];
+        $id_produto = $linha['id_produto'];
 
-        $sql = "INSERT INTO itemvenda (cod_venda, cod_produto, qtde, preco) VALUES (CURRVAL('venda_codvenda_seq'),".$codproduto.",".$qtde.",".$preco.");";
+        $sql = "INSERT INTO itemvenda (id_venda, id_produto, qtde, preco) 
+                    VALUES (CURRVAL('venda_codvenda_seq'),".$id_produto.",".$quantidade.",".$preco.");";
         $res = pg_query($conecta, $sql);
 
         // Atualizar qtde estoque 
         // (ainda precisa programar)
-        atualizarEstoque($codproduto, $qtde);
+        atualizarEstoque($id_produto, $qtde);
     }  
 
     // Limpar carrinho
     $sql=" DELETE FROM carrinho
-            where cod_usuario = $codusuario";
+            where id_usuario = $id_usuario";
 
     pg_query($conecta,$sql);
 

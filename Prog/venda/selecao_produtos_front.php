@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>Carrinho de compras</title>
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="shortcut icon" href="../../image/inlines2.png">
+    <link rel="shortcut icon" href="../../image/logo.png">
 </head>
 
 <body>
@@ -77,23 +77,42 @@
                 foreach ($resultado_lista as $linha) {
                     $preco = number_format($linha['preco'], 2, ',', '.');
 
-                    // ------------------------------------------------------------------------------------
-                    echo '<div class="gallery">
-                            <div class="content2">
+                    echo "<section class='slider'>
+                    <div class='cardvenda'>
+                        <div class='cardvenda-content'>
+                            <a href='selecao_detalhes_front.php?id=" . $linha['id_produto'] . "'>
+                            <img  class='cardvenda-img' src='../../image/" . $linha['imagem'] . ".jpeg'>
+                            <h1 class='cardvenda-title'>" . $linha['nome'] . "</h1>
+                            <div class='cardvenda-body'>
+                                <p class='cardvenda-price'>R$ $preco</p>
+                            </div>
+                            <div class='cardvenda-footer'>
+                                <button class='btn btn-success'><a href='carrinho_front.php?acao=add&id_produto=" . $linha['id_produto'] . "'></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>";
+
+                // <h4 class='pcard'>" . $linha['descricao'] . "</h4>
+                // <button class='btn btn-border'>Add To Cart</button>
+
+
+                    // echo '<div class="gallery">
+                    //         <div class="content2">
                         
-                                <a href="selecao_detalhes_front.php?id=' . $linha['id_produto'] . '">
-                                <img class="imgcard" src="../../image/' . $linha['imagem'] . '.jpeg">
+                    //             <a href="selecao_detalhes_front.php?id=' . $linha['id_produto'] . '">
+                    //             <img class="imgcard" src="../../image/' . $linha['imagem'] . '.jpeg">
                                 
 
-                                <h3 class="nomepro">' . $linha['nome'] . '</h3>
-                                <h4 class="pcard">' . $linha['descricao'] . '</h4>
-                                <h6 class="h6card">R$ ' . $preco . '</h6>';
-                    echo '<button class="buy"><a href="carrinho_front.php?acao=add&id_produto=' . $linha['id_produto'] . '">Compre aqui</a></button>';
+                    //             <h3 class="nomepro">' . $linha['nome'] . '</h3>
+                    //             <h4 class="pcard">' . $linha['descricao'] . '</h4>
+                    //             <h6 class="h6card">R$ ' . $preco . '</h6>';
+                    // echo '<button class="buy"><a href="carrinho_front.php?acao=add&id_produto=' . $linha['id_produto'] . '">Compre aqui</a></button>';
 
-                    echo '</div>';
+                    // echo '</div>';
 
-                    echo '</div>';
-                }
+                    // echo '</div>';
+                } //foreache
 
                 ?>
                 <!-- php -->
@@ -181,3 +200,9 @@
 </body> <!-- body -->
 
 </html>
+
+<!-- <section class="slider">
+    <div class="cardvenda">
+
+    </div>
+</section> -->

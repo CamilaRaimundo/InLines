@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../css/style.css">
-<link rel="shortcut icon" href="../../image/inlines2.png">
+<link rel="shortcut icon" href="../../image/logo.png">
 
 <div class="menu">
 <input type="checkbox" id="check">

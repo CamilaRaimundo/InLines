@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="../../css/style.css">
-    <link rel="shortcut icon" href="../../image/inlines2.png">
+    <link rel="shortcut icon" href="../../image/logo.png">
 
 <?php
     //session_start();
-    $codusuario = 1; // Depois precisamos alterar para pegar da $_SESSION
+    $id_usuario = 1; // Depois precisamos alterar para pegar da $_SESSION
     include "finalizacao_compra_back.php";
 
     echo "<h1>Compra Finalizada com Sucesso!!!</h1>";
