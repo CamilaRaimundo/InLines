@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Carrinho de compras</title>
-    <link rel="stylesheet" href="../../css/style.css">
+    <title>Produtos</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <link rel="shortcut icon" href="../../image/logo.png">
 </head>
 
@@ -77,132 +77,54 @@
                 foreach ($resultado_lista as $linha) {
                     $preco = number_format($linha['preco'], 2, ',', '.');
 
-                    echo "<section class='slider'>
-                    <div class='cardvenda'>
-                        <div class='cardvenda-content'>
-                            <a href='selecao_detalhes_front.php?id=" . $linha['id_produto'] . "'>
-                            <img  class='cardvenda-img' src='../../image/" . $linha['imagem'] . ".jpeg'>
-                            <h1 class='cardvenda-title'>" . $linha['nome'] . "</h1>
-                            <div class='cardvenda-body'>
-                                <p class='cardvenda-price'>R$ $preco</p>
-                            </div>
-                            <div class='cardvenda-footer'>
-                                <button class='btn btn-success'><a href='carrinho_front.php?acao=add&id_produto=" . $linha['id_produto'] . "'></button>
-                            </div>
-                        </div>
-                    </div>
-                </section>";
+                    if ($linha['quantidade'] <= 0) {
+                            echo "< div >< span style='color:red'>Produto esgotado</span></ div>";
+                        } 
+                        else {
 
-                // <h4 class='pcard'>" . $linha['descricao'] . "</h4>
-                // <button class='btn btn-border'>Add To Cart</button>
-
-
-                    // echo '<div class="gallery">
-                    //         <div class="content2">
-                        
-                    //             <a href="selecao_detalhes_front.php?id=' . $linha['id_produto'] . '">
-                    //             <img class="imgcard" src="../../image/' . $linha['imagem'] . '.jpeg">
-                                
-
-                    //             <h3 class="nomepro">' . $linha['nome'] . '</h3>
-                    //             <h4 class="pcard">' . $linha['descricao'] . '</h4>
-                    //             <h6 class="h6card">R$ ' . $preco . '</h6>';
-                    // echo '<button class="buy"><a href="carrinho_front.php?acao=add&id_produto=' . $linha['id_produto'] . '">Compre aqui</a></button>';
-
-                    // echo '</div>';
-
-                    // echo '</div>';
+                                echo "<section class='slider'>
+                                    <div class='cardvenda'>
+                                        <div class='cardvenda-content'>
+                                            <a class='class_a' href='selecao_detalhes_front.php?id=" . $linha['id_produto'] . "'>
+                                            <img  class='cardvenda-img' src='../../image/" . $linha['imagem'] . ".jpeg'>
+                                            <h1 class='cardvenda-title'>" . $linha['nome'] . "</h1>
+                                            <div class='cardvenda-body'>
+                                                <p class='cardvenda-price'>R$ $preco</p>
+                                            </div>
+                                            <div class='cardvenda-footer'>
+                                            <button class='btn btn-success'><a href='carrinho_front.php?acao=add&id_produto=" . $linha['id_produto'] . "' class='btn btn-success'>Comprar</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>";
+                             }
                 } //foreache
 
-                ?>
-                <!-- php -->
+                ?> <!-- php -->
             </div> <!-- container -->
-        </div> <!-- mãe -->
+        </div> <!-- menu -->
+    </div> <!-- mãe -->
 
+<!-- ----------------RODAPÉ ------------------------------ -->
+<div class="footer">
+        <div class="devs">
+            <h2>Devs</h2>
+            <ul>
+                <li>Ana Clara Gama Alba Postinguel, n° 02</li>
+                <li>Camila Pereira Raimundo, n° 06</li>
+                <li>Laura Caires Jardim Maldonado Galera, n° 17</li>
+                <li>Murilo Gonzales Vieira, n° 24</li>
+                <li>Rafael Chun Lin Chen, n° 28</li>
+            </ul>
 
-        <!-- // if ($linha['quantidade'] <= 0) {
-                                //     echo "
-                                //         < div >< span style='color:red'>Produto esgotado</ span></ div>";
-                                // } else {
-                                //     echo "
-                                //         < div>" . $linha['quantidade'] . " em estoque</ div>";
-                                // }
+        </div>
 
-                                // echo'    
-                                //     < ul class="ulcard">
-                                //         < li class="licard">
-                                //             < ion-icon name="star">< /ion-icon>
-                                //         < /li>
-                                //         < li class="licard">
-                                //             < ion-icon name="star"></ ion-icon>
-                                //         < /li>
-                                //         < li class="licard">
-                                //             < ion-icon name="star"></ ion-icon>
-                                //         < /li>
-                                //         < li class="licard">
-                                //             < ion-icon name="star"></ ion-icon>
-                                //         < /li>
-                                //         < li class="licard">
-                                //             < ion-icon name="star"></ ion-icon>
-                                //         < /li>
-                                //         < /ul>';
-                                        // echo '< button class="buy">Buy Now< /button>';
-
-                                // -----------------------------------------------------------------------------------------
-
-                               // <img src='img/".$linha['imagem']."' height=250 width=250> -->
-        <!-- 
-                                    // if ($quantidade == 0) {
-                                    //     echo "Não foi encontrado nenhum produto !!!<br><br>";
-                                    //     return;
-                                    // } -->
-
-        <!-- // echo '< div style="display:grid; 
-                                    //             grid-template-columns: repeat(4,250px); 
-                                    //             grid-column-gap: 10px;
-                                    //             grid-row-gap: 10px;
-                                    //             width=1250px">';
-
-                                    // foreach ($resultado_lista as $linha) {
-                                    //     $preco = number_format($linha['preco'], 2, ',', '.');
-                                    //     // var_dump($resultado_lista); 
-                                    //     echo "
-                                    // < div style = 'border: 1px solid black;text-align:center'>
-                                    //     < div>
-                                    //         < br>
-                                    //         <a href='selecao_detalhes_front.php?id=" . $linha['id_produto'] . "'> 
-                                    //         <img src='../../image/" . $linha['imagem'] . ".jpeg' style='width:50%; height:35%'/>
-                                    //         </a>
-                                    //     </div>
-
-                                    //     <div> -->
-        <!-- //         < div>< p>" . $linha['nome'] . "</ p></ div>
-                                    //         < div>R$ " . $preco . "</ div>";
-
-                                    //     if ($linha['quantidade'] <= 0) {
-                                    //         echo "
-                                    //             < div>< span style='color:red'>Produto esgotado</span></div>";
-                                    //     } else {
-                                    //         echo "
-                                    //             < div>" . $linha['quantidade'] . " em estoque</div>";
-                                    //     }
-
-                                        // echo "< a href='carrinho_front.php?acao=add&id_produto=" . $linha['id_produto'] . "'>Comprar</a>";
-
-                                    //     echo "< /div>< br>";
-                                    //     echo "< /div>";
-                    
-                                 // echo "< /div>"; -->
-
-
-    </div> <!-- menu -->
+        <div class="voltar_ao_topo">
+            <a href="#" class="top">
+                <ion-icon name="arrow-up-circle-outline"></ion-icon>
+            </a>
+        </div>
 
 </body> <!-- body -->
 
 </html>
-
-<!-- <section class="slider">
-    <div class="cardvenda">
-
-    </div>
-</section> -->

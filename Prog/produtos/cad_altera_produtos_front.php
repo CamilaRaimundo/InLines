@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../css/style.css">
-<link rel="shortcut icon" href="../../image/logo.png">
+<link rel="shortcut icon" type="text/css" href="../../image/logo.png">
 <!-- Recuperando as informações do produto -->
 <?php
        $id_produto = $_GET["id_produto"];

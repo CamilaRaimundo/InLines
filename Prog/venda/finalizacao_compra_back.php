@@ -1,7 +1,7 @@
 <?php
     include "../../utilis/conexao.php"; 
 
-    $compraFinalizada = FALSE;
+    $compraFinalizada = false;
 
     function validarProdutos($resultado_lista)
     {
@@ -10,10 +10,10 @@
         // Realizar as validações com os produtos aqui
         foreach($resultado_lista as $linha)
         {
-            //$sql = "SELECT QTDE FROM PROD.... ";
-            // $res = pg_query($conecta,$sql);
-            // if ///
-            //   return false;
+            $sql = "SELECT quantidade FROM produto WHERE ativo = 'true' ";
+            $res = pg_query($conecta,$sql);
+            // if ()
+              return false;
         }
 
         return true;
@@ -21,16 +21,18 @@
 
     function atualizarEstoque($id_produto, $qtdeVendida)
     {
-        // ESSE CODIGO ESTÁ INCOMPLETO!!!
-
-        //$sql = "UPDATE ..."
-        //$res = pg_query($conecta,$sql);
+        //  MEXI AQ
+        $res = pg_query($conecta,$sql);
+        $sql="UPDATE produto
+        set quantidade = '.($quantidadeProduto - qtdeVendida).
+        'WHERE id_produto = $id_produto
+        AND id_usuario = '$id_usuario';
     }
 
     session_start();
     $resultado_lista = $_SESSION['produtos'];
 
-    // (ainda precisa programar)
+    -- // (ainda precisa programar)
     validarProdutos($resultado_lista);
 
     $sql = "INSERT INTO venda (id_venda, id_usuario, datavenda, ativo) 
@@ -58,7 +60,7 @@
 
     // Limpar carrinho
     $sql=" DELETE FROM carrinho
-            where id_usuario = $id_usuario";
+            WHERE id_usuario = $id_usuario";
 
     pg_query($conecta,$sql);
 

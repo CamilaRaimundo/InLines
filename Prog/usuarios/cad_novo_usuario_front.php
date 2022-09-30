@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <title>Cadastro de Usuários</title>
       <link rel="stylesheet" href="../../css/style.css">
-      <link rel="shortcut icon" href="../../image/logo.png">
+      <link rel="shortcut icon" type="text/css" href="../../image/logo.png">
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
@@ -46,57 +46,97 @@
 </div>
 <div class="mae">
     <div class="container">
-    <form class="forms" action="cad_novo_usuario_back.php" method="post">
-    <h1 class="title">Cadastro de Usuários</h1><br><br>
-        <label>
-            <strong>Nome:</strong><br />    
-            <input type="text" name="nome" class="inputs" /><br />
-            <br />
-        </label>
-        <label>
-            <strong>Email:</strong><br />    
-            <input type="email" name="email" class="inputs"/><br />
-            <br />
-        </label>
-        <label>
-            <strong>Senha:</strong><br />
-            <input type="password" name="senha" class="inputs"/><br />
-            <br />
-        </label>
-        <label>
-            <strong>Telefone:</strong><br />
-            <input type="text" name="telefone"  class="inputs"/><br />
-            <br />
-        </label>
-        <label>
-            <strong>CPF:</strong><br />
-            <input type="text" name="cpf" class="inputs"/><br />
-            <br />
-        </label>
+        <form class="forms" action="cad_novo_usuario_back.php" method="post">
+        <h1 class="title">Cadastro de Usuários</h1><br><br>
+            <label>
+                <strong>Nome:</strong><br />    
+                <input type="text" name="nome" class="inputs" /><br />
+                <br />
+            </label>
+            <label>
+                <strong>Email:</strong><br />    
+                <input type="email" 
+                name="email" 
+                class="inputs"
+                pattern="#"
+                placeholder="Telefone"
+                /><br />
+                <br/>
+            </label>
+            <label>
+                <strong>Senha:</strong><br />
+                <input type="password" 
+                name="senha" 
+                class="inputs"
+                placeholder="Senha"
+                /><br />
+                <br />
+            </label>
+            <label>
+                <strong>Telefone:</strong><br />
+                <input type="text" 
+                name="telefone"  
+                class="inputs"
+                placeholder="Telefone"/><br />
+                <br />
+            </label>
+            <label>
+                <strong>CPF:</strong><br />
+                <input type="text" 
+                name="cpf" 
+                class="inputs"
+                placeholder="CPF"
+                /><br />
+                <br />
+            </label>
 
-         <label>
-            <strong>Gênero:</strong><br />
-             <select name="genero">
-             <option label="Masculino" value="masc"></option>
-             <option label="Feminino" value="fem"></option>
-             <option label="Não Binário" value="nbin"></option>
-             <option label="Outros" value="outros"></option>
-             <option label="Prefiro não dizer" value="ndizer"></option>
-        </select> 
-            <br/><br><br>
-        </label>
-        <label>
-            <strong>Data de nascimento:</strong><br />
-            <input type="date" name="datanasc" class="inputs"/><br />
-            <br />
-        </label>
+            <label>
+                <strong>Gênero:</strong><br />
+                <select name="genero" aria-placeholder="Gênero">
+                <option label="Masculino" value="masc"></option>
+                <option label="Feminino" value="fem"></option>
+                <option label="Não Binário" value="nbin"></option>
+                <option label="Outros" value="outros"></option>
+                <option label="Prefiro não dizer" value="ndizer"></option>
+            </select> 
+                <br/><br><br>
+            </label>
+            <label>
+                <strong>Data de nascimento:</strong><br />
+                <input type="date" 
+                name="datanasc" 
+                class="inputs"
+                placeholder="Data de nascimento"
+                /><br />
+                <br />
+            </label>
 
-        <input type="submit" name="button" id="button" value="Enviar" class = "button"/>
-        <input type="button" name="button2" id="button" value="Voltar" class = "button" onclick="location.href='cad_pesq_usuario_front.php';"/>
-        <!-- <a href=''>Voltar</a><br><br> -->
-    </form> 
-</div>
-    </div>   
+            <input type="submit" name="button" id="button" value="Enviar" class = "button"/>
+            <input type="button" name="button2" id="button" value="Voltar" class = "button" onclick="location.href='cad_pesq_usuario_front.php';"/>
+            <!-- <a href=''>Voltar</a><br><br> -->
+        </form> 
+    </div> <!-- container -->
+</div> <!-- mãe -->
+
+<!-- ----------------RODAPÉ ------------------------------ -->
+<div class="footer">
+        <div class="devs">
+            <h2>Devs</h2>
+            <ul>
+                <li>Ana Clara Gama Alba Postinguel, n° 02</li>
+                <li>Camila Pereira Raimundo, n° 06</li>
+                <li>Laura Caires Jardim Maldonado Galera, n° 17</li>
+                <li>Murilo Gonzales Vieira, n° 24</li>
+                <li>Rafael Chun Lin Chen, n° 28</li>
+            </ul>
+
+        </div>
+
+        <div class="voltar_ao_topo">
+            <a href="#" class="top">
+                <ion-icon name="arrow-up-circle-outline"></ion-icon>
+            </a>
+        </div>
    
 
     

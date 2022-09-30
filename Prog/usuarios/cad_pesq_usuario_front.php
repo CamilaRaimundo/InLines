@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>Pesquisa de Usuários</title>
         <link rel="stylesheet" href="../../css/style.css">
-        <link rel="shortcut icon" href="../../image/logo.png">
+        <link rel="shortcut icon" type="text/css" href="../../image/logo.png">
     </head>
 <body>
 
@@ -51,58 +51,78 @@
 <div class="mae">
     <div class="container">
 
-<a href='cad_novo_usuario_front.php'>+ Novo Usuário</a><br><br>
+        <a href='cad_novo_usuario_front.php'>+ Novo Usuário</a><br><br>
 
-<?php
-    include "cad_pesq_usuario_back.php";
+        <?php
+            include "cad_pesq_usuario_back.php";
 
-    if ($qtde == 0) {
-        echo "Não foi encontrado nenhum usuário!!!<br><br>";
-        return;
-    }
+            if ($qtde == 0) {
+                echo "Não foi encontrado nenhum usuário!!!<br><br>";
+                return;
+            }
 
-    // Começar tabela e criar o cabeçalho
-    echo "
-    <div class='table'>
-        <div class='row'>
-            <div class='cell cellCodigo cellHeader'>
-                Cód. Usuário
-            </div>
-            <div class='cell cellNome cellHeader'>
-                Nome
-            </div>
-            <div class='cell cellCPF cellHeader'>
-                CPF
-            </div>
-            <div class='cell cellAcoes'>
-                &nbsp;
-            </div>
-        </div>";
-
-        // Criar linhas com os dados dos usuários
-        foreach ($resultado_lista as $linha)
-        {
+            // Começar tabela e criar o cabeçalho
             echo "
-            <div class='row'>
-                <div class='cell cellCodigo'>
-                    ".$linha['id_usuario']."
-                </div>
-                <div class='cell cellNome'>
-                    ".$linha['nome']."
-                </div>
-                <div class='cell cellCPF'>
-                    ".$linha['cpf']."
-                </div>
-                <div class='cell cellAcoes'>
-                    <a href='cad_altera_usuario_front.php?id_usuario=".$linha['id_usuario']."'> Alterar</a>&nbsp;
-                    <a href='cad_exclui_usuario_front.php?id_usuario=".$linha['id_usuario']."'> Excluir</a>&nbsp;
-                </div>
-            </div> "; 
-        } 
-    // Fechando a tag da tabela
-    echo "</div>";
-?> 
-</div>
-    </div>   
+            <div class='table'>
+                <div class='row'>
+                    <div class='cell cellCodigo cellHeader'>
+                        Cód. Usuário
+                    </div>
+                    <div class='cell cellNome cellHeader'>
+                        Nome
+                    </div>
+                    <div class='cell cellCPF cellHeader'>
+                        CPF
+                    </div>
+                    <div class='cell cellAcoes'>
+                        &nbsp;
+                    </div>
+                </div>";
+
+                // Criar linhas com os dados dos usuários
+                foreach ($resultado_lista as $linha)
+                {
+                    echo "
+                    <div class='row'>
+                        <div class='cell cellCodigo'>
+                            ".$linha['id_usuario']."
+                        </div>
+                        <div class='cell cellNome'>
+                            ".$linha['nome']."
+                        </div>
+                        <div class='cell cellCPF'>
+                            ".$linha['cpf']."
+                        </div>
+                        <div class='cell cellAcoes'>
+                            <a href='cad_altera_usuario_front.php?id_usuario=".$linha['id_usuario']."'> Alterar</a>&nbsp;
+                            <a href='cad_exclui_usuario_front.php?id_usuario=".$linha['id_usuario']."'> Excluir</a>&nbsp;
+                        </div>
+                    </div> "; 
+                } 
+            // Fechando a tag da tabela
+            echo "</div>";
+        ?> 
+    </div> <!-- container -->
+</div> <!-- mãe -->
+
+<!-- ----------------RODAPÉ ------------------------------ -->
+<div class="footer">
+        <div class="devs">
+            <h2>Devs</h2>
+            <ul>
+                <li>Ana Clara Gama Alba Postinguel, n° 02</li>
+                <li>Camila Pereira Raimundo, n° 06</li>
+                <li>Laura Caires Jardim Maldonado Galera, n° 17</li>
+                <li>Murilo Gonzales Vieira, n° 24</li>
+                <li>Rafael Chun Lin Chen, n° 28</li>
+            </ul>
+
+        </div>
+
+        <div class="voltar_ao_topo">
+            <a href="#" class="top">
+                <ion-icon name="arrow-up-circle-outline"></ion-icon>
+            </a>
+        </div>
 </body>
 </html>

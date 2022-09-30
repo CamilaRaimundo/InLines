@@ -1,5 +1,12 @@
-<link rel="stylesheet" href="../../css/style.css">
-<link rel="shortcut icon" href="../../image/logo.png">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+       <meta charset="UTF-8">
+       <title>Excluir Produto</title>
+       <link rel="stylesheet" href="../../css/style.css">
+       <link rel="shortcut icon" type="text/css" href="../../image/logo.png">
+</head>
+<body>
 
 <?php
        $id_produto = $_GET["id_produto"];
@@ -55,3 +62,6 @@ Código do produto
     <input type="button" value="Editar" onclick="location.href='cad_altera_produtos_front.php?id_produto=<?php echo $id_produto?>';">
     <input type="button" value="Voltar" onclick="location.href='cad_pesq_produtos_front.php';">
 </form>
+
+</body>
+</html>

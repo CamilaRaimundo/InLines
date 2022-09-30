@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../css/style.css">
-    <link rel="shortcut icon" href="../../image/logo.png">
+    <link rel="shortcut icon" type="text/css" href="../../image/logo.png">
 
 <?php
     //session_start();
@@ -10,3 +10,4 @@
 ?>
 
 <a href="selecao_produtos_front.php">Voltar</a>
+

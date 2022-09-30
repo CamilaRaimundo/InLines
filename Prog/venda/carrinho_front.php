@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../css/style.css">
-<link rel="shortcut icon" href="../../image/logo.png">
+<link rel="shortcut icon" type="text/css" href="../../image/logo.png">
 
 <div class="menu">
 <input type="checkbox" id="check">
@@ -122,7 +122,7 @@
 			<br><br>
 			<input type="submit" value="Atualizar Carrinho" />&nbsp;&nbsp;
 			<a href="selecao_produtos_front.php">Continue Comprando</a>&nbsp;&nbsp;
-			<a href="finalizacompra.php">Finalize sua Compra</a>
+			<a href="confirmacao_compra_front.php">Finalize sua Compra</a>
 			
 			</form>
 

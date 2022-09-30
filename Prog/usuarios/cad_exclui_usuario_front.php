@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../css/style.css">
-<link rel="shortcut icon" href="../../image/logo.png">
+<link rel="shortcut icon" type="text/css" href="../../image/logo.png">
 <?php
        $id_usuario = $_GET["id_usuario"];
        include "cad_getinfo_usuario_back.php"; 
