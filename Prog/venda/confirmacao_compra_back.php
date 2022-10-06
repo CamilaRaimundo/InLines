@@ -4,7 +4,7 @@
     /* seleciona todos os itens do carrinho do usuário */
     $sql="SELECT c.*,
                  p.preco,
-                 c.quantidade * p.preco AS subtotal,
+                 c.quantidade_carrinho * p.preco AS subtotal,
                  p.descricao,
                  p.quantidade AS estoque
             FROM carrinho c

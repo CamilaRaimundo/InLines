@@ -29,9 +29,9 @@
            WHERE id_produto = $id_produto;";
     
     $resultado=pg_query($conecta,$sql);
-    $qtde=pg_affected_rows($resultado);
+    $quantidade=pg_affected_rows($resultado);
 
-    if ($qtde > 0)
+    if ($quantidade > 0)
         echo "<script type='text/javascript'>alert('Gravação OK !!!')</script>";
     else	
         echo "<script type='text/javascript'>alert('Erro na Gravação !!!')</script>";

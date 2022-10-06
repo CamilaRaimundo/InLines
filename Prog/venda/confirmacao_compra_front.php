@@ -44,7 +44,7 @@
 					<?php echo $linha['preco']; ?>
 				</div>
 				<div class='cell cellPreco'>
-					<?php echo $linha['quantidade']; ?>
+					<?php echo $linha['quantidade_carrinho']; ?>
 				</div>
 				<div class='cell cellPreco'>
 					<?php echo $linha['subtotal']; ?>
@@ -59,6 +59,6 @@
     <hr>
 
     <h3>Deseja confirmar?</h3>
-	<a href="finalizacao_compra_front.php">Finalizar</a>
-    <a href="carrinho_front.php">Cancelar</a>&nbsp;&nbsp;
+	<a href="finalizacao_compra_front.php" class="btn_finalizar_carrinho">Finalizar</a>
+    <a href="carrinho_front.php" class="btn_cancelar_carrinho">Cancelar</a>&nbsp;&nbsp;
 </div>

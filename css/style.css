@@ -27,12 +27,26 @@ header {
 }
 
 .mae {
-    margin: auto auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
+    margin: 0 17%; 
+    padding: 10% 20px;
+}
+
+.container_vendas{
+    /* margin: 0 auto; */
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-top: 50px;
+
+    /* width: 100%; */
     margin: 0 17%; 
     padding: 10% 20px;
 }
@@ -226,7 +240,7 @@ label #sidebar_btn:hover {
 }
 
 
-/* --------------------------------------TEBELAS---------------------------------------- */
+/* --------------------------------------TABELAS---------------------------------------- */
 
 .table {
     width: 800px;
@@ -289,6 +303,7 @@ label #sidebar_btn:hover {
 }
 
 /*----------------------------FORMULÁRIO PRODUTOS(ANA)--------------------------------------*/
+/*Notas: Border-Color! mudar */
 
 .produtos_front{
     background: #fee3b8;
@@ -505,6 +520,7 @@ label #sidebar_btn:hover {
     color: #aaaaaa;
 }
  
+
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
@@ -631,9 +647,6 @@ label #sidebar_btn:hover {
     width: 50%;
     align-items: center;
     justify-content: center;
-   
-
-
 }
 
 .textovideo{
@@ -650,7 +663,7 @@ label #sidebar_btn:hover {
     display: flex;   
 }
 
-/* --------------------------------------CARDS VENDA ANTIGO-------------------------------------------- */
+/* --------------------------------------CARDS VENDA -------------------------------------------- */
 
 .slider {
     padding: 1rem;
@@ -662,14 +675,14 @@ label #sidebar_btn:hover {
 
     font: normal 1rem sans-serif;
     float: left;
-    mar
 }
 
 .cardvenda {
     position: relative;
     width: 17rem;
     height: 23rem;
-    background-color: #fdb8fe;
+    /* background-color: #fdb8fe; */
+    background: linear-gradient(0deg, rgba(103,77,217,1) 0%, rgba(246,118,255,1) 100%);
     color: #fff;
     border-radius: 1rem;
     border: .1rem solid transparent;
@@ -691,7 +704,7 @@ label #sidebar_btn:hover {
     position: absolute;
     content: "";
     background-color: rgb(236, 129, 204); 
-    background-color: rgb(150, 152, 252);
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     transition: .5s ease-in-out;
     z-index: 1;
@@ -760,7 +773,7 @@ label #sidebar_btn:hover {
     text-transform: capitalize;
     transition-delay: .1s;
     margin-bottom: 10px;
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -800,7 +813,7 @@ label #sidebar_btn:hover {
     text-decoration: none;
     font: bolder 1.5rem sans-serif;
     margin-bottom: 10px;
-    color: #000;
+    color: #fff;
 }
 
 .btn {

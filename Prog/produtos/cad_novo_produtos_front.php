@@ -52,6 +52,9 @@
             </div>
             <div>
                 <input type="submit" name="button" class="button_prod_front" value="Enviar" />
+                
+
+                <input type="button" name="button2" id="button" value="Voltar" class = "button" onclick="location.href='cad_pesq_usuario_front.php';"/>
                 <a href="cad_pesq_produtos_front.php">
                     <input type="submit" value="Voltar" class="button_prod_front"><br><br>
                 </a>

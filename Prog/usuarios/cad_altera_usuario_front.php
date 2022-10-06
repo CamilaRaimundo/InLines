@@ -7,54 +7,61 @@
 ?>
 
 <!-- Formulário (após as informações serem carregadas) -->
-<form action="cad_altera_usuario_back.php" method="post">
-    <h1>Alteração de Usuarios</h1>
-    
-    Id Usuario
-    <input type="text" name="id_usuario" 
-           value="<?php echo $linha['id_usuario'];?>" 
-           readonly>
-    <br><br>Nome
-    <input type="text" name="nome" 
-           value="<?php echo $linha['nome'];?>" >
-
-    <br><br>Email
-    <input type="email" name="email" 
-           value="<?php echo $linha['email'];?>" >
-
-    <br><br>Senha
-    <input type="password" name="senha" 
-           value="<?php echo $linha['senha'];?>" >
-
-    <br><br>Telefone
-    <input type="text" name="telefone" 
-           value="<?php echo $linha['telefone'];?>" >
-
-    <br><br>CPF
-    <input type="text" name="cpf" 
-           value="<?php echo $linha['cpf']; ?>" >
-
-   
-    <br><br> Gênero:<br>
-    <input type="text" name="genero" 
-           value="<?php echo $linha['genero']; ?>" >
-           <select name= "genero">
-           <!--select name="genero"> 
+<div class="wrapper">
+        <div class="title">
+            Alteração de Usuários
+        </div>
+        <div class="form_items">,
+            <div class="input_field">
+                <label>Id Usuário</label>
+                <input type="text" class="input" name="id_usuario"
+                value="<?php echo $linha['id_usuario']; ?>" readonly>
+            </div>
+            <div class="input_field">
+                <label>Nome:</label>
+                <input type="text" class="input" name="nome"
+                value="<?php echo $linha['nome']; ?>">
+            </div>
+            <div class="input_field">
+                <label>Email:</label>
+                <input type="text" class="input" name="email"
+                value="<?php echo $linha['email']; ?>">
+            </div>
+            <div class="input_field">
+                <label>Senha:</label>
+                <input type="text" class="input" name="senha"
+                value="<?php echo $linha['senha']; ?>">
+            </div>
+            <div class="input_field">
+                <label>Telefone:</label>
+                <input type="text" class="input" name="telefone"
+                value="<?php echo $linha['telefone']; ?>">
+            </div>
+            <div class="input_field">
+                <label>CPF:</label>
+                <input type="text" class="input" name="cpf"
+                value="<?php echo $linha['cpf']; ?>">
+            </div>
+            <div class="input_field">
+                <label>Gênero:</label>
+                <input type="text" class="input" name="genero"
+                value="<?php echo $linha['genero']; ?>"> <select name="genero">
+            </div>
+            <!--select name="genero">
    <option label="Masculino" value="masc">Masculino</option!-->
    <!-- <option label="Masculino" value="masc">Masculino</option> -->
    <!-- <option label="Feminino" value="fem">Feminino</option> -->
    <!-- <option label="Não Binário" value="nbin">Não Binário</option> -->
    <!-- <option label="Outros" value="outros">Outros</option> -->
 <!-- </select> -->
-   
-           
-        
 
-    <br><br>Data de Nascimento
-    <input type="date" name="datanasc" 
-           value="<?php echo $linha['datanasc'];?>" >
+            <div class="input_field">
+                <label>Data de Nascimento:</label>
+                <input type="text" class="input" name="datanasc"
+                value="<?php echo $linha['datanasc']; ?>">
+            </div>
+            <div>
+              <input type="submit" name="button" class="button_prod_front" value="Enviar" />
+              <input type="submit" value="Voltar" class="button_prod_front" onclick="history.back()"><br><br>            </div>
+    </div>
 
-     <br><br>
-    <input type="submit" value="Gravar">
-    <input type="reset" value="Voltar" onclick="history.back()">
-</form>

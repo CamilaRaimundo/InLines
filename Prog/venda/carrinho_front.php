@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../css/style.css">
-<link rel="shortcut icon" type="text/css" href="../../image/logo.png">
+<link rel="shortcut icon" href="../../image/inlines2.png">
 
 <div class="menu">
 <input type="checkbox" id="check">
@@ -39,6 +39,7 @@
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/58fe79a519.js" crossorigin="anonymous"></script>
 
 
 <div class="mae">
@@ -102,7 +103,7 @@
 						</div>
 						<div class='cell cellPreco'>
 							<input type="text" size="3" name="produto[<?php echo $id_produto; ?>]"
-								value="<?php echo $linha['quantidade']; ?>" />
+								value="<?php echo $linha['quantidade_carrinho']; ?>" />
 						</div>
 						<div class='cell cellPreco'>
 							<?php echo $linha['subtotal']; ?>
