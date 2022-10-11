@@ -61,6 +61,50 @@
             pg_query($conecta,$sql);
         }
     }
+
+
+    // --------------------------------------------CARRINHO + E -
+    function getQtdeProdutoCarrinho2($conecta, $id_usuario, $id_produto) 
+    {
+        $sql="SELECT quantidade_carrinho
+                FROM carrinho
+                WHERE id_usuario = $id_usuario
+                AND id_produto = $id_produto";
+
+        $resultado=pg_query($conecta,$sql);
+        $quantidade=pg_num_rows($resultado);
+
+        if ( $quantidade == 0 )
+            return 0;
+        
+        $produto_carrinho = pg_fetch_array($resultado);
+        return intval($produto_carrinho['quantidade_carrinho']);
+    }
+
+    function mais($conecta, $id_usuario, $id_produto) 
+    {
+        //$quantidadeProduto = getQtdeProdutoCarrinho($conecta, $id_usuario, $id_produto);
+        $sql="UPDATE carrinho
+                set quantidade_carrinho = quantidade_carrinho + 1
+                WHERE id_produto = $id_produto
+                AND id_usuario = $id_usuario";
+
+        echo $sql;
+        pg_query($conecta,$sql);
+    }
+
+    function menos($conecta, $id_usuario, $id_produto) 
+    {
+        // $quantidadeProduto = getQtdeProdutoCarrinho($conecta, $id_usuario, $id_produto);
+        $sql="UPDATE carrinho
+                set quantidade_carrinho = quantidade_carrinho - 1
+                WHERE id_produto = $id_produto
+                AND id_usuario = $id_usuario";
+
+
+        echo $sql;
+        pg_query($conecta, $sql);
+    }
     
     // Início do processamento
 
@@ -78,8 +122,17 @@
         {
             updateCarrinho($conecta, $id_usuario, $produto);
         }
+        else if($acao == 'mais')
+        {
+            mais($conecta, $id_usuario, $id_produto);
+        }
+        else if($acao == 'menos')
+        {
+            menos($conecta, $id_usuario, $id_produto);
+        }
 
         header("location:carrinho_front.php");
+
         return;
     }
 

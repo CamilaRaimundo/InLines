@@ -19,7 +19,7 @@ body{
 
 header {
     position: fixed;
-    background: #B9B2DB;
+    background: #cc96ff;
     padding: 20px;/*diastacia entre o elemento e sua borda é de 20 pixel*/
     width: 100%;
     height: 30px;
@@ -41,13 +41,17 @@ header {
 }
 
 .container_vendas{
-    margin-left: 160px;
+    margin-left: 160px;  
     align-items: center;
-     /* margin: 0 auto; 
+    
+
+
+    /* margin: 0 auto;
     margin-left: 10%;
     margin-right: 15%;
     margin-top: 50px;
-    width: 100%; 
+
+    width: 100%;
     margin: 0 17%; 
     padding: 10% 20px; */
 }
@@ -64,7 +68,7 @@ header {
 
 .footer{
     width: 100%;
-    background-color: #B9B2DB;
+    background-color: #cc96ff;
     bottom: 0;
     left: 0;
     display: block; 
@@ -118,17 +122,23 @@ header {
 }
 
 .left h3 {
-    color: #EF8FAB;
+    /* color: #EF8FAB; */
+    color: #ff3e98;
     margin: 0;
     text-transform: uppercase; /*transformação do texto para maiuscula*/
     font-size: 30px; 
     font-weight: 800; /*peso 800, negrito*/
     text-align: center; /*alinhamento do texto centro*/
+    text-shadow: rgb(239, 61, 255) 0.1em 0.1em 0.2em;
+    margin-top: -5px;
 }
 
+
 .left span {
-    color: #A7D9E8;
+    /* color: #A7D9E8; */
+    color: #67dcff;
     text-align: center;
+    margin-top: -5px;
 }
 
 .carrinho {
@@ -163,7 +173,7 @@ header {
     margin-top: 70px; 
     padding-top: 30px; 
     left: 0; 
-    background: #B9B2DB;
+    background: #cc96ff;
     transition: 0.5s; 
     transition-property: left; 
     z-index: 1000;
@@ -194,7 +204,7 @@ header {
 }
 
 .sidebar a:hover {
-    background: #FEE3B8;
+    background: #b65cff;
 }
 
 .sidebar ion-icon {
@@ -249,7 +259,8 @@ label #sidebar_btn:hover {
 }
 
 .row {
-    display: block;
+    /* display: block; */
+    display: flex;
 }
 
 .cell {
@@ -283,6 +294,7 @@ label #sidebar_btn:hover {
 
 .cellAcoes {
     width: 100px;
+    background-color: transparent;
 }
 
 .cellNome {
@@ -290,7 +302,7 @@ label #sidebar_btn:hover {
 }
 
 .cellCPF {
-    width: 60px;
+    width: 70px;
     text-align: right;
 }
 
@@ -673,8 +685,9 @@ label #sidebar_btn:hover {
     place-items: center;
     grid-gap: 2rem;
     margin-top: 70px;
+
     font: normal 1rem sans-serif;
-    float: left;
+    float: left;    
 }
 
 .cardvenda {
@@ -682,7 +695,7 @@ label #sidebar_btn:hover {
     width: 17rem;
     height: 23rem;
     /* background-color: #fdb8fe; */
-    background: linear-gradient(0deg, rgba(103,77,217,1) 0%, rgba(246,118,255,1) 100%);
+    background: linear-gradient(0deg, rgb(157, 48, 247) 0%, rgb(255, 123, 152) 100%);
     color: #fff;
     border-radius: 1rem;
     border: .1rem solid transparent;
@@ -871,47 +884,90 @@ label #sidebar_btn:hover {
     align-items: center;
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 25px;
-    color: #4936a7;
-    text-transform: uppercase;
+    /* margin-bottom: 25px; */
+    color: purple;
+    /* text-transform: uppercase; */
     text-align: center;  
+    margin-bottom: 200px;
+    width: 100%;
 }
 
 .Developers{
     align-items: center;
     margin-bottom: 25px;
-    /* color: #4936a7; */
-    /* display: flex;
-    flex-direction: row;
+    display: flex;
+    flex-direction: flex;
     justify-content: space-around;
-    flex-flow: wrap; */
-    text-transform: uppercase;
+    flex-flow: wrap;
+    /* text-transform: uppercase; */
     text-align: center;  
 }
 
 
 .box {
-    background-color: rgb(44, 40, 40);
-    width: 300px;
+    background: linear-gradient(0deg, rgb(104, 127, 253) 0%,rgb(173, 72, 255) 100%);
+    width: 250px;
     height: 300px;
-    margin: 5px;
+    /* margin: 5px; */
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
     transition: 0.3s;
     margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
 }
 
 .box-image{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-top: 20px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 
 .box > h3{
     font-size: 15px;
     margin-right: 50px;
     color: antiquewhite;
+    align-items: center;
+    text-align: center;
+    word-break: break-word;
 }
+
+#devs{
+    width: 100%;
+    margin: 0 3%;
+    /* margin-left: 30px; */
+    /* margin-right: 5px; */
+    display: flex;
+    float: left;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+/* --------------------------------------carrinho-------------------------- */
+
+.fa-solid:link, .fa-solid:visited, .fa-solid:active{
+    font-size: 10px;
+}
+
+.fa-solid:hover{
+    /* font-size: 15px; */
+    color: #ff3e98;
+    transition: 1s;
+}
+
+.fa-trash, .fa-minus, .fa-plus{
+    color: rgb(104, 127, 253);
+    margin-top: 5px;
+}
+
+
+
+
+/* LINKS */
+/* :link :visited :active :hover */

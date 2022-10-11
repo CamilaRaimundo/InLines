@@ -1,16 +1,16 @@
-<link rel="stylesheet" href="../../css/style.css">
-<link rel="shortcut icon" type="text/css" href="../../image/logo.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<link rel="shortcut icon" href="../../image/logo.png">
 
 
-<body>
+<!--<body>
     <div class="menu">
     <input type="checkbox" id="check">
 
     <header>
-        <!-- <a name="ancora"></a> -->
+        <a name="ancora"></a> 
         <label for="check">
             <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
-            <!-- <i class="fa-brands fa-octopus-deploy" id="sidebar_btn"></i> -->
+            <i class="fa-brands fa-octopus-deploy" id="sidebar_btn"></i> 
         </label>
 
 
@@ -19,7 +19,7 @@
         </div>
 
         <div class="right">
-            <!-- <a href="#" class="sair_btn">Sair</a> -->
+            <a href="#" class="sair_btn">Sair</a>
             <a href="Prog/venda/carrinho_front.php" class="carrinho"><ion-icon name="cart"></ion-icon></a>
             <a href="Prog/usuarios/cad_pesq_usuario_front.php" class="conta"><ion-icon name="person-outline"></ion-icon></a>
         </div> 
@@ -44,7 +44,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/58fe79a519.js" crossorigin="anonymous"></script>
     </div>
-    <!-- DIV MENU -->
+ DIV MENU -->
 
     <div class="mae">
         <div class="container">
@@ -61,7 +61,7 @@
                     <div class="title">
                         Alteração de Produtos
                     </div>
-                    <div class="form_items">,
+                    <div class="form_items">
                         <div class="input_field">
                             <label>Código do Produto:</label>
                             <input type="text" class="input" name="id_produto"

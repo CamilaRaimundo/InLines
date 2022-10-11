@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <title>Detalhe Produto</title>
-    <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <link rel="shortcut icon" href="../../image/logo.png">
-</head>
-<body>    
+    <head>
+        <meta charset="utf-8">
+        <title>Detalhe Produto</title>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <link rel="shortcut icon" href="../../image/logo.png">
+    </head>
+    <body>    
         <div class="menu">
             <input type="checkbox" id="check">
 
@@ -35,9 +35,9 @@
 
                     <a href="../../index.html"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
                     <a href="../produtos/cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Produtos</span></a>
-                    <a href="../usuarios/cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a>
+                    <!-- <a href="../usuarios/cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a> -->
                     <a href="selecao_produtos_front.php"><ion-icon name="bag-check-outline"></ion-icon><span>Vendas</span></a>
-                    <a href="#"><ion-icon name="code"></ion-icon><span>Devs</span></a>
+                    <a href="../devs.html"><ion-icon name="code"></ion-icon><span>Devs</span></a>
 
                 
                     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -79,26 +79,26 @@
             </div> <!-- container -->
         </div> <!-- mãe -->
 
-<!-- ----------------RODAPÉ ------------------------------ -->
-<div class="footer">
-        <div class="devs">
-            <h2>Devs</h2>
-            <ul>
-                <li>Ana Clara Gama Alba Postinguel, n° 02</li>
-                <li>Camila Pereira Raimundo, n° 06</li>
-                <li>Laura Caires Jardim Maldonado Galera, n° 17</li>
-                <li>Murilo Gonzales Vieira, n° 24</li>
-                <li>Rafael Chun Lin Chen, n° 28</li>
-            </ul>
+        <!-- ----------------RODAPÉ ------------------------------ -->
+        <div class="footer">
+            <div class="devs">
+                <h2>Devs</h2>
+                <ul>
+                    <li>Ana Clara Gama Alba Postinguel, n° 02</li>
+                    <li>Camila Pereira Raimundo, n° 06</li>
+                    <li>Laura Caires Jardim Maldonado Galera, n° 17</li>
+                    <li>Murilo Gonzales Vieira, n° 24</li>
+                    <li>Rafael Chun Lin Chen, n° 28</li>
+                </ul>
 
+            </div>
+
+            <div class="voltar_ao_topo">
+                <a href="#" class="top">
+                    <ion-icon name="arrow-up-circle-outline"></ion-icon>
+                </a>
+            </div>
         </div>
-
-        <div class="voltar_ao_topo">
-            <a href="#" class="top">
-                <ion-icon name="arrow-up-circle-outline"></ion-icon>
-            </a>
-</div>
-
-</body>
+    </body>
 </html>
 

@@ -8,125 +8,125 @@
 
     </head>
 
-<body>
+    <body>
 
-<div class="menu">
-<input type="checkbox" id="check">
+        <div class="menu">
+        <input type="checkbox" id="check">
 
-<header>
-    <label for="check">
-        <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
-    </label>
-
-
-    <div class="left">
-        <h3>In <span>Line</span></h3> 
-    </div>
-
-    <div class="right">
-        <a href="Prog/venda/carrinho_front.php" class="carrinho"><ion-icon name="cart"></ion-icon></a>
-        <a href="../../Prog/venda/carrinho_front.php" class="conta"><ion-icon name="person-outline"></ion-icon></a>
-    </div> 
-
-</header>
-<div class="sidebar">
-    <center>
-        <img src="../../image/inlines.png" class="img" alt="In Lines">
-        <h2>Menu</h2>
-    </center>
-
-    <a href="../../index.html"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
-    <a href="cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Produtos</span></a>
-    <a href="../usuarios/cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a>
-    <a href="../venda/selecao_produtos_front.php"><ion-icon name="bag-check-outline"></ion-icon><span>Vendas</span></a>
-    <a href="#"><ion-icon name="code"></ion-icon><span>Devs</span></a>
-
-</div>
+        <header>
+            <label for="check">
+                <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
+            </label>
 
 
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="https://kit.fontawesome.com/58fe79a519.js" crossorigin="anonymous"></script>
+            <div class="left">
+                <h3>In <span>Line</span></h3> 
+            </div>
 
+            <div class="right">
+                <a href="../venda/carrinho_front.php" class="carrinho"><ion-icon name="cart"></ion-icon></a>
+                <a href="../usuarios/cad_pesq_usuario_front.php" class="conta"><ion-icon name="person-outline"></ion-icon></a>
+            </div> 
 
-<div class="mae">
-    <div class="container">
-        <div class="cad_p">
-            <a href='cad_novo_produtos_front.php'>+ Novo Produto</a><br><br>
+        </header>
+        <div class="sidebar">
+            <center>
+                <img src="../../image/inlines.png" class="img" alt="In Lines">
+                <h2>Menu</h2>
+            </center>
 
-            <?php
-                include "cad_pesq_produtos_back.php";
-
-                if ($qtde == 0) {
-                    echo "Não foi encontrado nenhum produto!!!<br><br>";
-                    return;
-                }
-
-                // Começar tabela e criar o cabeçalho
-                echo"
-                <div class='table'> 
-                    <div class='row'>
-                        <div class='cell cellCodigo cellHeader'>
-                            Cód. Produto
-                        </div>
-                        <div class='cell cellDescricao cellHeader'>
-                            Descrição
-                        </div>
-                        <div class='cell cellPreco cellHeader'>
-                            Preço
-                        </div>
-                        <div class='cell cellAcoes'>
-                            &nbsp;
-                        </div>
-                    </div>";
-
-                    // Criar linhas com os dados dos produtos
-                    foreach ($resultado_lista as $linha)
-                    {
-                        echo "
-                        <div class='row'>
-                            <div class='cell cellCodigo'>
-                                ".$linha['id_produto']."
-                            </div>
-                            <div class='cell cellDescricao'>
-                                ".$linha['descricao']."
-                            </div>
-                            <div class='cell cellPreco'>
-                                ".$linha['preco']."
-                            </div>
-                            <div class='cell cellAcoes'>
-                                <a href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;
-                                <a href='cad_exclui_produtos_front.php?id_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
-                            </div>
-                        </div>";
-                    }
-                // Fechando a tag da tabela
-                echo "</div>";
-            ?>
-        </div>
-        
-    </div> <!-- container -->
-</div> <!-- mae -->
-
-<!-- ----------------RODAPÉ ------------------------------ -->
-<div class="footer">
-        <div class="devs">
-            <h2>Devs</h2>
-            <ul>
-                <li>Ana Clara Gama Alba Postinguel, n° 02</li>
-                <li>Camila Pereira Raimundo, n° 06</li>
-                <li>Laura Caires Jardim Maldonado Galera, n° 17</li>
-                <li>Murilo Gonzales Vieira, n° 24</li>
-                <li>Rafael Chun Lin Chen, n° 28</li>
-            </ul>
+            <a href="../../index.html"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
+            <a href="cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Produtos</span></a>
+            <!-- <a href="../usuarios/cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a> -->
+            <a href="../venda/selecao_produtos_front.php"><ion-icon name="bag-check-outline"></ion-icon><span>Vendas</span></a>
+            <a href="../devs.html"><ion-icon name="code"></ion-icon><span>Devs</span></a>
 
         </div>
 
-        <div class="voltar_ao_topo">
-            <a href="#" class="top">
-                <ion-icon name="arrow-up-circle-outline"></ion-icon>
-            </a>
-</div>
 
-</body>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://kit.fontawesome.com/58fe79a519.js" crossorigin="anonymous"></script>
+
+
+        <div class="mae">
+            <div class="container">
+                <div class="cad_p">
+                    <a href='cad_novo_produtos_front.php'>+ Novo Produto</a><br><br>
+
+                    <?php
+                        include "cad_pesq_produtos_back.php";
+
+                        if ($qtde == 0) {
+                            echo "Não foi encontrado nenhum produto!!!<br><br>";
+                            return;
+                        }
+
+                        // Começar tabela e criar o cabeçalho
+                        echo"
+                        <div class='table'> 
+                            <div class='row'>
+                                <div class='cell cellCodigo cellHeader'>
+                                    Cód. Produto
+                                </div>
+                                <div class='cell cellDescricao cellHeader'>
+                                    Descrição
+                                </div>
+                                <div class='cell cellPreco cellHeader'>
+                                    Preço
+                                </div>
+                                <div class='cell cellAcoes'>
+                                    &nbsp;
+                                </div>
+                            </div>";
+
+                            // Criar linhas com os dados dos produtos
+                            foreach ($resultado_lista as $linha)
+                            {
+                                echo "
+                                <div class='row'>
+                                    <div class='cell cellCodigo'>
+                                        ".$linha['id_produto']."
+                                    </div>
+                                    <div class='cell cellDescricao'>
+                                        ".$linha['descricao']."
+                                    </div>
+                                    <div class='cell cellPreco'> 
+                                        ".$linha['preco']."
+                                    </div>
+                                    <div class='cell cellAcoes'>
+                                        <a href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'><i class='fa-solid fa-pencil'></i></a>&nbsp;
+                                        <a href='cad_exclui_produtos_front.php?id_produto=".$linha['id_produto']."'><i class='fa-solid fa-eraser'></i></a>&nbsp;
+                                    </div>
+                                </div>";
+                            }
+                        // Fechando a tag da tabela
+                        echo "</div>";
+                    ?>
+                </div>
+                
+            </div> <!-- container -->
+        </div> <!-- mae -->
+
+        <!-- ----------------RODAPÉ ------------------------------ -->
+        <div class="footer">
+                <div class="devs">
+                    <h2>Devs</h2>
+                    <ul>
+                        <li>Ana Clara Gama Alba Postinguel, n° 02</li>
+                        <li>Camila Pereira Raimundo, n° 06</li>
+                        <li>Laura Caires Jardim Maldonado Galera, n° 17</li>
+                        <li>Murilo Gonzales Vieira, n° 24</li>
+                        <li>Rafael Chun Lin Chen, n° 28</li>
+                    </ul>
+
+                </div>
+
+                <div class="voltar_ao_topo">
+                    <a href="#" class="top">
+                        <ion-icon name="arrow-up-circle-outline"></ion-icon>
+                    </a>
+        </div>
+
+    </body>
 </html>
