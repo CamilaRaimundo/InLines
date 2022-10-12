@@ -6,7 +6,8 @@
                  p.preco,
                  c.quantidade_carrinho * p.preco AS subtotal,
                  p.descricao,
-                 p.quantidade AS estoque
+                 p.quantidade 
+                --  AS estoque
             FROM carrinho c
            INNER JOIN produto p
               ON c.id_produto = p.id_produto

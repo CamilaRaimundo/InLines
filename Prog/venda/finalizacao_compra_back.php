@@ -1,100 +1,97 @@
-<?php
-    include "../../utilis/conexao.php";  
+ <?php 
 
-    $compraFinalizada = false;
+    include "../../utilis/conexao.php"; 
 
-    function validarProdutos($resultado_lista)
+    $compraFinalizada = FALSE;
+
+    function validarProdutos($resultado_lista, $conecta)
     {
-        $id_produto = 1;
-
-        // Realizar as validações com os produtos aqui
         if($resultado_lista)
+        {
             foreach($resultado_lista as $linha)
             {
-                $sql = "SELECT quantidade FROM produto 
-                WHERE id_produto = '.$id_produto.';";
-                // echo $sql;
-                $res = pg_query($conecta, $sql);
-                // var_dump($res);
-                // if ($qtdeVendida > $quantidade)
-                // {
-                //     echo "<script type='text/javascript'>alert('Quantidade maior que a existente no estoque')</script>";
-                //     exit;
-                // }
-                // return false;
-            }
-        return true;
-    }
+                $sql="SELECT * FROM produto WHERE id_produto = ".$linha['id_produto'].";";
+                
+                $res=pg_query($conecta, $sql); 
 
-    // function atualizarEstoque($id_produto, $qtdeVendida, $conecta)
+                // $resulta=pg_fetch_array($res);
+
+                /*if($linha['quantidade'] > $resulta['quantidade'] || $resulta['quantidade'] <= 0){
+                
+                    echo '<script language="javascript">';
+                    echo "alert('Não possuimos a quantidade desejada de ".$resulta['nome']." em estoque! A quantidade máxima é de ".$resulta['quantidade']." unidades.')";
+                    echo '</script>';
+                    
+                    echo "<center>";
+                    echo "<h1>Volte ao carrinho</h1>";
+                    echo "<br><br>";
+                    echo "<a class='btn-confirma' href='carrinho_front.php'>Voltar ao carrinho</a>";
+                    echo "</center>";
+
+                    exit;*/
+
+            } // foreach
+            //  return false;
+        } // if
+    }// function
+
+      //  return true;
+    //}
+
+    // function atualizarEstoque($conecta, $id_produto, $qtde)
     // {
-    //      MEXI AQ
-    //     include "../../utilis/conexao.php";
-    //     $sql="UPDATE produto
-    //     set quantidade = '.($quantidadeProduto - $qtdeVendida).
-    //     'WHERE id_produto = '.$id_produto.'
-    //     AND id_usuario = '.$id_usuario.';";
-    //     $res = pg_query($conecta,$sql);
+    //     $sql = "UPDATE produto
+    //     SET quantidade = quantidade-$qtde
+    //     WHERE id_produto = $id_produto;";
+    //     echo $sql;
+    //     $res=pg_query($conecta, $sql);
     // }
 
     session_start();
-    $resultado_lista = $_SESSION["produto"];
-
-
-    $sql = "INSERT INTO venda (id_venda, id_usuario, ativo, data_venda) 
-    VALUES (DEFAULT, $id_usuario, 'true', NOW());";
-
-    // (ainda precisa programar)
-    // validarProdutos($resultado_lista);
-    $res = pg_query($conecta, $sql);
-    $qtdLinhas = pg_affected_rows($res);
-    // $sql = "INSERT INTO venda(id_venda, id_usuario, data_venda, ativo) 
-    //             VALUES(DEFAULT, '.$id_usuario.', NOW(),'true');";
-    // echo $sql;
-    
-    
+    $resultado_lista = $_SESSION['produtos'];
+   if($resultado_lista)
+   {
+    $sql = "INSERT INTO venda(id_venda, id_usuario, ativo, data_venda) VALUES (DEFAULT, $id_usuario, 'true', current_timestamp);";
+            
+    $res=pg_query($conecta, $sql);
+    $qtdLinhas=pg_affected_rows($res);
 
     if ($qtdLinhas == 0)
         echo "<h1>Erro ao Finalizar a Compra!!!</h1>";
-
-    if($resultado_lista)
-        foreach($resultado_lista as $linha)
-        {
-            // $quantidade_compra = $linha['quantidade'];
-            $qtdeVendida = $linha['quantidade_carrinho']; 
-            // $qtdeVendida=$linha['quantidade'];
-            $preco = $linha['preco'];
-            $id_produto = $linha['id_produto'];
-            $quantidade = $linha['quantidade'];
-            // $estoque = $linha['estoque'];
-            
+   }
 
 
-            $sql = "INSERT INTO itemvenda (id_itemvenda, id_produto, id_venda, quantidade_compra, preco) 
-                    VALUES (DEFAULT, ".$id_produto.", CURRVAL('venda_id_venda_seq'),".$quantidade.", ".$preco.");";
-                                // ,".$id_produto."
-                                // (DEFAULT,".$id_produto.", CURRVAL('venda_id_venda_seq'),".$estoque.",".$preco.");";
-            $res = pg_query($conecta, $sql);
+   if($resultado_lista)
+   {
+    foreach($resultado_lista as $linha)
+    { 
+        $preco = $linha['preco'];
+        $qtde = $linha['quantidade_carrinho'];
+        $id_produto = $linha['id_produto'];
+        $valortotal += floatval($linha['subtotal']);
+        $id_venda= $linha['id_venda'];
+        $sql_insert="INSERT INTO itemvenda(id_itemvenda, id_produto,id_venda, quantidade_compra, valor_venda) 
+                VALUES (DEFAULT, $id_produto, CURRVAL('itemvenda_id_itemvenda_seq'), $qtde, $valortotal);";
+                // echo $sql;
+                // $preco*$qtde
+        $res=pg_query($conecta, $sql_insert);
 
-            // Atualizar qtde estoque 
-            // (ainda precisa programar)
+        validarProdutos($resultado_lista, $conecta);
 
-            $sql = "UPDATE produto SET quantidade = quantidade - $quantidade_carrinho
-            WHERE id_produto = $id_produto;";
-            pg_query($conecta,$sql);
+        // atualizarEstoque($conecta, $id_produto, $quantidade);
+        $sql_update = "UPDATE produto
+        SET quantidade = quantidade-$qtde
+        WHERE id_produto = $id_produto;";
+        // echo $sql;
+        $res=pg_query($conecta, $sql_update);
+    }  
+   }
+    // Limpar carrinho
+    $sql_delete="DELETE FROM carrinho
+            WHERE id_usuario = $id_usuario";
 
-            // atualizarEstoque($id_produto, $quantidade, $conecta);
-        }  
-
-        // Limpar carrinho
-        $sql= "DELETE FROM carrinho
-                WHERE id_usuario = $id_usuario";
-
-        pg_query($conecta,$sql);
-
+    pg_query($conecta,$sql_delete);
 
     // Fecha a conexão com o PostgreSQL
     pg_close($conecta);
-
-
 ?>

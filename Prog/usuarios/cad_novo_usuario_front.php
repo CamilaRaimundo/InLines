@@ -41,18 +41,18 @@
             <!-- <a href="cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a> -->
             <a href="../venda/selecao_produtos_front.php"><ion-icon name="bag-check-outline"></ion-icon><span>Vendas</span></a>
             <a href="../devs.html"><ion-icon name="code"></ion-icon><span>Devs</span></a>
-
+            <form action="cad_novo_usuario_back.php" method="post">
         </div>
-        <div class="mae">
-            <div class="container">
-                <a href="ancora"></a>
-                <form class="forms" action="cad_novo_usuario_back.php" method="post">
-                    <h1 class="title">Cadastro de Usuários</h1><br><br>
+        <div class="wrapper">
+            <div class="title">
+                Cadastro de Usuários
+            </div>
+            <div class="form_items">
                         <div class="input_field">
                             <label>Nome:</label>
                             <input type="text" 
                             name="nome" 
-                            class="inputs" 
+                            class="input" 
                             /><br />
                             <br />
                         </div>
@@ -60,7 +60,7 @@
                             <label>Email:</label><br />    
                             <input type="email" 
                             name="email" 
-                            class="inputs"
+                            class="input"
                             pattern="#"
                             placeholder="Telefone"
                             /><br />
@@ -70,7 +70,7 @@
                             <label>Senha:</label><br />
                             <input type="password" 
                             name="senha" 
-                            class="inputs"
+                            class="input"
                             placeholder="Senha"
                             /><br />
                             <br />
@@ -79,7 +79,7 @@
                             <label>Telefone:</label>
                             <input type="text" 
                             name="telefone"  
-                            class="inputs"
+                            class="input"
                             placeholder="Telefone"/><br />
                             <br />
                         </div>
@@ -87,7 +87,7 @@
                             <label>CPF:</label><br />
                             <input type="text" 
                             name="cpf" 
-                            class="inputs"
+                            class="input"
                             placeholder="CPF"
                             /><br />
                             <br />
@@ -108,14 +108,14 @@
                             <label>Data de nascimento:</label><br />
                             <input type="date" 
                             name="datanasc" 
-                            class="inputs"
+                            class="input"
                             placeholder="Data de nascimento"
                             /><br />
                             <br />
                         </div>
 
-                        <input type="submit" name="button" id="button" value="Enviar" class = "button"/>
-                        <input type="button" name="button2" id="button" value="Voltar" class = "button" onclick="location.href='cad_pesq_usuario_front.php';"/>
+                        <input type="submit" name="button" id="button_prod_front" value="Enviar" class = "button_prod_front"/>
+                        <input type="button" name="button2" id="button_prod_front" value="Voltar" class = "button_prod_front" onclick="location.href='cad_pesq_usuario_front.php';"/>
                         <!-- <a href=''>Voltar</a><br><br> -->
                     </form> 
             </div> <!-- container -->

@@ -102,7 +102,7 @@
 						// Criar linhas com os dados dos produtos
 						foreach ($resultado_lista as $linha)
 						{ 
-							$idprod = $linha['id_produto'];
+							$id_produto = $linha['id_produto'];
 							$total += floatval($linha['subtotal']);
 					?>
 							<div class='row'>
