@@ -11,7 +11,7 @@
 
     </head>
 
-    <body>
+    <body onload="cliqui(),select()">
         <div class="menu">
             <input type="checkbox" id="check">
 
@@ -37,9 +37,9 @@
             </center>
 
             <a href="../../index.html"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
-            <a href="../produtos/cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Produtos</span></a>
+            <a href="../produtos/cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Cad. Produtos</span></a>
             <!-- <a href="cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a> -->
-            <a href="../venda/selecao_produtos_front.php"><ion-icon name="bag-check-outline"></ion-icon><span>Vendas</span></a>
+            <a href="../venda/selecao_produtos_front.php"><i class="fa-brands fa-octopus-deploy"></i><span> Produtos</span></a>
             <a href="../devs.html"><ion-icon name="code"></ion-icon><span>Devs</span></a>
             <form action="cad_novo_usuario_back.php" method="post">
         </div>
@@ -50,47 +50,23 @@
             <div class="form_items">
                         <div class="input_field">
                             <label>Nome:</label>
-                            <input type="text" 
-                            name="nome" 
-                            class="input" 
-                            /><br />
-                            <br />
+                            <input type="text" name="nome" class="input" placeholder="Nome"><br/><br/>
                         </div>
                         <div class="input_field">
-                            <label>Email:</label><br />    
-                            <input type="email" 
-                            name="email" 
-                            class="input"
-                            pattern="#"
-                            placeholder="Telefone"
-                            /><br />
-                            <br/>
+                            <label>Email:</label><br/>    
+                            <input type="email" name="email"class="input" placeholder="E-mail"><br><br>
                         </div>
                         <div class="input_field">
-                            <label>Senha:</label><br />
-                            <input type="password" 
-                            name="senha" 
-                            class="input"
-                            placeholder="Senha"
-                            /><br />
-                            <br />
+                            <label>Senha:</label><br>
+                            <input type="password" name="senha" class="input" placeholder="Senha"><br><br>
                         </div>
                         <div class="input_field">
                             <label>Telefone:</label>
-                            <input type="text" 
-                            name="telefone"  
-                            class="input"
-                            placeholder="Telefone"/><br />
-                            <br />
+                            <input type="text" name="telefone" class="input" placeholder="Telefone"><br><br>
                         </div>
                         <div class="input_field">
-                            <label>CPF:</label><br />
-                            <input type="text" 
-                            name="cpf" 
-                            class="input"
-                            placeholder="CPF"
-                            /><br />
-                            <br />
+                            <label>CPF:</label><br>
+                            <input type="text" name="cpf" class="input" placeholder="CPF"><br><br>
                         </div>
 
                         <div class="input_field">
@@ -106,16 +82,11 @@
                         </div>
                         <div class="input_field">
                             <label>Data de nascimento:</label><br />
-                            <input type="date" 
-                            name="datanasc" 
-                            class="input"
-                            placeholder="Data de nascimento"
-                            /><br />
-                            <br />
+                            <input type="date" name="datanasc" class="input" placeholder="Data de nascimento"><br><br>
                         </div>
 
-                        <input type="submit" name="button" id="button_prod_front" value="Enviar" class = "button_prod_front"/>
-                        <input type="button" name="button2" id="button_prod_front" value="Voltar" class = "button_prod_front" onclick="location.href='cad_pesq_usuario_front.php';"/>
+                        <input type="submit" name="button" id="button_prod_front" value="Enviar" class = "button_prod_front">
+                        <input type="button" name="button2" id="button_prod_front" value="Voltar" class = "button_prod_front" onclick="location.href='cad_pesq_usuario_front.php';">
                         <!-- <a href=''>Voltar</a><br><br> -->
                     </form> 
             </div> <!-- container -->

@@ -79,6 +79,15 @@
         validarProdutos($resultado_lista, $conecta);
 
         // atualizarEstoque($conecta, $id_produto, $quantidade);
+
+        // if($qtd <= 0){
+        //     $qtd = 1;
+        // }else if($qtd > $estoque){
+        //     echo "<script type='text/javascript'>alert('Não há $qtd ptodutos em estoque')</script>";
+        //     $qtd = $estoque;
+        // }
+
+
         $sql_update = "UPDATE produto
         SET quantidade = quantidade-$qtde
         WHERE id_produto = $id_produto;";

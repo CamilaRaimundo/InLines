@@ -990,7 +990,185 @@ label #sidebar_btn:hover {
 }
 
 
+/* --------------------------------LOGIN------------------------------------------------ */
+/* form {
+    padding-left: 0;
+    width: 600px;
+}
 
+.login {
+    width: 200px;
+    padding: 2% 0 2% 30px;
+    margin: auto;
+    border: 1px solid black;
+  } */
+
+
+/* body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;   
+} */
+
+.container_login{
+    width: 100%;
+    /* margin: auto auto; */
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+
+}
+
+.main-login{
+    /* margin: auto; */
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgb(104, 127, 253) 0%,rgb(173, 72, 255) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-esquerdo{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-esquerdo > h1{
+    color: #fff;
+}
+
+.box-direito{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px 00000056;
+}
+
+.card-login > h1{
+    color: #ff3e98;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: #f0ffff94;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #201b2c;
+    background-color: #ff3e98;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px 12px;
+}
+
+.link_cadastro:link, .link_cadastro:visited, .link_cadastro:active, .link_cadastro:hover{
+    color: #fff;
+} 
+
+/* -------------------------------DETALHES---------------------------------------------- */
+
+.container68{
+    background: linear-gradient(0deg, rgb(104, 127, 253) 0%,rgb(173, 72, 255) 100%);
+    width: 100%;
+    margin:0;
+    padding: 0;
+    height: 100vh;
+
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin: 0 17%; 
+    padding: 10% 20px; */
+    
+}
+
+.detalhes_prod{
+    width: 1200px;
+    margin-left: 280px;
+    color: #fff;
+    border-radius: 15px;
+    display: flex;
+}
+
+.imgDetalhes{
+    border-radius: 50px;
+    width: 500px;
+    margin-top: 150px;
+    box-shadow: 0px 10px 40px #000;
+
+
+}
+
+.detelhamento{
+    color: #000;
+    font-size: 20px;
+    margin-left: 70px ;
+    margin-top: 250px;
+  
+    width: 700px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #000;
+    background-color: #fff; 
+    /* background: linear-gradient(0deg, rgb(255, 70, 141) 0%,rgb(245, 192, 255) 100%); */
+
+}
+
+.imagempolvodetalhes{
+    width: 800px;
+}
 
 /* LINKS */
 /* :link :visited :active :hover */

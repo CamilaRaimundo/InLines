@@ -5,12 +5,19 @@
         <title>Detalhe Produto</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
         <link rel="shortcut icon" href="../../image/logo.png">
+
+        <script>
+            function cliqui() {
+                document.getElementById("check").click();
+            }
+        </script>
     </head>
-    <body>    
+
+    <body onload="cliqui(),select()">  
         <div class="menu">
             <input type="checkbox" id="check">
 
-            <header>
+            <header class="header">
                 <label for="check">
                     <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
                 </label>
@@ -34,9 +41,9 @@
                     </center>
 
                     <a href="../../index.html"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
-                    <a href="../produtos/cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Produtos</span></a>
+                    <a href="../produtos/cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Cad. Produtos</span></a>
                     <!-- <a href="../usuarios/cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a> -->
-                    <a href="selecao_produtos_front.php"><ion-icon name="bag-check-outline"></ion-icon><span>Vendas</span></a>
+                    <a href="selecao_produtos_front.php"><i class="fa-brands fa-octopus-deploy"></i><span> Produtos</span></a>
                     <a href="../devs.html"><ion-icon name="code"></ion-icon><span>Devs</span></a>
 
                 
@@ -47,8 +54,9 @@
         </div> <!-- menu -->
         
         <div class="mae">
-            <div class="container">
+            <div class="container68">
                 <!-- Recuperando as informações do produto -->
+                 <img src="../../image/Octopus-rafiki_detalhes.png" class="imagempolvodetalhes" alt="polvo">
                 <?php
                     $id_produto = $_GET["id"];
                     include "../produtos/cad_getinfo_produto_back.php"; 
@@ -59,9 +67,11 @@
                         
                         <div class="img_datalhes">
                             <h1><?php echo $linha['nome']; ?></h1>
-                            <img src="../../image/<?php  echo $linha['imagem']; ?>.jpeg" width="50%">
-                        </div> <!-- img_detalhes -->
-
+                            <br>
+                            <img src="../../image/<?php  echo $linha['imagem']; ?>.jpeg" class="imgDetalhes">
+                                          
+                        </div> <!-- img_detalhes --><br>
+                        
                         <div class="detelhamento">
                             <p>Código do produto: <?php echo $linha['id_produto'];?></p>
                             <!-- <br><br> -->
@@ -71,16 +81,19 @@
                             <!-- <br><br> -->
                             <p>Preço: R$ <?php echo number_format($linha['preco'], 2, ',', '.'); ?></p>
                             <!-- <br><br> -->
+                           
                         </div>
 
-                        <a href='carrinho_front.php?acao=add&id_produto=<?php echo $id_produto; ?>'>
-                        Comprar</a>&nbsp;<a href="selecao_produtos_front.php">Voltar</a>
+                        <div class="botoesDetalhes">
+                            <a href='carrinho_front.php?acao=add&id_produto=<?php echo $id_produto; ?>'>
+                            Comprar</a>&nbsp;<a href="selecao_produtos_front.php">Voltar</a>
+                        </div>  
                     </div>
             </div> <!-- container -->
         </div> <!-- mãe -->
 
         <!-- ----------------RODAPÉ ------------------------------ -->
-        <div class="footer">
+        <!-- <div class="footer">
             <div class="devs">
                 <h2>Devs</h2>
                 <ul>
@@ -98,7 +111,6 @@
                     <ion-icon name="arrow-up-circle-outline"></ion-icon>
                 </a>
             </div>
-        </div>
+        </div> -->
     </body>
 </html>
-

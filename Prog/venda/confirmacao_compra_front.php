@@ -6,10 +6,17 @@
 		<title>Confirmação Compra</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
         <link rel="shortcut icon" href="../../image/logo.png">
+
+		<script>
+            function cliqui() {
+                document.getElementById("check").click();
+            }
+        </script>
+
 	</head>
 
 
-	<body>
+	<body onload="cliqui(),select()">
 		<div class="menu">
 			<input type="checkbox" id="check">
 
