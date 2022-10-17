@@ -56,7 +56,6 @@
         <div class="mae">
             <div class="container68">
                 <!-- Recuperando as informações do produto -->
-                 <img src="../../image/Octopus-rafiki_detalhes.png" class="imagempolvodetalhes" alt="polvo">
                 <?php
                     $id_produto = $_GET["id"];
                     include "../produtos/cad_getinfo_produto_back.php"; 
@@ -64,7 +63,6 @@
 
                     <!-- <div style="border: 1px solid black"> -->
                     <div class="detalhes_prod">
-                        
                         <div class="img_datalhes">
                             <h1><?php echo $linha['nome']; ?></h1>
                             <br>
@@ -83,6 +81,10 @@
                             <!-- <br><br> -->
                            
                         </div>
+
+                        <!-- <div class="polvo_detalhes">
+                            <img src="../../image/Octopus-rafiki_detalhes.png" class="imagempolvodetalhes">
+                        </div> -->
 
                         <div class="botoesDetalhes">
                             <a href='carrinho_front.php?acao=add&id_produto=<?php echo $id_produto; ?>'>

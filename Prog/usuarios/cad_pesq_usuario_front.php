@@ -5,7 +5,15 @@
         <title>Pesquisa de Usuários</title>
         <link rel="stylesheet" href="../../css/style.css">
         <link rel="shortcut icon" type="text/css" href="../../image/logo.png">
+
+        <script>
+            function cliqui() {
+                document.getElementById("check").click();
+            }
+        </script>
+
     </head>
+
     <body onload="cliqui(),select()">
 
         <div class="menu">
@@ -97,11 +105,14 @@
                                 </div>
                             </div> "; 
                         } 
+                    //   echo"<img src='../../image/Octopus-rafiki_detalhes.png' width='30%'>";
                     // Fechando a tag da tabela
                     echo "</div>";
                 ?> 
+
             </div> <!-- container -->
-        </div> <!-- mãe -->
+        <!-- </div>  -->
+        <!-- mãe -->
 
         <!-- ----------------RODAPÉ ------------------------------ -->
         <div class="footer">

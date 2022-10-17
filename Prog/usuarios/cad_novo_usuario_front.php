@@ -5,20 +5,20 @@
         <title>Cadastro de Usuários</title>
         <link rel="stylesheet" href="../../css/style.css">
         <link rel="shortcut icon" type="text/css" href="../../image/logo.png">
+
+
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="https://kit.fontawesome.com/58fe79a519.js" crossorigin="anonymous"></script>
-
     </head>
 
     <body onload="cliqui(),select()">
-        <div class="menu">
+        <!-- <div class="menu">
             <input type="checkbox" id="check">
 
             <header>
             <label for="check">
                 <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
-                <!-- <i class="fa-brands fa-octopus-deploy" id="sidebar_btn"></i> -->
             <div>
         <div class="left">
                 <h3>In <span>Line</span></h3> 
@@ -37,33 +37,41 @@
             </center>
 
             <a href="../../index.html"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
-            <a href="../produtos/cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Cad. Produtos</span></a>
+            <a href="../produtos/cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Cad. Produtos</span></a> -->
             <!-- <a href="cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a> -->
-            <a href="../venda/selecao_produtos_front.php"><i class="fa-brands fa-octopus-deploy"></i><span> Produtos</span></a>
+            <!-- <a href="../venda/selecao_produtos_front.php"><i class="fa-brands fa-octopus-deploy"></i><span> Produtos</span></a>
             <a href="../devs.html"><ion-icon name="code"></ion-icon><span>Devs</span></a>
-            <form action="cad_novo_usuario_back.php" method="post">
-        </div>
-        <div class="wrapper">
-            <div class="title">
-                Cadastro de Usuários
-            </div>
-            <div class="form_items">
+            
+        </div> -->
+        <form action="cad_novo_usuario_back.php" method="post">
+            <div class="container_novo">
+                <div class="wrapper">
+
+                    <div class="title">
+                        Cadastro de Usuários
+                    </div>
+
+                    <div class="form_items">
                         <div class="input_field">
                             <label>Nome:</label>
                             <input type="text" name="nome" class="input" placeholder="Nome"><br/><br/>
                         </div>
+
                         <div class="input_field">
                             <label>Email:</label><br/>    
                             <input type="email" name="email"class="input" placeholder="E-mail"><br><br>
                         </div>
+
                         <div class="input_field">
                             <label>Senha:</label><br>
                             <input type="password" name="senha" class="input" placeholder="Senha"><br><br>
                         </div>
+
                         <div class="input_field">
                             <label>Telefone:</label>
                             <input type="text" name="telefone" class="input" placeholder="Telefone"><br><br>
                         </div>
+
                         <div class="input_field">
                             <label>CPF:</label><br>
                             <input type="text" name="cpf" class="input" placeholder="CPF"><br><br>
@@ -80,6 +88,7 @@
                         </select> 
                             <br/><br><br>
                         </div>
+
                         <div class="input_field">
                             <label>Data de nascimento:</label><br />
                             <input type="date" name="datanasc" class="input" placeholder="Data de nascimento"><br><br>
@@ -88,9 +97,10 @@
                         <input type="submit" name="button" id="button_prod_front" value="Enviar" class = "button_prod_front">
                         <input type="button" name="button2" id="button_prod_front" value="Voltar" class = "button_prod_front" onclick="location.href='cad_pesq_usuario_front.php';">
                         <!-- <a href=''>Voltar</a><br><br> -->
-                    </form> 
-            </div> <!-- container -->
-        </div> <!-- mãe -->
+                    </div>
+                </div>
+            </div>
+        </form> 
 
         <!-- ----------------RODAPÉ ------------------------------ -->
         <div class="footer">
@@ -103,8 +113,17 @@
                         <li>Murilo Gonzales Vieira, n° 24</li>
                         <li>Rafael Chun Lin Chen, n° 28</li>
                     </ul>
-
                 </div>
+
+                <div class="devs">
+                    <h2>Navegação</h2>
+
+                    <a href="../../index.html"><ion-icon name="home" id="icon_rodape"></ion-icon></i></a>
+                    <a href="../produtos/cad_pesq_produtos_front.php" id="icon_rodape"><ion-icon name="cart"></ion-icon></a> 
+                    <a href="../venda/selecao_produtos_front.php"><i class="fa-brands fa-octopus-deploy" id="icon_rodape"></i></a>
+                    <a href="../devs.html"><ion-icon name="code" id="icon_rodape"></ion-icon></a>
+                </div>
+
 
                 <div class="voltar_ao_topo">
                     <a href="#" class="top">

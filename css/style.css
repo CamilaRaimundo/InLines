@@ -81,6 +81,11 @@ header {
     display: flex;
 }
 
+#icon_rodape{
+    font-size: 50px;
+    color: #fff;
+}
+
 .devs{
     width: 50%;
     color: #fff;
@@ -317,12 +322,21 @@ label #sidebar_btn:hover {
 
 /*----------------------------FORMULÁRIO PRODUTOS(ANA)--------------------------------------*/
 
+.container_novo{
+    background-image: url(../image/Octopus-amico_login.png);
+    /* background: linear-gradient(to right, #bb6bf0 #b9b2db); */
+    width: 100%;
+    margin: auto;
+
+}
+
 .input_field> input{
     width: 100%;
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background: #514869;
+    /* background: #514869; */
+    background: #ffa0df;
     color: #f0ffffde;
     font-size: 12pt;
     box-shadow: 0px 10px 40px #00000056;
@@ -343,10 +357,10 @@ label #sidebar_btn:hover {
     margin: 10px 0px;
 }
 
-.produtos_front{
+/* .produtos_front{
     padding: 0 10px;
     font-family:'Arial', sans-serif;
-}
+} */
 
 .wrapper
 {
@@ -357,6 +371,8 @@ label #sidebar_btn:hover {
     box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
     border-radius: 15px;
     background: #2f2841;
+    /* background: #fc4dad; */
+
 }
 
 .wrapper .title{
@@ -364,6 +380,7 @@ label #sidebar_btn:hover {
     font-weight: 700;
     margin-bottom: 25px;
     color: #f0ffffde;
+    /* color: rgb(244, 244, 244); */
     text-transform: uppercase;
     text-align: center;
 }
@@ -399,7 +416,7 @@ label #sidebar_btn:hover {
 .button_prod_front
 {
     padding: 10px;
-	width: 30%;
+	width: 32%;
 	margin: 0 auto;
 	border: none;
 	font-weight: 700;
@@ -1125,6 +1142,8 @@ label #sidebar_btn:hover {
     margin:0;
     padding: 0;
     height: 100vh;
+    /* background-image: url(../image/Octopus-rafiki_detalhes.png); */
+
 
     /* margin-left: auto;
     margin-right: auto;
@@ -1154,12 +1173,16 @@ label #sidebar_btn:hover {
 .detelhamento{
     color: #000;
     font-size: 20px;
-    margin-left: 70px ;
+    margin-left: 70px;
     margin-top: 250px;
+
+    padding-top: 80px;
+    padding-left: 40px;
+    /* align-items: center; */
   
-    width: 700px;
-    height: 300px;
-    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    border-radius: 100px;
     box-shadow: 0px 10px 40px #000;
     background-color: #fff; 
     /* background: linear-gradient(0deg, rgb(255, 70, 141) 0%,rgb(245, 192, 255) 100%); */
