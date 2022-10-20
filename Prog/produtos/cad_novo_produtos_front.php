@@ -12,7 +12,7 @@
 
     <body class=produtos_front>
         <link rel="stylesheet" href="../../css/style.css">
-        <link rel="shortcut icon" href="../../image/inlines2.png">
+        <link rel="shortcut icon" href="../../image/InLines2.png">
 
         <form action="cad_novo_produtos_back.php" method="post">
             <div class="container_novo">

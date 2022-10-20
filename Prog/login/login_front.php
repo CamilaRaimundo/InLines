@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>Login</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
-        <link rel="shortcut icon" href="../../image/logo.png">
+        <link rel="shortcut icon" href="../../image/InLines.png">
 
         <script>
             function cliqui() {
@@ -95,19 +95,22 @@
                         <div class="box-direito">
                             <div class="card-login">
                                 <h1>Login</h1>
+                                <a href="conta.php">lalalalal</a>
 
                                 <div class="textfield">
-                                    <label for="usuario">E-mail</label>
+                                    <label for="usuario">E-mail*</label>
                                     <input type="text" name="usuario" placeholder="E-mail" class="form-control" id="usuario" name="usuario" size="40" required>
 
                                 </div>
 
                                 <div class="textfield">
-                                    <label for="senha">Senha</label>
+                                    <label for="senha">Senha*</label>
                                     <input type="password" name="senha" placeholder="Senha" class="form-control" id="senha" name="senha" size="40" required>
                                 </div>
 
+                                <div class="link_cadastrar">
                                 <p class="link_cadastro"><a href="../usuarios/cad_novo_usuario_front.php">Não tem conta? Cadastre-se aqui!</a></p>
+                                </div>
 
                                 <button class="btn-login" type="submit">Login</button>
                             </div>

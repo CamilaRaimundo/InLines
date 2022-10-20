@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>Finalização da Compra</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
-        <link rel="shortcut icon" href="../../image/logo.png">
+        <link rel="shortcut icon" href="../../image/InLines.png">
 
         <script>
             function cliqui() {
@@ -76,7 +76,33 @@
                     $id_usuario = 1; // Depois precisamos alterar para pegar da $_SESSION
                     include "finalizacao_compra_back.php";
 
+
+                    // echo "<img src='../../image/celebracao.png' class='card-img' width=300px>";
+
+
+
                     echo "<h1>Compra Finalizada com Sucesso!!!</h1>";
+                    // echo "<div class='card card-1'>";
+
+                    // <!-- card-header -->
+                    // echo "<div class='card-header'>";
+                    //     echo "<img src='../../image/celebracao.png' class='card-img'>";
+                    // echo "</div>";
+                    // <!-- card-header -->
+
+                    // <!-- card-body -->
+                    // echo "<div class='card-body'>
+                    //     <h3 class='card-local'>Volte sempre!</h3>
+                    //     <h2 class='card-titulo'>Obrigada!!</h2>
+                    //     <h3>Compra Finalizada com Sucesso!!!</h3>";
+                    // echo "</div>";
+                    // <!-- card-body -->
+
+                    // <!-- card-footer -->
+                    // echo "<div class='card-footer'>";
+                    //     echo "<a href='selecao_produtos_front.php'>Voltar</a>";
+                    // echo "</div>";
+                    // <!-- card-footer -->
                 ?>
 
                 <a href="selecao_produtos_front.php">Voltar</a>

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Cadastro de Usuários</title>
         <link rel="stylesheet" href="../../css/style.css">
-        <link rel="shortcut icon" type="text/css" href="../../image/logo.png">
+        <link rel="shortcut icon" type="text/css" href="../../image/InLines.png">
 
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

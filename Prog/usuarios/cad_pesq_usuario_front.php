@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>Pesquisa de Usuários</title>
         <link rel="stylesheet" href="../../css/style.css">
-        <link rel="shortcut icon" type="text/css" href="../../image/logo.png">
+        <link rel="shortcut icon" type="text/css" href="../../image/InLines.png">
 
         <script>
             function cliqui() {
@@ -37,7 +37,7 @@
         </header>
         <div class="sidebar">
             <center>
-                <img src="../../image/inlines.png" class="img" alt="In Lines">
+                <img src="../../image/InLines.png" class="img" alt="In Lines">
                 <h2>Menu</h2>
             </center>
 

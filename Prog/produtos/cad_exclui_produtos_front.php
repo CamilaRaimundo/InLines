@@ -5,7 +5,7 @@
        <meta charset="UTF-8">
        <title>Exclusão de Produtos</title>
        <link rel="stylesheet" type="text/css" href="../../css/style.css">
-       <link rel="shortcut icon" href="../../image/logo.png">
+       <link rel="shortcut icon" href="../../image/InLines.png">
 
        <script>
             function cliqui() {
@@ -77,7 +77,7 @@
                                                  name="preco"
                                                  class="input"
                                                  value="<?php echo $linha['preco'];?>" readonly>  
-                                          <div>
+                                          </div>
 
                                           <!-- <br><br> -->
                                           
@@ -98,7 +98,7 @@
                                                  name="cod_visual"
                                                  class="input"
                                                  value="<?php echo $linha['cod_visual'];?>" readonly>
-
+                                          </div>
                                           <!-- <br><br> -->
 
                                           <div class="input_field">
@@ -117,7 +117,7 @@
                                                  name="margem_lucro" 
                                                  class="input"
                                                  value="<?php echo $linha['margem_lucro'];?>" readonly>
-                                         
+                                          </div>                                         
                                           <!-- <br><br> -->
                                           
                                           <div class="input_field">
@@ -151,33 +151,34 @@
         
  
               <!-- ----------------RODAPÉ ------------------------------ -->
-      <div class="footer">
-                <div class="devs">
-                    <h2>Devs</h2>
-                    <ul>
-                        <li>Ana Clara Gama Alba Postinguel, n° 02</li>
-                        <li>Camila Pereira Raimundo, n° 06</li>
-                        <li>Laura Caires Jardim Maldonado Galera, n° 17</li>
-                        <li>Murilo Gonzales Vieira, n° 24</li>
-                        <li>Rafael Chun Lin Chen, n° 28</li>
-                    </ul>
-                </div>
+              <div class="footer">
+                     <div class="devs">
+                            <h2>Devs</h2>
+                            <ul>
+                                   <li>Ana Clara Gama Alba Postinguel, n° 02</li>
+                                   <li>Camila Pereira Raimundo, n° 06</li>
+                                   <li>Laura Caires Jardim Maldonado Galera, n° 17</li>
+                                   <li>Murilo Gonzales Vieira, n° 24</li>
+                                   <li>Rafael Chun Lin Chen, n° 28</li>
+                            </ul>
+                     </div>
 
-                <div class="devs">
-                    <h2>Navegação</h2>
+                     <div class="devs">
+                            <h2>Navegação</h2>
 
-                    <a href="../../index.html"><ion-icon name="home" id="icon_rodape"></ion-icon></i></a>
-                    <a href="cad_pesq_produtos_front.php" id="icon_rodape"><ion-icon name="cart"></ion-icon></a> 
-                    <a href="../venda/selecao_produtos_front.php"><i class="fa-brands fa-octopus-deploy" id="icon_rodape"></i></a>
-                    <a href="../devs.html"><ion-icon name="code" id="icon_rodape"></ion-icon></a>
-                </div>
+                            <a href="../../index.html"><ion-icon name="home" id="icon_rodape"></ion-icon></i></a>
+                            <a href="cad_pesq_produtos_front.php" id="icon_rodape"><ion-icon name="cart"></ion-icon></a> 
+                            <a href="../venda/selecao_produtos_front.php"><i class="fa-brands fa-octopus-deploy" id="icon_rodape"></i></a>
+                            <a href="../devs.html"><ion-icon name="code" id="icon_rodape"></ion-icon></a>
+
+                     </div>
 
 
-                <div class="voltar_ao_topo">
-                    <a href="#" class="top">
-                        <ion-icon name="arrow-up-circle-outline"></ion-icon>
-                    </a>
-                </div>
-       </div>
+                     <div class="voltar_ao_topo">
+                            <a href="#" class="top">
+                                   <ion-icon name="arrow-up-circle-outline"></ion-icon>
+                            </a>
+                     </div>
+              </div>
        </body>
 </html>

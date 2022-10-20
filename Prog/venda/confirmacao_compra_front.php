@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<title>Confirmação Compra</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
-        <link rel="shortcut icon" href="../../image/logo.png">
+        <link rel="shortcut icon" href="../../image/InLines.png">
 
 		<script>
             function cliqui() {

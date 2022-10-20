@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Detalhe Produto</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
-        <link rel="shortcut icon" href="../../image/logo.png">
+        <link rel="shortcut icon" href="../../image/InLines.png">
 
         <script>
             function cliqui() {
@@ -36,7 +36,7 @@
 
                 <div class="sidebar">
                     <center>
-                        <img src="../../image/inlines.png" class="img" alt="In Lines">
+                        <img src="../../image/InLines.png" class="img" alt="In Lines">
                         <h2>Menu</h2>
                     </center>
 

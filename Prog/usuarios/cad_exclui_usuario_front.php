@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-       <head>
+<head>
        <meta charset="UTF-8">
        <title>Exclusão de Usuário</title>
        <link rel="stylesheet" type="text/css" href="../../css/style.css">
-       <link rel="shortcut icon" href="../../image/logo.png">
+       <link rel="shortcut icon" href="../../image/InLines.png">
 
        <script>
             function cliqui(){
                 document.getElementById("check").click();
              }
-        </script>
+       </script>
 
        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -131,11 +131,6 @@
                      </div>
               </form>
                             
-                     <!-- </div>  -->
-                     <!-- container -->
-              <!-- </div>  -->
-              <!-- mae -->
-
     <!-- ----------------RODAPÉ ------------------------------ -->
     <div class="footer">
                 <div class="devs">
@@ -164,6 +159,7 @@
                         <ion-icon name="arrow-up-circle-outline"></ion-icon>
                     </a>
                 </div>
+    </div>
 
        </body>
 </html>
