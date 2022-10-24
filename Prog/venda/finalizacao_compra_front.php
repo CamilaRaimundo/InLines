@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>Finalização da Compra</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
-        <link rel="shortcut icon" href="../../image/InLines.png">
+        <link rel="shortcut icon" href="../../image/icon.png">
 
         <script>
             function cliqui() {
@@ -41,7 +41,7 @@
             </header>
             <div class="sidebar">
                 <center>
-                    <img src="../../image/inlines.png" class="img" alt="In Lines">
+                    <img src="../../image/InLines.png" class="img" alt="In Lines">
                     <h2>Menu</h2>
                 </center>
 
@@ -71,6 +71,7 @@
 
         <div class="mae">
             <div class="container">
+                <div class="quadro">
                 <?php
                     //session_start();
                     $id_usuario = 1; // Depois precisamos alterar para pegar da $_SESSION
@@ -80,8 +81,13 @@
                     // echo "<img src='../../image/celebracao.png' class='card-img' width=300px>";
 
 
+                    echo "<h1>Compra Finalizada com Sucesso!!!</h1><br>";
+                    echo "<div>";
+                    echo"<input type='submit' value='Voltar' class='button_prod_front' onclick='location.href='cad_pesq_usuario_front.php''><br><br>";
+                    echo "</div>";
 
-                    echo "<h1>Compra Finalizada com Sucesso!!!</h1>";
+
+                    
                     // echo "<div class='card card-1'>";
 
                     // <!-- card-header -->
@@ -104,11 +110,16 @@
                     // echo "</div>";
                     // <!-- card-footer -->
                 ?>
-
-                <a href="selecao_produtos_front.php">Voltar</a>
+                
+                </div>  
+                <div class="celebration">
+                    <img src="../../image/celebracao.png" alt="celebracao">
+                </div>
+                
+               
             
-            <div class="container">
-        <div class="mae">
+        </div>
+        </div>
     </body>
 </html>
 

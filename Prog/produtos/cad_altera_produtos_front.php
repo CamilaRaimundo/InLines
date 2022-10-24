@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>Alteração de Produtos</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
-        <link rel="shortcut icon" href="../../image/InLines.png">
+        <link rel="shortcut icon" href="../../image/icon.png">
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>Pesquisa de Produtos</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
-        <link rel="shortcut icon" href="../../image/InLines.png">
+        <link rel="shortcut icon" href="../../image/icon.png">
 
         <script>
             function cliqui() {

@@ -41,7 +41,7 @@ header {
 }
 
 .container_vendas{
-    margin-left: 160px;  
+    margin-left: 100px;  
     align-items: center;
     
 
@@ -307,7 +307,7 @@ label #sidebar_btn:hover {
 }
 
 .cellCPF {
-    width: 70px;
+    width: 100px;
     text-align: right;
 }
 
@@ -318,6 +318,14 @@ label #sidebar_btn:hover {
 .img2 {
     width: 30%;
     height: 35%
+}
+
+.img_tabs{
+    display:flex;
+    margin-left: 670px;
+    margin-top: -550px;
+    width: 70%;
+
 }
 
 /*----------------------------FORMULÁRIO PRODUTOS(ANA)--------------------------------------*/
@@ -796,7 +804,7 @@ label #sidebar_btn:hover {
     justify-content: space-around;
     align-items: center;
     z-index: 200;
-    margin-top: 10px;
+    margin-top: 5.1px;
     text-decoration: none;
 }
 
@@ -866,6 +874,14 @@ label #sidebar_btn:hover {
     color: #fff;
 }
 
+.cardvenda-estoque {
+    text-decoration: none;
+    font: bolder 1rem sans-serif;
+    margin-bottom: 15px;
+    margin-top: -5px;
+    color: red;
+}
+
 .btn {
     padding: 1rem 2rem;
     background-color: unset;
@@ -895,19 +911,10 @@ label #sidebar_btn:hover {
     text-decoration: none;
 }
 
-.detalhes_prod{
-    background: linear-gradient(to right, #bb6bf0 #b9b2db);
-}
-
-.img_detalhes img{
-    width: 50%;
-    border-radius: 20%;
-    margin-bottom: 20px;
-}
-
-.detalhamento p{
-    font-size: 30px;
-    margin-bottom: 10px;
+#null{
+    background-color: #D9D9D9;
+    pointer-events: none;
+    cursor: default;
 }
 
 /* ------------------------------------------------DEVS ------------------------------------- */
@@ -1133,20 +1140,66 @@ label #sidebar_btn:hover {
 
 /* -------------------------------DETALHES---------------------------------------------- */
 
-.container68{
-    /* background: linear-gradient(0deg, rgb(104, 127, 253) 0%,rgb(173, 72, 255) 100%); */
+.container_detalhes{
+    width: 100%;
+    min-height: 100vh;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(27,88,162,1) 0%, rgba(187,224,246,1) 69%); */
+    background: linear-gradient(0deg, rgb(104, 127, 253) 0%,rgb(173, 72, 255) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product{
+  width: 90%;
+  max-width: 750px;
+  display: flex;
+}
+
+.gallery2{
+  flex-basis: 47%;
+  transform: scale(1.08);
+  box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+}
+
+.gallery2 img{
+    width: 100%;
+    display: block;
+}
+
+.details{
+  flex-basis: 53%;
+  background: #fff;
+  padding: 40px;
+  padding-left: 60px;
+  border-radius: 10px;
+  box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detalhes_prod{
+    background: linear-gradient(to right, #bb6bf0 #b9b2db);
+}
+
+.img_detalhes img{
+    width: 50%;
+    border-radius: 20%;
+    margin-bottom: 20px;
+}
+
+.detalhamento p{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* .container68{
+    background: linear-gradient(0deg, rgb(104, 127, 253) 0%,rgb(173, 72, 255) 100%);
     width: 100%;
     margin:0;
     padding: 0;
     height: 100vh;
     background-image: url(../image/sea.png);
 
-
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    margin: 0 17%; 
-    padding: 10% 20px; */
     
 }
 
@@ -1175,14 +1228,14 @@ label #sidebar_btn:hover {
     padding-left: 40px;
     /* align-items: center; */
   
-    width: 300px;
+    /* width: 300px;
     height: 200px;
     border-radius: 100px;
     box-shadow: 0px 10px 40px #000;
     background-color: #fff; 
-    /* background: linear-gradient(0deg, rgb(255, 70, 141) 0%,rgb(245, 192, 255) 100%); */
+    background: linear-gradient(0deg, rgb(255, 70, 141) 0%,rgb(245, 192, 255) 100%);
 
-}
+}  */
 
 .imagempolvodetalhes{
     width: 800px;
@@ -1225,9 +1278,9 @@ label #sidebar_btn:hover {
     text-align: center;
 }
 
-.wrapper_conta .form_items{
-    /* width: 100%; */
-} 
+/* .wrapper_conta .form_items{
+    width: 100%;
+}  */
 
 .wrapper_conta .form_items .input_field{
     margin-bottom: 15px;
@@ -1260,6 +1313,28 @@ label #sidebar_btn:hover {
     margin-top: -770px;
 }
 
+/*---------------------------------------------FINALIZAÇÃO--------------------------------------------------*/
+
+.celebration img{
+    width: 35%;
+    display: flex;
+    margin-left: 800px;
+    margin-top: -200px;
+}
+
+.quadro{
+    border-width: 2px;
+    border-style: solid;    
+    border-color: rgb(202, 0, 101);
+    border-radius: 10px;
+    width:600px;
+    margin-left: 200px;
+    box-shadow: -10px 5px 10px 10px rgba(106, 2, 138, 0.1);
+
+
+
+}
+
 /* LINKS */
 /* :link :visited :active :hover */
 
@@ -1274,3 +1349,4 @@ label #sidebar_btn:hover {
     font-size: 20px;
     transition: 1s;
 }
+

@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>Pesquisa de Usuários</title>
         <link rel="stylesheet" href="../../css/style.css">
-        <link rel="shortcut icon" type="text/css" href="../../image/InLines.png">
+        <link rel="shortcut icon" type="text/css" href="../../image/icon.png">
 
         <script>
             function cliqui() {
