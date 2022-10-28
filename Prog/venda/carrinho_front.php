@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<title>Carrinho</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
-        <link rel="shortcut icon" href="../../image/InLines.png">
+        <link rel="shortcut icon" href="../../image/icon.png">
 		
 		<script>
             function cliqui() {
@@ -38,7 +38,7 @@
 		</header>
 		<div class="sidebar">
 			<center>
-				<img src="../../image/inlines.png" class="img" alt="In Lines">
+				<img src="../../image/InLines.png" class="img" alt="In Lines">
 				<h2>Menu</h2>
 			</center>
 
@@ -75,7 +75,7 @@
 
 					include "carrinho_back.php";
 				?>
-
+				<form action="?acao=up" method="post">
 				<div class='table'>
 					<div class='row'>
 						<!-- <div class='cell cellDescricao cellHeader'>
@@ -98,12 +98,12 @@
 						</div>
 					</div>
 
-					<form action="?acao=up" method="post">
+					
 					
 					<?php
 						$total = 0.0;
 
-						if(!empty($resultado_lista))
+					if(!empty($resultado_lista))
 						{
 							foreach ($resultado_lista as $linha)
 							{ 
@@ -127,22 +127,72 @@
 							<?php echo $linha['preco']; ?>
 						</div>
 						<div class='cell cellPreco'>
-							<a href='?acao=menos&id_produto=<?php echo $id_produto; ?>'><i class="fa-solid fa-minus"></i></a>
-							<input type="text" size="1" readonly name="produto[<?php echo $id_produto; ?>]"
-								value="<?php echo $linha['quantidade_carrinho']; ?>" />
-							<a href='?acao=mais&id_produto=<?php echo $id_produto; ?>'><i class="fa-solid fa-plus"></i></a>
-						</div>
+							<?php
+								if($linha['quantidade_carrinho'] > 1){
+									echo "<a href='?acao=menos&id_produto=" .$id_produto. "'><i class='fa-solid fa-minus'></i></a>";
+								}
+
+							echo $linha['quantidade_carrinho'];
+							echo "<input type='hidden' value=' " .$linha['quantidade_carrinho']. " ' id='' .$id_produto. ''>";
+							
+							if($linha['quantidade_carrinho'] < $linha['estoque']){
+								echo "<a href='?acao=mais&id_produto=" .$id_produto. "'><i class='fa-solid fa-plus'></i></a>";
+							}
+							?>
+
+							<!-- < ?php
+								if($linha['quantidade_carrinho'] < 1)
+								{
+									echo '<script language="javascript">';
+									echo "alert('O produto será removido do carrinho!')";
+									echo '</script>';
+
+									echo "<a href='#'><i class='fa-solid fa-minus'></i></a>";
+									echo "<input type='text' size='1' readonly name='produto[$id_produto]'
+								value=$linha'['quantidade_carrinho']'>"; 
+									echo "<a href='?acao=mais&id_produto=< ?php echo $id_produto; ? >'><i class='fa-solid fa-plus'></i></a>";
+									
+								}
+							?> -->
+									<!-- meu certo, eu acho -->
+							<!-- <a href='?acao=menos&id_produto=< ?php echo $id_produto; ?>'><i class="fa-solid fa-minus"></i></a>
+							<input type="text" size="1" readonly name="produto[< ?php echo $id_produto; ?>]"
+								value="< ?php echo $linha['quantidade_carrinho']; ?>"> 
+							<a href='?acao=mais&id_produto=< ?php echo $id_produto; ?>'><i class="fa-solid fa-plus"></i></a> 
+							</div> -->
+
+							<!-- <div class="cart-row-cell quant">
+                                <ul> -->
+                                    <!-- < ?php
+                                        if($linha['quantidade_carrinho'] > 1){
+                                            echo "<a href='?acao=menos&id_produto=" .$id_produto. "'><i class='fa-solid fa-minus'></i></a>";
+                                        } -->
+                                    
+                                    <!-- // <li>
+										echo $linha['quantidade_carrinho'];
+									// <!-- </li> -->
+                                    <!-- // quantidade de estoque -->
+                                    	<!-- echo "<input type='hidden' value=' " .$linha['quantidade_carrinho']. " ' id='' .$id_produto. ''>"; -->
+									<!-- // <input type="text" size="1" readonly name="produto[< ?php echo $id_produto; ? >]" value="< ?php echo $linha['quantidade_carrinho']; ? >">  -->
+									<!-- // < ?php --> 
+									<!-- if($linha['quantidade_carrinho'] < $linha['estoque']){
+										echo "<a href='?acao=mais&id_produto=" .$id_produto. "'><i class='fa-solid fa-plus'></i></a>";
+									}
+
+                                    ?> -->
+                                <!-- </ul>-->
+                            </div> 
 
 						<div class='cell cellPreco'>
 							<?php echo $linha['subtotal']; ?>
 						</div>
 
-						<!-- <div class="lixeira_icon"> -->
+						<div class="lixeira_icon">
 						<a href='?acao=del&id_produto=<?php echo $id_produto; ?>'><i class="fa-solid fa-trash"></i></a>
-						<!-- </div> -->
+						</div>
 						
-					</div>
-							
+					<!-- </div> -->
+					</div> 	
 					<?php 
 						}
 					}
@@ -166,9 +216,8 @@
 						echo"<a href='confirmacao_compra_front.php'>Finalize sua Compra</a>";
 					?>
 					
-					</form>
-				</div>
-
+					
+				</form>
 			</div> <!-- container -->
  		</div> <!-- mae -->
 	</body>

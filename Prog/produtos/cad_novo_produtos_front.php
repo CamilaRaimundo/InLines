@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <link rel="shortcut icon" href="../../image/icon.png">
         <meta charset="utf-8">
         <title>Formulário de Cadastro de Produtos - Tabela Produtos CRUD</title>
 
@@ -11,9 +12,6 @@
     </head>
 
     <body class=produtos_front>
-        <link rel="stylesheet" href="../../css/style.css">
-        <link rel="shortcut icon" href="../../image/InLines2.png">
-
         <form action="cad_novo_produtos_back.php" method="post">
             <div class="container_novo">
                 <div class="wrapper">

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>Finalização da Compra</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
-        <link rel="shortcut icon" href="../../image/InLines.png">
+        <link rel="shortcut icon" href="../../image/icon.png">
 
         <script>
             function cliqui() {
@@ -41,13 +41,12 @@
             </header>
             <div class="sidebar">
                 <center>
-                    <img src="../../image/inlines.png" class="img" alt="In Lines">
+                    <img src="../../image/InLines.png" class="img" alt="In Lines">
                     <h2>Menu</h2>
                 </center>
 
                 <a href="../../index.html">
-                    <!-- <ion-icon name="home"></ion-icon></i><span>Home</span> -->
-                    <i class="fa-brands fa-octopus-deploy"></i></i><span> Home</span>
+                    <ion-icon name="home"></ion-icon></i><span> Home</span>
                 </a>
                 <a href="../produtos/cad_pesq_produtos_front.php">
                     <ion-icon name="cart"></ion-icon><span>Cad. Produtos</span>
@@ -71,6 +70,7 @@
 
         <div class="mae">
             <div class="container">
+                <div class="quadro">
                 <?php
                     //session_start();
                     $id_usuario = 1; // Depois precisamos alterar para pegar da $_SESSION
@@ -80,8 +80,15 @@
                     // echo "<img src='../../image/celebracao.png' class='card-img' width=300px>";
 
 
+                    echo "<h1>&nbsp Compra Finalizada com Sucesso!!!</h1><br>";
+                    echo "<h3>&nbsp Ficamos muito felizes pela preferência!</h3><br>";
+                    echo "<div>";
+                    echo"<a href='selecao_produtos_front.php'><input type='submit' value='Voltar' class='button_prod_front'></a><br><br>";
+                    // echo "<input type='submit'  value='Voltar' class='button_prod_front'  onclick='location.href='cad_pesq_usuario_front.php';'>";
+                    echo "</div>";
 
-                    echo "<h1>Compra Finalizada com Sucesso!!!</h1>";
+
+                    
                     // echo "<div class='card card-1'>";
 
                     // <!-- card-header -->
@@ -104,11 +111,16 @@
                     // echo "</div>";
                     // <!-- card-footer -->
                 ?>
-
-                <a href="selecao_produtos_front.php">Voltar</a>
+                
+                </div>  
+                <div class="celebration">
+                    <img src="../../image/celebracao.png" alt="celebracao">
+                </div>
+                
+               
             
-            <div class="container">
-        <div class="mae">
+        </div>
+        </div>
     </body>
 </html>
 

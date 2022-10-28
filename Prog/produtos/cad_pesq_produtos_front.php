@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>Pesquisa de Produtos</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
-        <link rel="shortcut icon" href="../../image/InLines.png">
+        <link rel="shortcut icon" href="../../image/icon.png">
 
         <script>
             function cliqui() {
@@ -27,7 +27,7 @@
 
 
             <div class="left">
-                <h3>In <span>Line</span></h3> 
+                <h3>In <span>Lines</span></h3> 
             </div>
 
             <div class="right">
