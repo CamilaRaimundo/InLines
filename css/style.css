@@ -327,9 +327,15 @@ label #sidebar_btn:hover {
 
 .img_tabs{
     display:flex;
+/* <<<<<<< HEAD */
     margin-left: 560px;
     margin-top: -600px;
     width: 78%;
+/* ======= */
+    margin-left: 670px;
+    margin-top: -550px;
+    width: 70%;
+/* >>>>>>> 41cce5db66bd5a4eaae978fadb7bc7cb51126422 */
 
 }
 
@@ -1324,21 +1330,35 @@ label #sidebar_btn:hover {
 /*---------------------------------------------FINALIZAÇÃO--------------------------------------------------*/
 
 .celebration img{
+/* <<<<<<< HEAD */
     width: 50%;
     display: flex;
     margin-left: 450px;
+/* ======= */
+    width: 35%;
+    display: flex;
+    margin-left: 800px;
+/* >>>>>>> 41cce5db66bd5a4eaae978fadb7bc7cb51126422 */
     margin-top: -200px;
 }
 
 .quadro{
     border-width: 2px;
     border-style: solid;    
+/* <<<<<<< HEAD */
     border-color: rgb(255, 255, 255);
     border-radius: 10px;
     margin-left: -100px;
     width:600px;
     box-shadow: 10px 10px 58px 14px rgba(4,123,214,0.68);
     
+/* ======= */
+    border-color: rgb(202, 0, 101);
+    border-radius: 10px;
+    width:600px;
+    margin-left: 200px;
+    box-shadow: -10px 5px 10px 10px rgba(106, 2, 138, 0.1);
+/* >>>>>>> 41cce5db66bd5a4eaae978fadb7bc7cb51126422 */
 
 
 

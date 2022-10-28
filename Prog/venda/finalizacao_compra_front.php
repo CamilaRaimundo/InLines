@@ -80,11 +80,17 @@
                     // echo "<img src='../../image/celebracao.png' class='card-img' width=300px>";
 
 
+// <<<<<<< HEAD
                     echo "<h1>&nbsp Compra Finalizada com Sucesso!!!</h1><br>";
                     echo "<h3>&nbsp Ficamos muito felizes pela preferência!</h3><br>";
                     echo "<div>";
                     echo"<a href='selecao_produtos_front.php'><input type='submit' value='Voltar' class='button_prod_front'></a><br><br>";
                     // echo "<input type='submit'  value='Voltar' class='button_prod_front'  onclick='location.href='cad_pesq_usuario_front.php';'>";
+// =======
+                    echo "<h1>Compra Finalizada com Sucesso!!!</h1><br>";
+                    echo "<div>";
+                    echo"<input type='submit' value='Voltar' class='button_prod_front' onclick='location.href='cad_pesq_usuario_front.php''><br><br>";
+// >>>>>>> 41cce5db66bd5a4eaae978fadb7bc7cb51126422
                     echo "</div>";
 
 
