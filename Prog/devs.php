@@ -78,7 +78,7 @@
                 <a href="./usuarios/cad_pesq_usuario_front.php">
                     <ion-icon name="body"></ion-icon><span>Cad. Usuários</span> 
                 </a>-->
-                <!-- ----------------------------------------ema-------------------------------------- -->
+
                 <?php
                         if($_SESSION["isadm"]){
                             echo "<a href='../produtos/cad_pesq_produtos_front.php'>
@@ -90,7 +90,7 @@
                         }
                             
                     ?>
-                <!-- -----------------------------------------------ema---------------------------------- -->
+
                 <a href="./venda/selecao_produtos_front.php">
                     <i class="fa-brands fa-octopus-deploy"></i><span> Produtos</span>
                 </a>

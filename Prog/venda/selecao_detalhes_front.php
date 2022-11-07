@@ -14,6 +14,9 @@
 </head>
 
 <body onload="cliqui(),select()">  
+<?php
+        session_start()
+    ?>
     <div class="menu">
         <input type="checkbox" id="check">
 
@@ -27,8 +30,23 @@
             </div>
 
             <div class="right">
-                <a href="carrinho_front.php" class="carrinho"><ion-icon name="cart"></ion-icon></a>
-                <a href="../usuarios/cad_pesq_usuario_front.php" class="conta"><ion-icon name="person-outline"></ion-icon></a>
+                    <a href="carrinho_front.php" class="carrinho">
+                        <ion-icon name="cart"></ion-icon>
+                    </a>
+                    <?php
+                        if($_SESSION["usuariologado"]){
+                            echo "<a href='../login/logoff_back.php' class='conta'>
+                            <ion-icon name='exit-outline'></ion-icon>
+                            </a>";
+                        
+                        }
+                            
+                        else{
+                            echo "<a href='../login/login_front.php' class='conta'>
+                                <ion-icon name='person-outline'></ion-icon>
+                            </a>";
+                        }
+                    ?>
             </div> 
 
         </header>
@@ -39,10 +57,21 @@
             <center>
                 <img src="../../image/InLines.png" class="img" alt="In Lines">
                 <h2>Menu</h2>
+                <br>
+                    <?php
+                        if($_SESSION["usuariologado"]){
+                          echo"<h3 class='h3_bemvindo'>Bem-vind<i class='fa-brands fa-octopus-deploy'></i>!</h3>";   
+                        }
+                        else if($_SESSION["isadm"])
+                            echo "<span class='conta'>Bem-vinde ADM<span>";   
+                        else 
+                            echo"<h2>Menu</h2>";
+                    ?>
             </center>
 
-            <a href="../../index.html"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
-            <!-- ----------------------------------------ema-------------------------------------- -->
+            <a href="../../index.php"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
+            <!-- <a href="../produtos/cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Cad. Produtos</span></a> -->
+            <!-- <a href="../usuarios/cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a> -->
             <?php
                         if($_SESSION["isadm"]){
                             echo "<a href='../produtos/cad_pesq_produtos_front.php'>
@@ -54,11 +83,11 @@
                         }
                             
                     ?>
-                <!-- -----------------------------------------------ema---------------------------------- -->
-            <!-- <a href="../produtos/cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Cad. Produtos</span></a> -->
-            <!-- <a href="../usuarios/cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a> -->
             <a href="selecao_produtos_front.php"><i class="fa-brands fa-octopus-deploy"></i><span> Produtos</span></a>
-            <a href="../devs.html"><ion-icon name="code"></ion-icon><span>Devs</span></a>
+            <a href="../devs.php"><ion-icon name="code"></ion-icon><span>Devs</span></a>
+            <!-- <a href="Prog/login/login_back.php">
+                    <ion-icon name="exit-outline"></ion-icon><span>Sair</span>
+            </a> -->
 
         
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

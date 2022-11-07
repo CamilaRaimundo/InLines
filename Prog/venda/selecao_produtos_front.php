@@ -17,6 +17,9 @@
 
 
 <body onload="cliqui(),select()">
+    <?php
+        session_start()
+    ?>
 
     <div class="mae">
         <div class="menu">
@@ -34,9 +37,20 @@
                     <a href="carrinho_front.php" class="carrinho">
                         <ion-icon name="cart"></ion-icon>
                     </a>
-                    <a href="../usuarios/cad_pesq_usuario_front.php" class="conta">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </a>
+                    <?php
+                        if($_SESSION["usuariologado"]){
+                            echo "<a href='../login/logoff_back.php' class='conta'>
+                            <ion-icon name='exit-outline'></ion-icon>
+                            </a>";
+                        
+                        }
+                            
+                        else{
+                            echo "<a href='../login/login_front.php' class='conta'>
+                                <ion-icon name='person-outline'></ion-icon>
+                            </a>";
+                        }
+                    ?>
                 </div>
 
             </header>
@@ -44,19 +58,27 @@
 
                 <center>
                     <img src="../../image/InLines.png" class="img" alt="In Lines">
-                    <h2>Menu</h2>
+                    <br>
+                    <?php
+                        if($_SESSION["usuariologado"]){
+                          echo"<h3 class='h3_bemvindo'>Bem-vind<i class='fa-brands fa-octopus-deploy'></i>!</h3>";   
+                        }
+                        else if($_SESSION["isadm"])
+                            echo "<span class='conta'>Bem-vinde ADM<span>";   
+                        else 
+                            echo"<h2>Menu</h2>";
+                    ?>
                 </center>
 
-                <a href="../../index.html">
+                <a href="../../index.php">
                     <ion-icon name="home"></ion-icon></i><span> Home</span>
                 </a>
                 <!-- <a href="../produtos/cad_pesq_produtos_front.php">
                     <ion-icon name="cart"></ion-icon><span>Cad. Produtos</span>
-                </a> -->
-                <!-- <a href="../usuarios/cad_pesq_usuario_front.php">
+                </a> 
+                <a href="../usuarios/cad_pesq_usuario_front.php">
                     <ion-icon name="body"></ion-icon><span>Usuários</span>
                 </a> -->
-                <!-- ----------------------------------------ema-------------------------------------- -->
                 <?php
                         if($_SESSION["isadm"]){
                             echo "<a href='../produtos/cad_pesq_produtos_front.php'>
@@ -68,13 +90,30 @@
                         }
                             
                     ?>
-                <!-- -----------------------------------------------ema---------------------------------- -->
                 <a href="../venda/selecao_produtos_front.php">
                     <i class="fa-brands fa-octopus-deploy"></i><span> Produtos</span>
                 </a>
-                <a href="../devs.html">
+                <a href="../devs.php">
                     <ion-icon name="code"></ion-icon><span>Devs</span>
                 </a>
+                <!-- < ?php
+                    if($_SESSION == $_SESSION["isadm"])
+                        echo"<a href='../produtos/cad_novo_produto_front.php'>
+                            <ion-icon name='cart'></ion-icon><span>Cad. Produtos</span>
+                            <a>";
+                        echo"<a href='../usuarios/cad_pesq_usuario_front.php'>
+                            <ion-icon name='body'></ion-icon><span>Usuários</span>
+                            </a>";
+                    ?> -->
+                <!-- < ?php
+                    if (isset($_SESSION['isadm']) && $_SESSION['isadm'] == 't'){
+                    echo "<a href='cad_novo_produtos_front.php' target='_parent' class='link'><ion-icon name='cart'</ion-icon><span>Cad. Produtos</span></a>";
+                    echo "<a href='../usuario/cad_pesq_usuario_front.php' target='_parent' class='link'><ion-icon name='body'></ion-icon><span>Usuários</span></a>";
+                }
+                ?>
+                <a href="Prog/login/login_back.php">
+                    <ion-icon name="exit-outline"></ion-icon><span>Sair</span>
+                </a> -->
 
             </div><!-- menu lateral -->
 
@@ -146,10 +185,20 @@
                     <li>Rafael Chun Lin Chen, n° 28</li>
                 </ul>
             </div>
+            
+            <!-- <div class="devs">
+                < ?php
+                    if($_SESSION == $_SESSION["isadm"])
+                        echo"<a href='../produtos/cad_novo_produto_front.php'>";
+                ?>
+            </div> -->
+
+            
 
             <div class="voltar_ao_topo">
                 <a href="#" class="top">
                     <ion-icon name="arrow-up-circle-outline"></ion-icon>
+               
                 </a>
             </div>
     </div>

@@ -13,7 +13,8 @@
                 $sql="SELECT * FROM produto WHERE id_produto = ".$linha['id_produto'].";";
                 
                 $res=pg_query($conecta, $sql); 
-
+                if ($res == 0)
+                    return false;
                 // $resulta=pg_fetch_array($res);
 
                 /*if($linha['quantidade'] > $resulta['quantidade'] || $resulta['quantidade'] <= 0){
@@ -30,7 +31,9 @@
 
                     exit;*/
 
-            } // foreach
+            }
+                return true;
+            // foreach
             //  return false;
         } // if
     }// function
@@ -103,4 +106,6 @@
 
     // Fecha a conexão com o PostgreSQL
     pg_close($conecta);
+
+    include "../envioemail/enviaking.php";
 ?>

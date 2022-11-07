@@ -13,6 +13,7 @@
         </script>
     </head>
 
+
     <body onload="cliqui(),select()">
     <?php
         session_start()

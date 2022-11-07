@@ -25,6 +25,7 @@
         $linha = pg_fetch_array($res);
         
         $_SESSION["usuariologado"] = $linha;
+        $_SESSION["usuarioemail"] = $_SESSION['usuariologado']['email'];
         if($usuario == 'adm01_inlines_cti@gmail.com')
         {   
             $_SESSION["isadm"] = $linha['adm'];
@@ -37,8 +38,8 @@
             echo "alert('Você entrou!')";
             echo '</script>';
         }
-            
-        echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=../venda/selecao_produtos_front.php'>";
+        echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=../../index.php'>";
+        //echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=../venda/selecao_produtos_front.php'>";
 
         // echo '<script language="javascript">';
         // echo "alert('Você entrou!')";
