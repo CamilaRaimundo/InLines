@@ -72,6 +72,19 @@
             <a href="../../index.php"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
             <!-- <a href="cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Cad. Produtos</span></a> -->
             <!-- <a href="../usuarios/cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a> -->
+            <!-- ----------------------------------------ema-------------------------------------- -->
+            <?php
+                        if($_SESSION["isadm"]){
+                            echo "<a href='cad_pesq_produtos_front.php'>
+                            <ion-icon name='cart'></ion-icon><span>Cad. Produtos</span>
+                            </a>";
+                            echo "<a href='../usuarios/cad_pesq_usuario_front.php'>
+                            <ion-icon name='body'></ion-icon><span>Tabela usuários</span>
+                            </a>";
+                        }
+                            
+                    ?>
+                <!-- -----------------------------------------------ema---------------------------------- -->
             <a href="../venda/selecao_produtos_front.php"><i class="fa-brands fa-octopus-deploy"></i><span> Produtos</span></a>
             <a href="../devs.php"><ion-icon name="code"></ion-icon><span>Devs</span></a>
             <!-- <a href="Prog/login/login_back.php">

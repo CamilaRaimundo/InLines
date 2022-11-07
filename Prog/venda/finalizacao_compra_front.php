@@ -48,12 +48,25 @@
                 <a href="../../index.html">
                     <ion-icon name="home"></ion-icon></i><span> Home</span>
                 </a>
-                <a href="../produtos/cad_pesq_produtos_front.php">
+                <!-- <a href="../produtos/cad_pesq_produtos_front.php">
                     <ion-icon name="cart"></ion-icon><span>Cad. Produtos</span>
-                </a>
+                </a> -->
                 <!-- <a href="Prog/usuarios/cad_pesq_usuario_front.php">
                     <ion-icon name="body"></ion-icon><span>Usuários</span>
                 </a> -->
+                <!-- ----------------------------------------ema-------------------------------------- -->
+                <?php
+                        if($_SESSION["isadm"]){
+                            echo "<a href='../produtos/cad_pesq_produtos_front.php'>
+                            <ion-icon name='cart'></ion-icon><span>Cad. Produtos</span>
+                            </a>";
+                            echo "<a href='../usuarios/cad_pesq_usuario_front.php'>
+                            <ion-icon name='body'></ion-icon><span>Tabela usuários</span>
+                            </a>";
+                        }
+                            
+                    ?>
+                <!-- -----------------------------------------------ema---------------------------------- -->
                 <a href="selecao_produtos_front.php">
                     <i class="fa-brands fa-octopus-deploy"></i><span> Produtos</span>
                 </a>
