@@ -4,7 +4,7 @@
     // Recuperação de dados
     $nome=$_POST['nome'];
     $email=$_POST['email'];
-    $senha=$_POST['senha'];
+    $senha=MD5($_POST['senha']);
     $telefone=$_POST['telefone'];
     $cpf=$_POST['cpf'];
     $genero=$_POST['genero'];
@@ -37,7 +37,7 @@
         echo "alert('Usuário salvo com sucesso!')";
         echo '</script>';	
 
-        header("Location: cad_novo_usuario_front.php");
+        header("Location: ../../index.php");
     }   
     else
     {

@@ -15,6 +15,9 @@
 
 
     <body onload="cliqui(),select()">
+    <?php
+        session_start()
+    ?>
 
         <a href="ancora"></a>
         <!-- Recuperando as informações do produto -->
@@ -119,10 +122,10 @@
                 <div class="devs">
                     <h2>Navegação</h2>
 
-                    <a href="../../index.html"><ion-icon name="home" id="icon_rodape"></ion-icon></i></a>
+                    <a href="../../index.php"><ion-icon name="home" id="icon_rodape"></ion-icon></i></a>
                     <a href="cad_pesq_produtos_front.php" id="icon_rodape"><ion-icon name="cart"></ion-icon></a> 
                     <a href="../venda/selecao_produtos_front.php"><i class="fa-brands fa-octopus-deploy" id="icon_rodape"></i></a>
-                    <a href="../devs.html"><ion-icon name="code" id="icon_rodape"></ion-icon></a>
+                    <a href="../devs.php"><ion-icon name="code" id="icon_rodape"></ion-icon></a>
                 </div>
 
 

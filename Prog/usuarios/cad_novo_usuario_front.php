@@ -13,6 +13,9 @@
     </head>
 
     <body onload="cliqui(),select()">
+    <?php
+        session_start()
+    ?>
         <!-- <div class="menu">
             <input type="checkbox" id="check">
 
@@ -36,11 +39,11 @@
                 <h2>Menu</h2>
             </center>
 
-            <a href="../../index.html"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
+            <a href="../../index.php"><ion-icon name="home"></ion-icon></i><span>Home</span></a>
             <a href="../produtos/cad_pesq_produtos_front.php"><ion-icon name="cart"></ion-icon><span>Cad. Produtos</span></a> -->
             <!-- <a href="cad_pesq_usuario_front.php"><ion-icon name="body"></ion-icon><span>Usuários</span></a> -->
             <!-- <a href="../venda/selecao_produtos_front.php"><i class="fa-brands fa-octopus-deploy"></i><span> Produtos</span></a>
-            <a href="../devs.html"><ion-icon name="code"></ion-icon><span>Devs</span></a>
+            <a href="../devs.php"><ion-icon name="code"></ion-icon><span>Devs</span></a>
             
         </div> -->
         <form action="cad_novo_usuario_back.php" method="post">
@@ -54,31 +57,38 @@
                     <div class="form_items">
                         <div class="input_field">
                             <label>Nome:</label>
-                            <input type="text" name="nome" class="input" placeholder="Nome"><br/><br/>
+                            <input type="text" name="nome" class="input" placeholder="Nome">
+                            <!-- <br><br> -->
                         </div>
 
                         <div class="input_field">
                             <label>Email:</label><br/>    
-                            <input type="email" name="email"class="input" placeholder="E-mail"><br><br>
+                            <input type="email" name="email"class="input" placeholder="E-mail">
+                            <!-- <br><br> -->
                         </div>
 
                         <div class="input_field">
                             <label>Senha:</label><br>
-                            <input type="password" name="senha" class="input" placeholder="Senha"><br><br>
+                            <input type="password" name="senha" class="input" placeholder="Senha">
+                            <!-- <br><br> -->
                         </div>
 
                         <div class="input_field">
-                            <label>Telefone:</label>
-                            <input type="text" name="telefone" class="input" placeholder="Telefone"><br><br>
+                            <label>Telefone:</label><br>
+                            <input type="text" name="telefone" class="input" placeholder="99999999">
+                            <!-- pattern="([9]{1})?([0-9]{4})([0-9]{4})" -->
+                            <!-- <br><br> -->
                         </div>
 
                         <div class="input_field">
                             <label>CPF:</label><br>
-                            <input type="text" name="cpf" class="input" placeholder="CPF"><br><br>
+                            <input type="text" name="cpf" class="input" placeholder="CPF" >
+                            <!-- pattern=".{11}" -->
+                            <!-- <br><br> -->
                         </div>
 
                         <div class="input_field">
-                            <label>Gênero:</label><br />
+                            <label>Gênero:</label><br>
                             <select name="genero" aria-placeholder="Gênero">
                             <option label="Masculino" value="masc"></option>
                             <option label="Feminino" value="fem"></option>
@@ -86,11 +96,11 @@
                             <option label="Outros" value="outros"></option>
                             <option label="Prefiro não dizer" value="ndizer"></option>
                         </select> 
-                            <br/><br><br>
+                            <!-- <br><br> -->
                         </div>
 
                         <div class="input_field">
-                            <label>Data de nascimento:</label><br />
+                            <label>Data de nascimento:</label><br>
                             <input type="date" name="datanasc" class="input" placeholder="Data de nascimento"><br><br>
                         </div>
 
@@ -118,10 +128,10 @@
                 <div class="devs">
                     <h2>Navegação</h2>
 
-                    <a href="../../index.html"><ion-icon name="home" id="icon_rodape"></ion-icon></i></a>
+                    <a href="../../index.php"><ion-icon name="home" id="icon_rodape"></ion-icon></i></a>
                     <a href="../produtos/cad_pesq_produtos_front.php" id="icon_rodape"><ion-icon name="cart"></ion-icon></a> 
                     <a href="../venda/selecao_produtos_front.php"><i class="fa-brands fa-octopus-deploy" id="icon_rodape"></i></a>
-                    <a href="../devs.html"><ion-icon name="code" id="icon_rodape"></ion-icon></a>
+                    <a href="../devs.php"><ion-icon name="code" id="icon_rodape"></ion-icon></a>
                 </div>
 
 
