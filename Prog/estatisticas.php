@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Developers</title>
+        <title>Estatísticas</title>
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <link rel="shortcut icon" href="../image/icon.png">
 
@@ -112,78 +112,17 @@
         </div> <!-- menu -->
 
         <div class="mae">
-            <div id="devs">
-                <!-- class="container" -->
-
-                <a href="ancora"></a>
-            <div class="Developers">
-                <h1>Desenvolvedores</h1>
-            <!-- </div> -->
-                
-                <!--Dev1-->
-                <div class="box"> 
-                    <img src="../image/Ana.png" alt="Desenvolvedor" class="box-image">
-                    <h3>02 - Ana Clara Gama Alba Postinguel</h3>
-                    <p><b>E-mail: </b><a href="mailto:ana.gama@unesp.br">ana.gama@unesp.br</a></p>
+            <div class="container">
+                <h1>Estatísticas</h1>
+                <div class="movi_caixa">
+                    <h2>Movimento de caixa</h2>
+                    <iframe src="https://docs.google.com/spreadsheets/d/1Pm_hlxA2VBRhOs_2sEbxXaFKYaxzeZDL/edit?usp=sharing&ouid=117871962651895443978&rtpof=true&sd=true" title="Movimento de caixa" width="70%" height="600px"></iframe>
                 </div>
-                <!-- <br> -->
 
-                <!--Dev2-->
-                <div class="box">
-                    <img src="../image/Camila.png" alt="Desenvolvedor" class="box-image">
-                    <h3>06 - Camila Pereira Raimundo</h3>
-                    <p><b>E-mail: </b><a href="mailto:camila.raimundo@unesp.br">camila.raimundo@unesp.br</a></p>
+                <div class="movi_estoque">
+                    <h2>Movimento de estoque</h2>   
+                    <iframe src="https://docs.google.com/spreadsheets/d/1mF0UoChQ0pBjZioE4StsjCTRqjo860YI/edit?usp=sharing&ouid=117871962651895443978&rtpof=true&sd=true" title="Movimento de Estoque" width="70%" height="600px"></iframe>
                 </div>
-            
-                <!-- <br> -->
-                <!--Dev3-->
-                <div class="box">
-                    <img src="../image/Laura.png" alt="Desenvolvedor" class="box-image">
-                    <h3>17 - Laura Caires Maldonado Jardim Galera</h3>
-                    <p><b>E-mail: </b><a href="mailto:laura.caires@unesp.br">laura.caires@unesp.br</a></p>
-                </div>
-                <!-- <br> -->
-                <!--Dev4-->
-                <div class="box">
-                    <img src="../image/Murilo.png" alt="Desenvolvedor" class="box-image">
-                    <h3>24 - Murilo Gonzales Vieira</h3>
-                    <p><b>E-mail: </b><a href="mailto:murilo.vieira@unesp.br">murilo.vieira@unesp.br</a></p>
-                </div>
-                <!--Dev5-->
-                <div class="box">
-                    <img src="../image/Chen.png" alt="Desenvolvedor" class= "box-image">
-                    <h3>28 - Rafael Chun Lin Chen</h3>
-                    <p><b>E-mail: </b><a href="mailto:rafael.chen@unesp.br">rafael.chen@unesp.br</a></p>
-                </div>
-                
-
-                <!-- <br><br><br><br><br> -->
-            </div>
-
-
-            </div> <!-- container -->
-        </div> <!-- mae -->
-
-        <!-- ----------------RODAPÉ ------------------------------ -->
-        <div class="footer">
-            <div class="devs">
-                <h2>Devs</h2>
-                <ul>
-                    <li>Ana Clara Gama Alba Postinguel, n° 02</li>
-                    <li>Camila Pereira Raimundo, n° 06</li>
-                    <li>Laura Caires Jardim Maldonado Galera, n° 17</li>
-                    <li>Murilo Gonzales Vieira, n° 24</li>
-                    <li>Rafael Chun Lin Chen, n° 28</li>
-                </ul>
 
             </div>
-
-            <div class="voltar_ao_topo">
-                <a href="#" class="top">
-                    <ion-icon name="arrow-up-circle-outline"></ion-icon>
-                </a>
         </div>
-
-    </body>
-
-</html>

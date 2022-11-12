@@ -77,19 +77,20 @@
                 <!-- <a href="Prog/usuarios/cad_pesq_usuario_front.php">
                     <ion-icon name="body"></ion-icon><span>Usuários</span>
                 </a> -->
-                <?php
-                        if($_SESSION["isadm"]){
-                            echo "<a href='../produtos/cad_pesq_produtos_front.php'>
-                            <ion-icon name='cart'></ion-icon><span>Cad. Produtos</span>
-                            </a>";
-                            echo "<a href='../usuarios/cad_pesq_usuario_front.php'>
-                            <ion-icon name='body'></ion-icon><span>Tabela usuários</span>
-                            </a>";
-                        }
-                            
-                    ?>
                 <a href="selecao_produtos_front.php">
                     <i class="fa-brands fa-octopus-deploy"></i><span> Produtos</span>
+                </a>
+                <!-- < ?php
+                    if($_SESSION == $_SESSION["isadm"])
+                        echo"<a href='../produtos/cad_novo_produto_front.php'>
+                            <ion-icon name='cart'></ion-icon><span>Tabela Produtos</span>
+                            <a>";
+                        echo"<a href='../usuarios/cad_pesq_usuario_front.php'>
+                            <ion-icon name='body'></ion-icon><span>Tabela Usuários</span>
+                            </a>";
+                ?> -->
+                <a href="estatisticas.php">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i><span> Estatísticas</span>
                 </a>
                 <a href="../devs.php">
                     <ion-icon name="code"></ion-icon><span>Devs</span>
@@ -124,12 +125,6 @@
                     echo "<div>";
                     echo"<a href='selecao_produtos_front.php'><input type='submit' value='Voltar' class='button_prod_front'></a><br><br>";
                     // echo "<input type='submit'  value='Voltar' class='button_prod_front'  onclick='location.href='cad_pesq_usuario_front.php';'>";
-// =======
-                    echo "<h1>Compra Finalizada com Sucesso!!!</h1><br>";
-                    echo "<div>";
-                    echo"<input type='submit' value='Voltar' class='button_prod_front' onclick='location.href='cad_pesq_usuario_front.php''><br><br>";
-// >>>>>>> 41cce5db66bd5a4eaae978fadb7bc7cb51126422
-                    echo "</div>";
 
 
                     
@@ -160,9 +155,7 @@
                 <div class="celebration">
                     <img src="../../image/celebracao.png" alt="celebracao">
                 </div>
-                
-               
-            
+  
         </div>
         </div>
     </body>

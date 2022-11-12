@@ -103,9 +103,9 @@
             WHERE id_usuario = $id_usuario";
 
     pg_query($conecta,$sql_delete);
-
+    include "enviaking.php";
     // Fecha a conexão com o PostgreSQL
     pg_close($conecta);
 
-    include "../envioemail/enviaking.php";
+    
 ?>

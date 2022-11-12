@@ -74,7 +74,7 @@
             <?php
                         if($_SESSION["isadm"]){
                             echo "<a href='../produtos/cad_pesq_produtos_front.php'>
-                            <ion-icon name='cart'></ion-icon><span>Cad. Produtos</span>
+                            <ion-icon name='cart'></ion-icon><span>Tabela Produtos</span>
                             </a>";
                             echo "<a href='cad_pesq_usuario_front.php'>
                             <ion-icon name='body'></ion-icon><span>Tabela usuários</span>
@@ -83,6 +83,9 @@
                             
                     ?>
             <a href="../venda/selecao_produtos_front.php"><i class="fa-brands fa-octopus-deploy"></i><span> Produtos</span></a>
+            <a href="../estatisticas.php">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i><span> Estatísticas</span>
+            </a>
             <a href="../devs.php"><ion-icon name="code"></ion-icon><span>Devs</span></a>
             <!-- <a href="Prog/login/login_back.php">
                     <ion-icon name="exit-outline"></ion-icon><span>Sair</span>

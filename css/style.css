@@ -947,12 +947,13 @@ label #sidebar_btn:hover {
     align-items: center;
     font-size: 40px;
     font-weight: 700;
-    /* margin-bottom: 25px; */
+    margin-bottom: 25px;
     color: purple;
     /* text-transform: uppercase; */
     text-align: center;  
     margin-bottom: 200px;
     width: 100%;
+    /* margin-top: 100px; */
 }
 
 .Developers{
@@ -1335,27 +1336,24 @@ label #sidebar_btn:hover {
 /*---------------------------------------------FINALIZAÇÃO--------------------------------------------------*/
 
 .celebration img{
-/* <<<<<<< HEAD */
-    width: 50%;
+    /* width: 100%; */
     display: flex;
     margin-left: 450px;
-/* ======= */
-    width: 35%;
+    width: 70%;
     display: flex;
-    margin-left: 800px;
-/* >>>>>>> 41cce5db66bd5a4eaae978fadb7bc7cb51126422 */
+    margin-left: 650px;
     margin-top: -200px;
 }
 
 .quadro{
     border-width: 2px;
     border-style: solid;    
-/* <<<<<<< HEAD */
     border-color: rgb(255, 255, 255);
     border-radius: 10px;
     margin-left: -100px;
     width:600px;
     box-shadow: 10px 10px 58px 14px rgba(4,123,214,0.68);
+    height: 200px;
     
 /* ======= */
     border-color: rgb(202, 0, 101);
@@ -1363,7 +1361,6 @@ label #sidebar_btn:hover {
     width:600px;
     margin-left: 200px;
     box-shadow: -10px 5px 10px 10px rgba(106, 2, 138, 0.1);
-/* >>>>>>> 41cce5db66bd5a4eaae978fadb7bc7cb51126422 */
 
 
 
@@ -1384,3 +1381,10 @@ label #sidebar_btn:hover {
     transition: 1s;
 }
 
+
+/* -------------------------------estatísticas------------------------------------------- */
+
+.movi_caixa{
+    margin-bottom: 5%;
+    /* border-color: #000; */
+}
